@@ -34,6 +34,7 @@ public class PlayerCharacterController : MonoBehaviour
         m_InputHandler = GetComponent<PlayerInputHandler>();
 
     }
+
     //public float RotationMultiplier
     //{
     //    get
@@ -76,6 +77,7 @@ public class PlayerCharacterController : MonoBehaviour
 
    //     CharacterPlayerController.Move(-1*movement.normalized * SpeedMovement * Time.deltaTime);
     }
+
     
 }
 

@@ -20,9 +20,9 @@ namespace Unity.FPS.Gameplay
         [Tooltip("Used to flip the horizontal input axis")]
         public bool InvertXAxis = false;
 
-   //     GameFlowManager m_GameFlowManager;
+        //GameFlowManager m_GameFlowManager;
         PlayerCharacterController m_PlayerCharacterController;
-      //  bool m_FireInputWasHeld;
+        //  bool m_FireInputWasHeld;
 
         void Start()
         {

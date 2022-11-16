@@ -1,7 +1,8 @@
 ﻿namespace Unity.FPS.Game
 {
     public class GameConstants
-    {    // tất cả chuỗi hằng số
+    {   
+        // tất cả chuỗi hằng số
         // all the constant string used across the game
         public const string k_AxisNameVertical = "Vertical";
         public const string k_AxisNameHorizontal = "Horizontal";
