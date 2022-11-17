@@ -15,19 +15,16 @@ public class MainUiMenu : Singleton<MainUiMenu>
         _btMiddleRight.onClick.AddListener(NextAnimationr);
         _btShop.onClick.AddListener(OpenShop);
     }
-    public void SetAnimator(string nameParameters)
-    {
-        animator.SetTrigger(nameParameters);
-    }
-
     void OpenShop()
     {
-        Debug.Log("Open shop");
-      //  SoundManager.instance.OnPlayAudio(SoundType.ButtonBlip);
-        CavasControllerUiMenu.Instance.SetActivePlayer(false);
-        CavasControllerUiMenu.Instance.SetActiveShopUi(true);
-       // LoadWeaponUiShop.instance.SetActiveGunCurrent(true);
-        SetAnimator("OutMain");
+        //  SoundManager.instance.OnPlayAudio(SoundType.ButtonBlip);
+        CavasControllerUiMenu._instance.SetActiveShopUi();
+        StateOut();
+
+    }
+    void StateOut()
+    {
+        animator.SetTrigger("OutMain");
 
     }
     void NextAnimationl()

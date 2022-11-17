@@ -10,19 +10,10 @@ public class MainUiRightMenu : MonoBehaviour
     {
         _btPlayGame.onClick.AddListener(OnPlayGame);
     }
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
     void OnPlayGame()
     {
       //  MusicManager.instance.OnPlayMusic(MusicType.CountDown);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
 }

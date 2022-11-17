@@ -4,34 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class CavasControllerUiMenu : MonoBehaviour
+public class CavasControllerUiMenu : Singleton<CavasControllerUiMenu>
 {
-    public static CavasControllerUiMenu Instance;
-
     [SerializeField] GameObject _mainUi;
     [SerializeField] GameObject _shopUi;
     [SerializeField] GameObject _rankUi;
     [SerializeField] GameObject _player;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
     void Start()
     {
      //   DataPlayer a = new DataPlayer();
       //  MusicManager.instance.OnPlayMusic(MusicType.MainMenu);
     }
-    public void SetActivePlayer(bool res)
+    public void SetActiveShopUi()
     {
-        _player.SetActive(res);
+        _player.SetActive(false);
+        _shopUi.SetActive(true);
     }
-    public void SetActiveShopUi(bool res)
-    {
-        _shopUi.SetActive(res);
-    }
-    public void SetActiveRankUi(bool res)
-    {
-        _rankUi.SetActive(res);
-    }
+
+
 }

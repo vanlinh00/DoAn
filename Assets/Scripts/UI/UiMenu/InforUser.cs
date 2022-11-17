@@ -14,11 +14,6 @@ public class InforUser : Singleton<InforUser>
         ChangeInforUser();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void ChangeInforUser()
     {
        // InforPlayer inforPlayer = DataPlayer.getInforPlayer();
