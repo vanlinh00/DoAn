@@ -12,6 +12,7 @@ public class WeaponManager : MonoBehaviour
         {
             ChangeGun();
         }
+
     }
     void ChangeGun()
     {
