@@ -11,20 +11,24 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
-        Ray ray = _camera.ScreenPointToRay(screenCenterPoint);
-        if (Physics.Raycast(ray, out RaycastHit raycastHit))
+        if(GameState.stateGame!= StateGame.OpenStore)
         {
-            _shootPoint = raycastHit.point;
+            Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            Ray ray = _camera.ScreenPointToRay(screenCenterPoint);
+            if (Physics.Raycast(ray, out RaycastHit raycastHit))
+            {
+                _shootPoint = raycastHit.point;
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                Shoot();
+            }
+            if (Input.GetKeyDown("q"))
+            {
+                _animator.SetTrigger("Reload");
+            }
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
-        }
-        if (Input.GetKeyDown("q"))
-        {
-            _animator.SetTrigger("Reload");
-        }
+       
     }
     public void Shoot()
     {
