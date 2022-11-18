@@ -11,6 +11,10 @@ public class CavasControllerUiMenu : Singleton<CavasControllerUiMenu>
     [SerializeField] GameObject _rankUi;
     [SerializeField] GameObject _player;
 
+    protected override void Awake()
+    {
+        base.Awake();
+    }
     void Start()
     {
      //   DataPlayer a = new DataPlayer();
@@ -19,8 +23,16 @@ public class CavasControllerUiMenu : Singleton<CavasControllerUiMenu>
     public void SetActiveShopUi()
     {
         _player.SetActive(false);
+        _mainUi.SetActive(false);
         _shopUi.SetActive(true);
     }
+    public void SetActiveMainUi()
+    {
+        _shopUi.SetActive(false);
+        _player.SetActive(true);
+        _mainUi.SetActive(true);
+    }
+  
 
 
 }
