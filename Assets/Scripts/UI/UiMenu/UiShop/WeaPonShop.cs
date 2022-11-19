@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaPonShop:MonoBehaviour
+[System.Serializable]
+public class WeaPonShop
 {
     public int idType;
     public int idWeapon;
-    public string name { get; set; }
-    public float damage { get; set; }
-    public float rateOfFire { get; set; }
-    public float accuracy { get; set; }
-    public int priceForCoin { get; set; }
-    public int priceForDiamond { get; set; }
+    public string name;
+    public float damage;
+    public float rateOfFire;
+    public float accuracy;
+    public int priceForCoin;
+    public int priceForDiamond;
+}
+[System.Serializable]
+public class DataListWeapon
+{
+  public  WeaPonShop[] ListDataGun;
 }

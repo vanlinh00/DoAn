@@ -7588,6 +7588,7 @@ MonoBehaviour:
   _nameWeapon: {fileID: 6947122177576082127}
   _priceWeaponFCoinTxt: {fileID: 6947122178695647610}
   _priceWeaponFDiamondTxt: {fileID: 6947122178010437577}
+  _weaPonCurrent: {fileID: 0}
   _positionGun: {x: 0, y: 2.07, z: 0}
 --- !u!222 &6947122178090807323
 CanvasRenderer:

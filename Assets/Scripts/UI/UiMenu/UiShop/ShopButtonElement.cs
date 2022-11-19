@@ -13,8 +13,6 @@ public class ShopButtonElement : MonoBehaviour
     public Button _btSelectWeapon;
     public GameObject _darkBackGround;
     public GameObject _lock;
-
-
     private void Awake()
     {
         _btSelectWeapon.onClick.AddListener(SelectWeapon);
@@ -32,7 +30,7 @@ public class ShopButtonElement : MonoBehaviour
     {
 
         // _backGround.color = new Color32(255, 25, 43, 225);
-       // LoadWeaponUiShop.instance.ChangePropertiesGun(_weapon.damage, _weapon.rateOfFire, _weapon.accuracy, _weapon.name, _weapon.id, _weapon.priceForCoin, _weapon.priceForDiamond);
+        InforWeaponManager._instance.ChangePropertiesGun(_weapon.damage, _weapon.rateOfFire, _weapon.accuracy, _weapon.name, _weapon.idWeapon, _weapon.priceForCoin, _weapon.priceForDiamond);
     }
 
 }

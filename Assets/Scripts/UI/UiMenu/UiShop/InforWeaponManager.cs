@@ -16,6 +16,11 @@ public class InforWeaponManager : Singleton<InforWeaponManager>
     public GameObject _weaPonCurrent;
 
    [SerializeField] Vector3 _positionGun;
+
+    protected override void Awake()
+    {
+        base.Awake();
+    }
     public void ChangePropertiesGun(float newDamage, float newRateOfFire, float newAccuracy, string nameGun, int idWeapon, int priceForCoin, int priceForDiamond)
     {
         _barDamageWeapon.fillAmount = newDamage;
