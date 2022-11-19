@@ -12,12 +12,15 @@ public class EnemyController : MonoBehaviour,IDamageable
     public bool isHit = false;
     public float health = 1000f;
     [SerializeField] Image _valueHealthImg;
+    [SerializeField] ParticleSystem _explosionBodyBloody;
     public enum StateEnemy
     {
         run,
         shoot,
         idle,
+        die,
     }
+    public StateEnemy stateEnemy;
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -67,6 +70,35 @@ public class EnemyController : MonoBehaviour,IDamageable
     }
     void Die()
     {
+        stateEnemy = StateEnemy.die;
         gameObject.SetActive(false);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("Bullet"))
+        {
+            _explosionBodyBloody.transform.position = collision.gameObject.transform.position;
+            _explosionBodyBloody.gameObject.SetActive(true);
+            _explosionBodyBloody.Play();
+         
+            if (stateEnemy != StateEnemy.die)
+            {
+                StartCoroutine(WaitTimeStopParticle());
+            }
+            //IDamageable Damage = collision.gameObject.GetComponent<IDamageable>();
+            //if (Damage != null)
+            //{
+            //    Damage.Damage();
+            //}
+            //ObjectPooler._instance.AddElement("Bullet", transform.gameObject);
+            //transform.gameObject.SetActive(false);
+        }
+
+    }
+    IEnumerator WaitTimeStopParticle()
+    {
+        yield return new WaitForSeconds(0.5f);
+        _explosionBodyBloody.Stop();
+        //_explosionBodyBloody.gameObject.SetActive(false);
     }
 }

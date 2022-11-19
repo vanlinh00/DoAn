@@ -8,7 +8,6 @@ public class Weapon : MonoBehaviour
     public Transform _gunHead;
     public Vector3 _shootPoint;
     public Camera _camera;
-
     public void StateReady()
     {
         _animator.SetTrigger("Ready");
