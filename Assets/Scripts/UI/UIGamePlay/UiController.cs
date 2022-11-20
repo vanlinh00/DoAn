@@ -5,6 +5,7 @@ using UnityEngine;
 public class UiController : MonoBehaviour
 {
     [SerializeField] GameObject _uiStore;
+    [SerializeField] StoreManager _storeManager;
     private void Update()
     {
         if (Input.GetKeyDown("z"))

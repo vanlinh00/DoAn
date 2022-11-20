@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gun : Weapon
 {
+    public int idGun;
     public  void  Update()
     {
         if (GameState.stateGame != StateGame.OpenStore)
@@ -26,6 +27,10 @@ public class Gun : Weapon
         }
 
       
+    }
+    public void OnEnable()
+    {
+        _camera = GameObject.FindWithTag("Player").transform.GetChild(0).gameObject.GetComponent<Camera>();
     }
     public void Shoot()
     {

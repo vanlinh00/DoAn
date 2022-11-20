@@ -299,6 +299,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &495462173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495462175}
+  - component: {fileID: 495462174}
+  m_Layer: 0
+  m_Name: GameManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &495462174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495462173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ae43121d2dbde468c1372297ed0573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &495462175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495462173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757440692
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +818,7 @@ PrefabInstance:
     - target: {fileID: 5975044693963026769, guid: 4b668ed02082475448e31e259a549170,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.21337299
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 5975044693963026769, guid: 4b668ed02082475448e31e259a549170,
         type: 3}
@@ -15431,6 +15474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7106665248525481181}
   - component: {fileID: 7106665248525481180}
+  - component: {fileID: 7106665248525481183}
   m_Layer: 5
   m_Name: top_right
   m_TagString: Untagged
@@ -15438,6 +15482,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7106665248525481183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106665248525481182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa711ad093552b2438471d66ae091ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amountCoinTxt: {fileID: 7106665249617815630}
+  _amountDiamondTxt: {fileID: 7106665249221966131}
 --- !u!95 &7106665248658803828
 Animator:
   serializedVersion: 3

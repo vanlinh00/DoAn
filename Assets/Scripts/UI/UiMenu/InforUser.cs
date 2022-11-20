@@ -9,6 +9,14 @@ public class InforUser : Singleton<InforUser>
     [SerializeField] Text _rankingText;
     [SerializeField] Text _levelText;
 
+    public void OnEnable()
+    {
+        DataPlayer.UpdateName("VanLinh00");
+        _nameText.text = DataPlayer.GetInforPlayer().name;
+        _levelText.text ="Level "+ DataPlayer.GetInforPlayer().level;
+        _rankingText.text ="Ranking "+ DataPlayer.GetInforPlayer().ranking;
+    }
+
     void Start()
     {
         ChangeInforUser();
@@ -20,4 +28,5 @@ public class InforUser : Singleton<InforUser>
       //  _levelText.text = "Level 0" + inforPlayer.level.ToString();
 
     }
+ 
 }

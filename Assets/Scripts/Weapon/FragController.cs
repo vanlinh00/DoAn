@@ -26,7 +26,11 @@ public class FragController : Weapon
 
         }
     }
-        public void Shoot()
+    public void OnEnable()
+    {
+        _camera = GameObject.FindWithTag("Player").transform.GetChild(0).gameObject.GetComponent<Camera>();
+    }
+    public void Shoot()
        {
         StartCoroutine(WaitTimeBullet());
         }
