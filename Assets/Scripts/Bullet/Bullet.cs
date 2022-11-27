@@ -13,6 +13,9 @@ public class Bullet : MonoBehaviour, ImoveBulletable
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("HIHIHIHI+_____________");
+        Debug.Log(collision.gameObject.tag.ToString());
+
         if (collision.gameObject.tag.Equals("Enemy") || collision.gameObject.tag.Equals("Player"))
         {
             IDamageable Damage = collision.gameObject.GetComponent<IDamageable>();
@@ -20,6 +23,7 @@ public class Bullet : MonoBehaviour, ImoveBulletable
             {
                 Damage.Damage();
             }
+        
             ObjectPooler._instance.AddElement("Bullet", transform.gameObject);
             transform.gameObject.SetActive(false);
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.FPS.Gameplay;
 using UnityEngine;
 
-public class PlayerCharacterController : MonoBehaviour
+public class PlayerCharacterController : MonoBehaviour, IDamageable
 {
     PlayerInputHandler m_InputHandler;
     [Header("Rotation")]
@@ -77,7 +77,12 @@ public class PlayerCharacterController : MonoBehaviour
 
    //     CharacterPlayerController.Move(-1*movement.normalized * SpeedMovement * Time.deltaTime);
     }
-
-    
+    int a = 0;
+    public void Damage()
+    {
+        a++;
+        Debug.Log("HHIIIIIiiiiiiiiiiiiiiiiiiiiiii"+a);
+       // throw new System.NotImplementedException();
+    }
 }
 
