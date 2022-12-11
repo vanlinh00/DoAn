@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour, ImoveBulletable
 {
     public Vector3 _firePoint { get; set; }
-    private float speed = 2f;
+    private float speed = 1f;
     public void Fly()
     {
         //  SoundManager.instance.OnPlayAudio(SoundType.AKFire);
@@ -13,11 +13,11 @@ public class Bullet : MonoBehaviour, ImoveBulletable
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("HIHIHIHI+_____________");
-        Debug.Log(collision.gameObject.tag.ToString());
-
+        //Debug.Log(collision.gameObject.tag.ToString());
+        Debug.Log("1  Shoot player");
         if (collision.gameObject.tag.Equals("Enemy") || collision.gameObject.tag.Equals("Player"))
         {
+            Debug.Log("2  Shoot player");
             IDamageable Damage = collision.gameObject.GetComponent<IDamageable>();
             if (Damage != null)
             {

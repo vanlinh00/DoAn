@@ -29,6 +29,7 @@ public class PlayerCharacterController : MonoBehaviour, IDamageable
 
     public float SpeedMovement = 3f;
     public CharacterController CharacterPlayerController;
+    public float HpPlayer;
     private void Start()
     {
         m_InputHandler = GetComponent<PlayerInputHandler>();
@@ -77,12 +78,21 @@ public class PlayerCharacterController : MonoBehaviour, IDamageable
 
    //     CharacterPlayerController.Move(-1*movement.normalized * SpeedMovement * Time.deltaTime);
     }
-    int a = 0;
+    private void OnEnable()
+    {
+        EventManager.HitPlayer += Damage;
+    }
+    public void OnDisable()
+    {
+        EventManager.HitPlayer -= Damage;
+    }
     public void Damage()
     {
-        a++;
-        Debug.Log("HHIIIIIiiiiiiiiiiiiiiiiiiiiiii"+a);
-       // throw new System.NotImplementedException();
+        if(Random.RandomRange(1,4)==3)
+        {
+          //  Debug.Log(HpPlayer);
+        }
+
     }
 }
 
