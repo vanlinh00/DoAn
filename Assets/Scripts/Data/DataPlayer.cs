@@ -23,6 +23,7 @@ public class DataPlayer
                 level = 1,
                 idGun1 = 1,
                 idGun2 = 2,
+                countKeys = 0,
             };
             SaveData();
         }
@@ -84,6 +85,11 @@ public class DataPlayer
         inforPlayer.idGun2 = id;
         SaveData();
     }
+    public static void UpdateAmountKeys(int CountKeys)
+    {
+        inforPlayer.countKeys = CountKeys;
+        SaveData();
+    }
     public static InforPlayer GetInforPlayer()
     {
         return inforPlayer;
@@ -101,4 +107,5 @@ public class InforPlayer
     public int level;
     public int idGun1;
     public int idGun2;
+    public int countKeys;
 }

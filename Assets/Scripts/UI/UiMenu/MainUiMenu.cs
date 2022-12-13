@@ -8,12 +8,28 @@ public class MainUiMenu : Singleton<MainUiMenu>
     [SerializeField] Button _btMiddleRight;
     [SerializeField] Button _btShop;
     [SerializeField] Animator animator;
+    [SerializeField] Button _btnLuckyBox;
+
+    public Text countCoin;
+    public Text CountDiamond;
     protected override void Awake()
     {
         base.Awake();
         _btMiddleLeft.onClick.AddListener(NextAnimationl);
         _btMiddleRight.onClick.AddListener(NextAnimationr);
         _btShop.onClick.AddListener(OpenShop);
+        _btnLuckyBox.onClick.AddListener(OpenLuckyBox);
+        UpdateCoinsAndDiamonds();
+    }
+    public void UpdateCoinsAndDiamonds()
+    {
+        countCoin.text = DataPlayer.GetInforPlayer().countCoins.ToString();
+        CountDiamond.text = DataPlayer.GetInforPlayer().countDiamond.ToString();
+
+    }
+    public void OpenLuckyBox()
+    {
+        CavasControllerUiMenu._instance.SetActiveLuckyPanel();
     }
     void OpenShop()
     {
