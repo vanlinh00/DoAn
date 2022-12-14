@@ -7,11 +7,19 @@ public class LuckyBoxPanel : Singleton<LuckyBoxPanel>
 {
     [SerializeField] Button _buttonClose;
     public GameObject[] arrayKeys;
+    public List<LuckyBox> listBoxBtn;
+    public GameObject Content;
 
     private void Awake()
     {
+        LoadAllBoxBtn();
         base.Awake();
+        DataPlayer.UpdateAmountKeys(3);
         _buttonClose.onClick.AddListener(CloseLuckyBoxPanel);
+    }
+    private void OnEnable()
+    {
+        RenewAllBoxBtn();
     }
     public void CloseLuckyBoxPanel()
     {
@@ -28,6 +36,22 @@ public class LuckyBoxPanel : Singleton<LuckyBoxPanel>
         {
             arrayKeys[i].transform.GetChild(0).gameObject.SetActive(true);
         }    
+    }
+    public void LoadAllBoxBtn()
+    {
+        int countBoxBtn = Content.transform.childCount;
+
+        for(int i=0;i<countBoxBtn;i++)
+        {
+            listBoxBtn.Add(Content.transform.GetChild(i).gameObject.GetComponent<LuckyBox>());
+        }
+    }
+    public void RenewAllBoxBtn()
+    {
+        for(int i=0;i<listBoxBtn.Count;i++)
+        {
+            listBoxBtn[i].Renew();
+        }
     }
 
 }

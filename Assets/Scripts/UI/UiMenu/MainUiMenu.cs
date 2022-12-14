@@ -10,6 +10,7 @@ public class MainUiMenu : Singleton<MainUiMenu>
     [SerializeField] Animator animator;
     [SerializeField] Button _btnLuckyBox;
 
+    [SerializeField] Button _chooseMapBtn;
     public Text countCoin;
     public Text CountDiamond;
     protected override void Awake()
@@ -19,6 +20,8 @@ public class MainUiMenu : Singleton<MainUiMenu>
         _btMiddleRight.onClick.AddListener(NextAnimationr);
         _btShop.onClick.AddListener(OpenShop);
         _btnLuckyBox.onClick.AddListener(OpenLuckyBox);
+        _chooseMapBtn.onClick.AddListener(CavasControllerUiMenu._instance.OpenMapUi);
+
         UpdateCoinsAndDiamonds();
     }
     public void UpdateCoinsAndDiamonds()
@@ -64,4 +67,6 @@ public class MainUiMenu : Singleton<MainUiMenu>
         }
 
     }
+   
+
 }

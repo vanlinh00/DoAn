@@ -19,7 +19,6 @@ public class LuckyBox : MonoBehaviour
     }
     private void Start()
     {
-        DataPlayer.UpdateAmountKeys(3);
         Renew();
     }
     public void Renew()
