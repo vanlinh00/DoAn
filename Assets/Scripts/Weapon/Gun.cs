@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : Weapon
 {
     public int idGun;
+
     public  void  Update()
     {
         if (GameState.stateGame != StateGame.OpenStore)
