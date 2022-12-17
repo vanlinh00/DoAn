@@ -197,10 +197,10 @@ public class EnemyController : MonoBehaviour, IDamageable
     //{
     //    Destroy(gameObject);
     //}
-    public void Damage()
+    public void Damage(float HealthEnemy)
     {
         DodgeBullet();
-        health = health - 200f;
+        health = health - HealthEnemy;
         Debug.Log(health);
         _valueHealthImg.fillAmount = health / 1000f;
         if (health == 0)

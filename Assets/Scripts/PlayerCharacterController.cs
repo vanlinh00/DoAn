@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.FPS.Gameplay;
 using UnityEngine;
 
-public class PlayerCharacterController : MonoBehaviour, IDamageable
+public class PlayerCharacterController : MonoBehaviour
 {
     PlayerInputHandler m_InputHandler;
     [Header("Rotation")]
@@ -88,9 +88,18 @@ public class PlayerCharacterController : MonoBehaviour, IDamageable
     }
     public void Damage()
     {
-        if(Random.RandomRange(1,4)==3)
+        if(Random.RandomRange(1,7)==3)
         {
-          //  Debug.Log(HpPlayer);
+            //  Debug.Log(HpPlayer);
+            HpPlayer -=100;
+            UiController._instance.EnableHitZone();
+            MainUi._instance.ChangeFillAmountHealth();
+            UiController._instance.CountTimeHizone = 0f;
+            if(HpPlayer<=0)
+            {
+                UiController._instance.ActiveEndGameUi();
+                gameObject.SetActive(false);
+            }
         }
 
     }

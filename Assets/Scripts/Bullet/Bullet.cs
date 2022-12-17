@@ -14,14 +14,14 @@ public class Bullet : MonoBehaviour, ImoveBulletable
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(collision.gameObject.tag.ToString());
-        Debug.Log("1  Shoot player");
-        if (collision.gameObject.tag.Equals("Enemy") || collision.gameObject.tag.Equals("Player"))
+        //Debug.Log("1  Shoot player");
+        if (collision.gameObject.tag.Equals("Enemy") /*|| collision.gameObject.tag.Equals("Player")*/)
         {
-            Debug.Log("2  Shoot player");
+           // Debug.Log("2  Shoot player");
             IDamageable Damage = collision.gameObject.GetComponent<IDamageable>();
             if (Damage != null)
             {
-                Damage.Damage();
+                Damage.Damage(200f);
             }
         
             ObjectPooler._instance.AddElement("Bullet", transform.gameObject);

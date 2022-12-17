@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if(this!=null)
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+
     }
     private void Start()
     {

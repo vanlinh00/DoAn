@@ -1,16 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class UiController : MonoBehaviour
+using UnityEngine.UI;
+using DG.Tweening;
+public class UiController : Singleton<UiController>
 {
     [SerializeField] GameObject _uiStore;
     [SerializeField] StoreManager _storeManager;
+    [SerializeField] UiEndGame _uiEndGame;
+    [SerializeField] GameObject _scope;
+
+    // Zone When play hit
+    public GameObject HitZone;
+    public float CountTimeHizone;
+    public GameObject cameraObj;
+    private void Start()
+    {
+        CountTimeHizone = 0;
+    }
     private void Update()
     {
         if (Input.GetKeyDown("z"))
         {
-            if(_uiStore.activeSelf)
+            if (_uiStore.activeSelf)
             {
                 CloseStore();
             }
@@ -18,7 +30,12 @@ public class UiController : MonoBehaviour
             {
                 OpenStore();
             }
-           
+        }
+        CountTimeHizone += Time.deltaTime;
+        if (CountTimeHizone >= 2)
+        {
+            HitZone.SetActive(false);
+            CountTimeHizone = 0;
         }
     }
     public void OpenStore()
@@ -42,5 +59,23 @@ public class UiController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+    public void EnableHitZone()
+    {
+        if (!HitZone.activeSelf)
+        {
+            HitZone.SetActive(true);
+        }
+    }
+    public void ActiveEndGameUi()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        HitZone.SetActive(false);
+        cameraObj.SetActive(true);
+        _scope.SetActive(false);
+        _uiEndGame.gameObject.SetActive(true);
+        _uiEndGame.Show();
+ 
     }
 }

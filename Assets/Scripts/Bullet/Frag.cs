@@ -10,11 +10,12 @@ public class Frag : MonoBehaviour, ImoveBulletable
     public void Fly()
     {
         transform.position = Vector3.Lerp(transform.position, _firePoint, speed * Time.timeScale);
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
         StartCoroutine(WaitTimeExplosion());
     }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    StartCoroutine(WaitTimeExplosion());
+    //}
 
     //void OnEnable()
     //{
@@ -25,6 +26,7 @@ public class Frag : MonoBehaviour, ImoveBulletable
     {
         yield return new WaitForSeconds(0.5f);
         _explosion.SetActive(true);
+        GamePlay._instance.CheckEnemysColistionWihtBoom(transform);
         yield return new WaitForSeconds(1f);
         ObjectPooler._instance.AddElement("Bomb2", gameObject);
         _explosion.SetActive(false);

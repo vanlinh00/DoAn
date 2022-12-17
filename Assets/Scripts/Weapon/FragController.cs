@@ -38,9 +38,9 @@ public class FragController : Weapon
     {
         _animator.SetTrigger("Fire");
         yield return new WaitForSeconds(1f);
-        GameObject Bullet = ObjectPooler._instance.SpawnFromPool("Bomb2", _gunHead.position, _gunHead.rotation);
-        Bullet.GetComponent<Frag>()._firePoint = _shootPoint;
-        Bullet.GetComponent<Frag>().Fly();
-
+        GameObject Bomb = ObjectPooler._instance.SpawnFromPool("Bomb2", _gunHead.position, _gunHead.rotation);
+        Bomb.GetComponent<Frag>()._firePoint = _shootPoint;
+        Bomb.GetComponent<Frag>().Fly();
+        // Bomb.GetComponent<Rigidbody>().AddForce(transform.forward*2000f);
     }
 }
