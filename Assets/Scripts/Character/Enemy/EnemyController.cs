@@ -82,6 +82,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (walkPointSet)
         {
             StateRun();
+            agent.speed = 5f;
             agent.SetDestination(walkPoint);
 
             Vector3 direction = walkPoint - transform.position;
@@ -92,7 +93,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
-        Debug.Log(distanceToWalkPoint.magnitude);
+        //Debug.Log(distanceToWalkPoint.magnitude);
         if (distanceToWalkPoint.magnitude < 1f)
         {
             // StateIdle();
@@ -121,6 +122,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         if (isDead) return;
         StateRun();
+        agent.speed = 10f;
         agent.SetDestination(player.position);
     }
     private void AttackPlayer()
@@ -201,9 +203,8 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         DodgeBullet();
         health = health - HealthEnemy;
-        Debug.Log(health);
         _valueHealthImg.fillAmount = health / 1000f;
-        if (health == 0)
+        if (health <= 0)
         {
             Die();
         }
@@ -212,6 +213,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         stateEnemy = StateEnemy.die;
         gameObject.SetActive(false);
+        EventManager.EnemyDied();
     }
     private void OnCollisionEnter(Collision collision)
     {
