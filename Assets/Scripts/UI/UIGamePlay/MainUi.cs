@@ -8,6 +8,10 @@ public class MainUi : Singleton<MainUi>
     public Image healthBar;
     public TextMeshProUGUI enemyTxt;
     public int TotalAmountEnemy;
+
+    public Image GunImg;
+    public TextMeshProUGUI nameGunTxt;
+    public TextMeshProUGUI CountBulletTxt;
     public void ChangeFillAmountHealth()
     {
         //if(Random.RandomRange(1,7)==1)
@@ -32,6 +36,21 @@ public class MainUi : Singleton<MainUi>
         {
             Debug.Log("Win Game");
         }
+    }
+
+    public void LoadGunPlaying(Weapon weapon,bool IsFrag)
+    {
+        if(!IsFrag)
+        {
+            GunImg.sprite = Resources.Load<Sprite>("Image/Shop/Guns/" + weapon.idGun);
+        }
+        else
+        {
+            GunImg.sprite = Resources.Load<Sprite>("Image/Shop/Frag/" + 1);
+        }
+
+        //nameGunTxt.text
+        CountBulletTxt.text = weapon._countBullet+ "/"+weapon._countTotalBullets;
     }
 
 }

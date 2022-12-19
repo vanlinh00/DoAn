@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour, ImoveBulletable
 {
     public Vector3 _firePoint { get; set; }
     private float speed = 1f;
+    public float power;
     public void Fly()
     {
         //  SoundManager.instance.OnPlayAudio(SoundType.AKFire);
@@ -21,7 +22,7 @@ public class Bullet : MonoBehaviour, ImoveBulletable
             IDamageable Damage = collision.gameObject.GetComponent<IDamageable>();
             if (Damage != null)
             {
-                Damage.Damage(200f);
+                Damage.Damage(power);
             }
         
             ObjectPooler._instance.AddElement("Bullet", transform.gameObject);

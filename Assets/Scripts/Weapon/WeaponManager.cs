@@ -40,8 +40,6 @@ public class WeaponManager : Singleton<WeaponManager>
         {
             UiScope._instance.SetScopeAWM();
             _gun2.transform.localPosition = new Vector3(0, 0, -10f);
-
-
         }
     }
     IEnumerator UseFrag()
@@ -65,6 +63,7 @@ public class WeaponManager : Singleton<WeaponManager>
         }
         _frag.SetActive(true);
         _frag.GetComponent<Weapon>().StateReady();
+        MainUi._instance.LoadGunPlaying(_frag.GetComponent<Weapon>(), true);
     }
 
     IEnumerator UseGun1()
@@ -88,6 +87,15 @@ public class WeaponManager : Singleton<WeaponManager>
         }
         _gun1.SetActive(true);
         _gun1.transform.GetChild(0).GetComponent<Weapon>().StateReady();
+   
+        for(int i=0;i<_gun1.transform.childCount;i++)
+        {
+            if(_gun1.transform.GetChild(i).gameObject.activeSelf)
+            {
+                MainUi._instance.LoadGunPlaying(_gun1.transform.GetChild(i).GetComponent<Weapon>(), false);
+                break;
+            }
+        }
 
     }
 
@@ -112,6 +120,16 @@ public class WeaponManager : Singleton<WeaponManager>
         if (_gun2.transform.childCount>=1)
         {
             _gun2.transform.GetChild(0).GetComponent<Weapon>().StateReady();
+
+            for (int i = 0; i < _gun2.transform.childCount; i++)
+            {
+                if (_gun2.transform.GetChild(i).gameObject.activeSelf)
+                {
+                    MainUi._instance.LoadGunPlaying(_gun2.transform.GetChild(i).GetComponent<Weapon>(), false);
+                    break;
+                }
+            }
+
         }
     
     }

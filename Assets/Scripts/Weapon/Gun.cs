@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Gun : Weapon
 {
-    public int idGun;
-
+    public int power;
     public  void  Update()
     {
         if (GameState.stateGame != StateGame.OpenStore)
@@ -40,12 +39,19 @@ public class Gun : Weapon
     IEnumerator WaitTimeBullet()
     {
         GameObject Bullet = ObjectPooler._instance.SpawnFromPool("Bullet", _gunHead.position, _gunHead.rotation);
-        Bullet.GetComponent<Bullet>()._firePoint = _shootPoint;
-        Bullet.GetComponent<Bullet>().Fly();
+        Bullet bullet = Bullet.GetComponent<Bullet>();
+        bullet.power = power;
+        bullet._firePoint = _shootPoint;
+        bullet.Fly();
         _animator.SetTrigger("Fire");
+
+        transform.GetComponent<Weapon>()._countBullet--;
+
+        MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>(), false);
         yield return new WaitForSeconds(0.1f);
         ObjectPooler._instance.AddElement("Bullet", Bullet);
         Bullet.SetActive(false);
+
     }
 
 }
