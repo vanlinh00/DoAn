@@ -34,7 +34,7 @@ public class ShopButtonElement : MonoBehaviour
     public void SelectWeapon()
     {
       if(!_lock.activeSelf)
-        {
+        { 
             InforWeaponManager._instance.ChangePropertiesGun(_weapon.damage, _weapon.rateOfFire, _weapon.accuracy, _weapon.name, _weapon.idWeapon, _weapon.priceForCoin, _weapon.priceForDiamond);
         }
         else
@@ -42,6 +42,8 @@ public class ShopButtonElement : MonoBehaviour
             if(DataPlayer.GetInforPlayer().countCoins>=_weapon.priceForCoin|| DataPlayer.GetInforPlayer().countDiamond >=_weapon.priceForDiamond)
             {
                 UnLock();
+                int AmountCoins = DataPlayer.GetInforPlayer().countCoins - _weapon.priceForCoin;
+                DataPlayer.UpdateAmountCoins(AmountCoins);
                 DataPlayer.AddNewIdGun(_weapon.idWeapon);
             }
         }

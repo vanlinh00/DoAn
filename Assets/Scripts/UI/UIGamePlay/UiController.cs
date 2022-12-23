@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
+
 public class UiController : Singleton<UiController>
 {
     [SerializeField] GameObject _uiStore;
@@ -36,6 +38,11 @@ public class UiController : Singleton<UiController>
         {
             HitZone.SetActive(false);
             CountTimeHizone = 0;
+        }
+        if(Input.GetKeyDown("j"))
+        {
+            EnableCursor();
+            SceneManager.LoadScene(0);
         }
     }
     public void OpenStore()

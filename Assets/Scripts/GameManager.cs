@@ -16,12 +16,8 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         GameState.stateGame = StateGame.Playing;
-        UpdateCore();
     }
-    void UpdateCore()
-    {
-        DataPlayer.UpdateAmountCoins(20000);
-    }
+
     private void Update()
     {
         if (Input.GetKeyDown("u"))

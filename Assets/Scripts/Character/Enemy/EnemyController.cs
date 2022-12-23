@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     //Patroling
     public Vector3 walkPoint;
+    private Vector3 oldPosition;
+
     public bool walkPointSet;
     public float walkPointRange;
 
@@ -42,6 +44,8 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] Image _valueHealthImg;
     [SerializeField] ParticleSystem _explosionBodyBloody;
     float currentTimeMove;
+
+    public ParticleSystem _expolsionGunVfx;
     public enum StateEnemy
     {
         run,
@@ -73,7 +77,6 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private void Patroling()
     {
-        Debug.Log("___________patroling");
         if (isDead) return;
 
         if (!walkPointSet) SearchWalkPoint();
@@ -89,24 +92,27 @@ public class EnemyController : MonoBehaviour, IDamageable
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 0.15f);
         }
 
-        //Calculates DistanceToWalkPoint
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
-        //Walkpoint reached
-        //Debug.Log(distanceToWalkPoint.magnitude);
+        currentTimeMove += Time.deltaTime;
+        if (currentTimeMove <= 0.05)
+        {
+            oldPosition = transform.position;
+        }
+        if(currentTimeMove>=0.1)
+        {
+            if(Vector3.Distance(oldPosition,transform.position)==0f)
+            {
+                distanceToWalkPoint = Vector3.zero;
+            }
+            currentTimeMove = 0;
+        }
+
         if (distanceToWalkPoint.magnitude < 1f)
         {
-            // StateIdle();
-            walkPointSet = false;
-
-        }
-
-        currentTimeMove += Time.deltaTime;
-        if (currentTimeMove >= 3)
-        {
-            currentTimeMove = 0;
             walkPointSet = false;
         }
+
     }
     private void SearchWalkPoint()
     {
@@ -114,8 +120,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-         if (Physics.Raycast(walkPoint, -transform.up, 10, whatIsGround))
+            ///if (Physics.Raycast(walkPoint, transform.forward, 10, whatIsGround))
             walkPointSet = true;
     }
     private void ChasePlayer()
@@ -138,7 +143,8 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             EventManager.OnHitPlayer();
             StateHit();
-            StartCoroutine(WaitTimeBullet());
+            _expolsionGunVfx.Play();
+             StartCoroutine(WaitTimeBullet());
             Invoke("ResetAttack", timeBetweenAttacks);
         }
     }
@@ -150,10 +156,10 @@ public class EnemyController : MonoBehaviour, IDamageable
         //Rigidbody bulletRg = Bullet.GetComponent<Rigidbody>();
         //bulletRg.AddForce(transform.forward * 32f, ForceMode.Impulse);
         //bulletRg.AddForce(transform.up * 8, ForceMode.Impulse);
-        //
-        Vector3 targetFirePoint = new Vector3(player.transform.position.x, player.transform.position.y + 2f, player.transform.position.z);
-        //  Bullet.GetComponent<Bullet>()._firePoint = targetFirePoint;
-        // Bullet.GetComponent<Bullet>().Fly();
+
+        //Vector3 targetFirePoint = new Vector3(player.transform.position.x, player.transform.position.y + 2f, player.transform.position.z);
+        //Bullet.GetComponent<Bullet>()._firePoint = targetFirePoint;
+        //Bullet.GetComponent<Bullet>().Fly();
 
         alreadyAttacked = true;
 

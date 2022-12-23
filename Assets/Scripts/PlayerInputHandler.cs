@@ -60,6 +60,15 @@ namespace Unity.FPS.Gameplay
             return GetMouseOrStickLookAxis(GameConstants.k_MouseAxisNameVertical,
                 GameConstants.k_AxisNameJoystickLookVertical);
         }
+        public bool GetJumpInputDown()
+        {
+            if (CanProcessInput())
+            {
+                return Input.GetButtonDown(GameConstants.k_ButtonNameJump);
+            }
+
+            return false;
+        }
         public bool GetSprintInputHeld()
         {
             if (CanProcessInput())
@@ -120,5 +129,6 @@ namespace Unity.FPS.Gameplay
 
             return 0f;
         }
+
     }
 }

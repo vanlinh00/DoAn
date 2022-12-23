@@ -47,10 +47,9 @@ public class LuckyBox : MonoBehaviour
             // add coin
             CoinsManager.Instance.InitCoins(transform);
             int amountCoins = DataPlayer.GetInforPlayer().countCoins+int.Parse(cointTxt.text);
-            DataPlayer.UpdateAmountCoins(amountCoins);
 
+            DataPlayer.UpdateAmountCoins(amountCoins);
             MainUiMenu._instance.UpdateCoinsAndDiamonds();
- 
         }
     }
 

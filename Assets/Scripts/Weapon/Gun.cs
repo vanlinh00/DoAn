@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : Weapon
 {
     public int power;
+    public ParticleSystem _explosionVfx;
     public  void  Update()
     {
         if (GameState.stateGame != StateGame.OpenStore)
@@ -18,7 +19,18 @@ public class Gun : Weapon
 
             if (Input.GetMouseButtonDown(0))
             {
-                Shoot();
+                if(_countBullet!=0)
+                {
+                    _explosionVfx.Play();
+                    Shoot();
+                }
+                else
+                {
+                    _animator.SetTrigger("Reload");
+
+                    _countBullet = _amountbullets;
+                }    
+               
             }
             if (Input.GetKeyDown("q"))
             {
@@ -45,7 +57,7 @@ public class Gun : Weapon
         bullet.Fly();
         _animator.SetTrigger("Fire");
 
-        transform.GetComponent<Weapon>()._countBullet--;
+        /*transform.GetComponent<Weapon>().*/_countBullet--;
 
         MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>(), false);
         yield return new WaitForSeconds(0.1f);

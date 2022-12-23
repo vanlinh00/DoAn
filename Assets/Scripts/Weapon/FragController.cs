@@ -17,7 +17,16 @@ public class FragController : Weapon
 
             if (Input.GetMouseButtonDown(0))
             {
-                Shoot();
+                 if(_countBullet!=0)
+                {
+                    Shoot();
+                }
+                else
+                {
+                    _animator.SetTrigger("Reload");
+                    _countBullet = _amountbullets;
+                }
+    
             }
             if (Input.GetKeyDown("q"))
             {
@@ -41,6 +50,7 @@ public class FragController : Weapon
         GameObject Bomb = ObjectPooler._instance.SpawnFromPool("Bomb2", _gunHead.position, _gunHead.rotation);
         Bomb.GetComponent<Frag>()._firePoint = _shootPoint;
         Bomb.GetComponent<Frag>().Fly();
+        _countBullet--;
         // Bomb.GetComponent<Rigidbody>().AddForce(transform.forward*2000f);
     }
 }
