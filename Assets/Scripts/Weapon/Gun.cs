@@ -22,6 +22,7 @@ public class Gun : Weapon
                 if(_countBullet!=0)
                 {
                     _explosionVfx.Play();
+                    SoundController._instance.OnPlayAudio(SoundType.Akfire);
                     Shoot();
                 }
                 else

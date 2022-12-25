@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : MonoBehaviour
 {
+    public static GameManager _instance;
     private void Awake()
     {
-        if(this!=null)
+        if (_instance != null && _instance != this)
         {
-            DontDestroyOnLoad(this.gameObject);
+            Destroy(this);
+            return;
         }
-
+        else
+        {
+            _instance = this;
+        }
+        DontDestroyOnLoad(this);
     }
     private void Start()
     {

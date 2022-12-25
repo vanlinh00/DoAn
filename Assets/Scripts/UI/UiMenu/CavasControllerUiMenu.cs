@@ -19,8 +19,9 @@ public class CavasControllerUiMenu : Singleton<CavasControllerUiMenu>
     }
     void Start()
     {
-     //   DataPlayer a = new DataPlayer();
-      //  MusicManager.instance.OnPlayMusic(MusicType.MainMenu);
+        //   DataPlayer a = new DataPlayer();
+        MusicController.instance.OnPlayAudio(SoundType.mainmenu);
+
     }
     public void SetActiveLuckyPanel()
     {
