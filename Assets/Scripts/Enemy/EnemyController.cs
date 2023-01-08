@@ -6,9 +6,7 @@ using DG.Tweening;
 
 public class EnemyController : MonoBehaviour, IDamageable
 {
-
     public NavMeshAgent agent;
-
     public Transform player;
     public GameObject gun;
 
@@ -45,6 +43,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     float currentTimeMove;
 
     public ParticleSystem _expolsionGunVfx;
+
     //public enum StateEnemy
     //{
     //    run,
@@ -53,6 +52,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     //    die,
     //}
     //public StateEnemy stateEnemy;
+
     private void Awake()
     {
         //player = GameObject.Find("PlayerObj").transform;
@@ -96,9 +96,9 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             oldPosition = transform.position;
         }
-        if(currentTimeMove>=0.1)
+        if (currentTimeMove >= 0.1)
         {
-            if(Vector3.Distance(oldPosition,transform.position)==0f)
+            if (Vector3.Distance(oldPosition, transform.position) == 0f)
             {
                 distanceToWalkPoint = Vector3.zero;
             }
@@ -116,8 +116,8 @@ public class EnemyController : MonoBehaviour, IDamageable
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-            ///if (Physics.Raycast(walkPoint, transform.forward, 10, whatIsGround))
-            walkPointSet = true;
+        ///if (Physics.Raycast(walkPoint, transform.forward, 10, whatIsGround))
+        walkPointSet = true;
     }
     protected virtual void ChasePlayer()
     {
@@ -137,13 +137,13 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (!alreadyAttacked)
         {
             EventManager.OnHitPlayer();
-            StateHit();
+            StateShoot();
             Debug.Log("Hit Player");
             _expolsionGunVfx.Play();
             alreadyAttacked = true;
             if (isDead) return;
             StartCoroutine(WaitTimeBullet());
-           // Invoke("ResetAttack", timeBetweenAttacks);
+            // Invoke("ResetAttack", timeBetweenAttacks);
         }
     }
 
@@ -171,22 +171,23 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (isDead) return;
 
         alreadyAttacked = false;
-       // _animator.ResetTrigger("Hit");
+        // _animator.ResetTrigger("Hit");
     }
     public void StateIdle()
     {
-        _animator.ResetTrigger("Hit");
+        _animator.ResetTrigger("Shoot");
         _animator.SetBool("Run", false);
     }
-    public  virtual void StateRun()
+    public virtual void StateRun()
     {
-        _animator.ResetTrigger("Hit");
+        _animator.ResetTrigger("Shoot");
         _animator.SetBool("Run", true);
     }
-    public virtual void StateHit()
+    public virtual void StateShoot()
     {
         _animator.SetBool("Run", false);
-        _animator.SetTrigger("Hit");
+        //  _animator.Play("Shoot");
+        _animator.SetTrigger("Shoot");
     }
 
 
@@ -217,7 +218,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     void Die()
     {
         isDead = true;
-      //  stateEnemy = StateEnemy.die;
+        //  stateEnemy = StateEnemy.die;
         gameObject.SetActive(false);
         EventManager.EnemyDied();
     }
@@ -231,7 +232,7 @@ public class EnemyController : MonoBehaviour, IDamageable
 
             //if (stateEnemy != StateEnemy.die)
             //{
-                if(!isDead)
+            if (!isDead)
                 StartCoroutine(WaitTimeStopParticle());
             //}
         }

@@ -20,14 +20,14 @@ public class Zombie : EnemyController
     //    Debug.Log("AttackPlayer");
     //    //base.AttackPlayer();
     //}
-    public override void StateRun()
-    {
-        Debug.Log("Run");
-    }
-    public override void StateHit()
-    {
-        Debug.Log("Hit");
+    //public override void StateRun()
+    //{
+    //    _animator.Play("run");
+    //}
+    //public override void StateShoot()
+    //{
+    //    _animator.Play("shoot");
 
-    }
+    //}
 
 }
