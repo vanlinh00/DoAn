@@ -7,17 +7,21 @@ public class MainUi : Singleton<MainUi>
 {
     public Image healthBar;
     public TextMeshProUGUI enemyTxt;
+    public int CurrentAmountEnemy;
     public int TotalAmountEnemy;
 
     public Image GunImg;
     public TextMeshProUGUI nameGunTxt;
     public TextMeshProUGUI CountBulletTxt;
+    private void Start()
+    {
+        CurrentAmountEnemy = TotalAmountEnemy;
+    }
     public void ChangeFillAmountHealth()
     {
         //if(Random.RandomRange(1,7)==1)
         //{
             healthBar.fillAmount = healthBar.fillAmount - 0.1f;
-   
        // }
     }
     private void OnEnable()
@@ -30,11 +34,11 @@ public class MainUi : Singleton<MainUi>
     }
     public void DisplayAmountEnemy()
     {
-        TotalAmountEnemy--;
-        enemyTxt.text = TotalAmountEnemy + "/" + 6;
-        if(TotalAmountEnemy<=0)
+        CurrentAmountEnemy--;
+        enemyTxt.text = CurrentAmountEnemy + "/" + TotalAmountEnemy;
+        if(CurrentAmountEnemy<=0)
         {
-            Debug.Log("Win Game");
+            GameManager._instance.gamePlay.WinGame();
         }
     }
 

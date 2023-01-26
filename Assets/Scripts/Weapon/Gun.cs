@@ -6,10 +6,11 @@ public class Gun : Weapon
 {
     public int power;
     public ParticleSystem _explosionVfx;
-    public  void  Update()
+
+    public void Update()
     {
-        //if (GameState.stateGame != StateGame.OpenStore)
-      //  {
+        if (GameState.stateGame != StateGame.OpenStore&& isReloading)
+        {
             Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
             Ray ray = _camera.ScreenPointToRay(screenCenterPoint);
             if (Physics.Raycast(ray, out RaycastHit raycastHit))
@@ -19,7 +20,7 @@ public class Gun : Weapon
 
             if (Input.GetMouseButtonDown(0))
             {
-                if(_countBullet!=0)
+                if (_countBullet != 0)
                 {
                     _explosionVfx.Play();
                     SoundController._instance.OnPlayAudio(SoundType.Akfire);
@@ -27,24 +28,16 @@ public class Gun : Weapon
                 }
                 else
                 {
-                    _animator.SetTrigger("Reload");
-
-                    _countBullet = _amountbullets;
-                }    
-               
+                    StartCoroutine(IEReload());
+                }
             }
             if (Input.GetKeyDown("q"))
             {
-                _animator.SetTrigger("Reload");
+                StartCoroutine(IEReload());
             }
-      //  }
-
-      
+        }
     }
-    //public void OnEnable()
-    //{
-    //    _camera = GameObject.FindWithTag("Player").transform.GetChild(0).gameObject.GetComponent<Camera>();
-    //}
+
     public void Shoot()
     {
         StartCoroutine(WaitTimeBullet());
@@ -58,7 +51,8 @@ public class Gun : Weapon
         bullet.Fly();
         _animator.SetTrigger("Fire");
 
-        /*transform.GetComponent<Weapon>().*/_countBullet--;
+        /*transform.GetComponent<Weapon>().*/
+        _countBullet--;
 
         MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>(), false);
         yield return new WaitForSeconds(0.1f);

@@ -26,7 +26,7 @@ public class Frag : MonoBehaviour, ImoveBulletable
     {
         yield return new WaitForSeconds(0.5f);
         _explosion.SetActive(true);
-        GamePlay._instance.CheckEnemysColistionWihtBoom(transform);
+     GameManager._instance.gamePlay.CheckEnemysColistionWihtBoom(transform);
         yield return new WaitForSeconds(1f);
         ObjectPooler._instance.AddElement("Bomb2", gameObject);
         _explosion.SetActive(false);

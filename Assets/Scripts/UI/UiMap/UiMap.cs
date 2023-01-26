@@ -17,18 +17,10 @@ public class UiMap : MonoBehaviour
     }
     void LevelProgress()
     {
-        int CurrentLevel = 3-1;
-        for(int i=0;i<listSelectLevel.Count;i++)
-        {
-            if(i<CurrentLevel)
-            {
-                listSelectLevel[i].Init(true, (i + 1).ToString(), 2);
-            }
-            else
-            {
-                listSelectLevel[i].Init(false, (i + 1).ToString(), 0);
-            }
-
+        List<int> listStars = DataPlayer.GetInforPlayer().listCountStarLevel;
+        for (int i = 0; i < listSelectLevel.Count; i++)
+        {  
+            listSelectLevel[i].Init(true, (i + 1).ToString(), listStars[i]);
         }
     }
     private void Update()

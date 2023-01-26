@@ -19,10 +19,10 @@ public class DataPlayer
                 countCoins = 0,
                 countDiamond = 0,
                 isOnSound = true,
-                listIdGun = new List<int>() { 1,2 },
+                listIdGun = new List<int>() { 1, 2 },
+                listCountStarLevel= new List<int>() { 0,0,0,0,0},
                 level = 1,
-                idGun1 = 1,
-                idGun2 = 2,
+                idGun = 1,
                 countKeys = 0,
             };
             SaveData();
@@ -75,14 +75,14 @@ public class DataPlayer
         SaveData();
 
     }
-    public static void UpdateGun1(int id)
+    public static void UpdateCountStar(int idLevel, int CountStar)
     {
-        inforPlayer.idGun1 = id;
+        inforPlayer.listCountStarLevel[idLevel] = CountStar;
         SaveData();
     }
-    public static void UpdateGun2(int id)
+    public static void UpdateGun(int id)
     {
-        inforPlayer.idGun2 = id;
+        inforPlayer.idGun = id;
         SaveData();
     }
     public static void UpdateAmountKeys(int CountKeys)
@@ -104,8 +104,10 @@ public class InforPlayer
     public int countCoins;
     public int countDiamond;
     public List<int> listIdGun;
+    public List<int> listCountStarLevel;
+
     public int level;
-    public int idGun1;
-    public int idGun2;
+    public int idGun;
     public int countKeys;
+
 }

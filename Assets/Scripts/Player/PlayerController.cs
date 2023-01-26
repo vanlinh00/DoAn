@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public Transform posDesMap;
     public float health;
     public bool isOnTrain;
+    public float HpPlayer;
     public enum StatePlayer
     {
         Die,
@@ -45,36 +46,61 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-    public void Shooting()
+    //public void Shooting()
+    //{
+    //    gunPlayer.Shoot();
+    //}
+    //public void Damage(float DamagePlayer)
+    //{
+    //    health -= DamagePlayer;
+    //  //  UiGamePlay.instance.UpdateHealthBarPlayer(health / 1000f);
+    //    if(health<=0)
+    //    {
+    //        Die();
+    //        Debug.Log("Player Die - End Game");
+    //    }
+    //}
+
+    //public void Die()
+    //{
+    //    if (statePlayer == StatePlayer.Die)
+    //        return;
+    //    statePlayer = StatePlayer.Die;
+    //    player.transform.DORotate(new Vector3(0, 0, 180), 1f, RotateMode.LocalAxisAdd);
+    //    // .SetDelay(3f)
+    //    // .OnComplete(() => transform.DORotate(new Vector3(0, 0, 180), 1, RotateMode.LocalAxisAdd)
+    //    //     .SetDelay(1)
+    //    //     .Play())
+    //    // .Play();
+    //}
+
+
+    private void OnEnable()
     {
-        gunPlayer.Shoot();
+        EventManager.HitPlayer += Damage;
     }
-    public void Damage(float DamagePlayer)
+    public void OnDisable()
     {
-        health -= DamagePlayer;
-      //  UiGamePlay.instance.UpdateHealthBarPlayer(health / 1000f);
-        if(health<=0)
+        EventManager.HitPlayer -= Damage;
+    }
+    public void Damage()
+    {
+        if (UnityEngine.Random.RandomRange(1, 7) == 3)
         {
-            Die();
-            Debug.Log("Player Die - End Game");
+            //  Debug.Log(HpPlayer);
+            HpPlayer -= 100;
+            UiController._instance.EnableHitZone();
+            MainUi._instance.ChangeFillAmountHealth();
+            UiController._instance.CountTimeHizone = 0f;
+            if (HpPlayer <= 0)
+            {
+                GameManager._instance.gamePlay.EndGame();
+                UiController._instance.ActiveEndGameUi();
+                gameObject.SetActive(false);
+            }
         }
+
     }
-
-    public void Die()
-    {
-        if (statePlayer == StatePlayer.Die)
-            return;
-        statePlayer = StatePlayer.Die;
-        player.transform.DORotate(new Vector3(0, 0, 180), 1f, RotateMode.LocalAxisAdd);
-        // .SetDelay(3f)
-        // .OnComplete(() => transform.DORotate(new Vector3(0, 0, 180), 1, RotateMode.LocalAxisAdd)
-        //     .SetDelay(1)
-        //     .Play())
-        // .Play();
-    }
-
-
-
 
 
 }

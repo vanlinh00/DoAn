@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager _instance;
+    public GamePlay gamePlay;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -24,13 +25,13 @@ public class GameManager : MonoBehaviour
         GameState.stateGame = StateGame.Playing;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("u"))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            SceneManager.LoadScene(0);
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown("u"))
+    //    {
+    //        Cursor.lockState = CursorLockMode.None;
+    //        Cursor.visible = true;
+    //        SceneManager.LoadScene(0);
+    //    }
+    //}
 }

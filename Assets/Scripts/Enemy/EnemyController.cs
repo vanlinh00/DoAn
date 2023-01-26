@@ -138,7 +138,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             EventManager.OnHitPlayer();
             StateShoot();
-            Debug.Log("Hit Player");
+           // Debug.Log("Hit Player");
             _expolsionGunVfx.Play();
             alreadyAttacked = true;
             if (isDead) return;
