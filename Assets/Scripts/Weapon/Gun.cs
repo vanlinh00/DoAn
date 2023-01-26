@@ -8,8 +8,8 @@ public class Gun : Weapon
     public ParticleSystem _explosionVfx;
     public  void  Update()
     {
-        if (GameState.stateGame != StateGame.OpenStore)
-        {
+        //if (GameState.stateGame != StateGame.OpenStore)
+      //  {
             Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
             Ray ray = _camera.ScreenPointToRay(screenCenterPoint);
             if (Physics.Raycast(ray, out RaycastHit raycastHit))
@@ -37,14 +37,14 @@ public class Gun : Weapon
             {
                 _animator.SetTrigger("Reload");
             }
-        }
+      //  }
 
       
     }
-    public void OnEnable()
-    {
-        _camera = GameObject.FindWithTag("Player").transform.GetChild(0).gameObject.GetComponent<Camera>();
-    }
+    //public void OnEnable()
+    //{
+    //    _camera = GameObject.FindWithTag("Player").transform.GetChild(0).gameObject.GetComponent<Camera>();
+    //}
     public void Shoot()
     {
         StartCoroutine(WaitTimeBullet());
