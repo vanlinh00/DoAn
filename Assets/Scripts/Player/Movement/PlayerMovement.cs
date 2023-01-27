@@ -85,14 +85,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-#elif UNITY_ANDROID
-        Debug.Log("Android");
-        verticalInput = joystick.Vertical;
-        horizontalInput = joystick.Horizontal;
-#endif
+//#elif UNITY_ANDROID
+//        Debug.Log("Android");
+//        verticalInput = joystick.Vertical;
+//        horizontalInput = joystick.Horizontal;
+//#endif
         if (Input.GetKeyDown("space"))
             isJumb = true;
 

@@ -15,13 +15,15 @@ public class SelectLevelBtn : MonoBehaviour
     public Image LineNextLevel;
     public PerformanceLevel performanceLevel;
     public Button mapSelectBtn;
+    int idLevel;
     private void Awake()
     {
         mapSelectBtn.onClick.AddListener(LoadMap);
     }
-    public void Init(bool IsPassed,string LevelTxt,int CountStar)
+    public void Init(bool IsPassed,int CountStar, int IdLevel)
     {
-        if(IsPassed)
+        idLevel = IdLevel;
+        if (IsPassed)
         {
             levelTxt.color = white;
             bgImg.gameObject.SetActive(true);
@@ -33,11 +35,11 @@ public class SelectLevelBtn : MonoBehaviour
             levelTxt.color = green;
             bgImg.gameObject.SetActive(false);
         }
-        levelTxt.text = LevelTxt;
+        levelTxt.text = IdLevel.ToString();
         performanceLevel.CompleteStar(CountStar);
     }    
     public void LoadMap()
     {
-        SceneManager.LoadScene(int.Parse(levelTxt.text));
+        SceneManager.LoadScene(idLevel);
     }
 }

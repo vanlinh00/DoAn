@@ -7,7 +7,7 @@ using DG.Tweening;
 public class EnemyController : MonoBehaviour, IDamageable
 {
     public NavMeshAgent agent;
-    public Transform player;
+   // public Transform player;
     public GameObject gun;
 
     //Check for Ground/Obstacles
@@ -29,8 +29,6 @@ public class EnemyController : MonoBehaviour, IDamageable
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    //Special
-    //  public Material green, red, yellow;
     public GameObject projectile;
     public Animator _animator;
 
@@ -44,18 +42,17 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public ParticleSystem _expolsionGunVfx;
 
-    //public enum StateEnemy
-    //{
-    //    run,
-    //    shoot,
-    //    idle,
-    //    die,
-    //}
-    //public StateEnemy stateEnemy;
+    public float PosMinX;
+    public float PosMaxX;
+
+    public float PosMinZ;
+    public float PosMaxZ;
+
+    public float SpeedMin;
+    public float SpeedMax;
 
     private void Awake()
     {
-        //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
     }
     private void Update()
@@ -83,7 +80,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (walkPointSet)
         {
             StateRun();
-            agent.speed = 5f;
+            agent.speed = SpeedMin;
             agent.SetDestination(walkPoint);
             Vector3 direction = walkPoint - transform.position;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 0.15f);
@@ -117,14 +114,15 @@ public class EnemyController : MonoBehaviour, IDamageable
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
         ///if (Physics.Raycast(walkPoint, transform.forward, 10, whatIsGround))
+        if (walkPoint.x >= PosMinX && walkPoint.x <= PosMaxX && walkPoint.z <=PosMaxZ && walkPoint.z >= PosMinZ) 
         walkPointSet = true;
     }
     protected virtual void ChasePlayer()
     {
         if (isDead) return;
         StateRun();
-        agent.speed = 10f;
-        agent.SetDestination(player.position);
+        agent.speed = SpeedMax;
+        agent.SetDestination(PlayerController.instance.gameObject.transform.position);
     }
     protected virtual void AttackPlayer()
     {
@@ -133,7 +131,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
-        transform.LookAt(player);
+        transform.LookAt(PlayerController.instance.gameObject.transform);
         if (!alreadyAttacked)
         {
             EventManager.OnHitPlayer();
@@ -149,22 +147,8 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     IEnumerator WaitTimeBullet()
     {
-        //GameObject Bullet = ObjectPooler._instance.SpawnFromPool("Bullet", FireSpawn.position, FireSpawn.rotation);
-
-        //Rigidbody bulletRg = Bullet.GetComponent<Rigidbody>();
-        //bulletRg.AddForce(transform.forward * 32f, ForceMode.Impulse);
-        //bulletRg.AddForce(transform.up * 8, ForceMode.Impulse);
-
-        //Vector3 targetFirePoint = new Vector3(player.transform.position.x, player.transform.position.y + 2f, player.transform.position.z);
-        //Bullet.GetComponent<Bullet>()._firePoint = targetFirePoint;
-        //Bullet.GetComponent<Bullet>().Fly();
-
-        //  alreadyAttacked = true;
-
         yield return new WaitForSeconds(timeBetweenAttacks);
         alreadyAttacked = false;
-        //   ObjectPooler._instance.AddElement("Bullet", Bullet);
-        //  Bullet.SetActive(false);
     }
     private void ResetAttack()
     {
@@ -191,20 +175,6 @@ public class EnemyController : MonoBehaviour, IDamageable
     }
 
 
-    //public void TakeDamage(int damage)
-    //{
-    //    health -= damage;
-
-    //    if (health < 0)
-    //    {
-    //        isDead = true;
-    //        Invoke("Destroyy", 2.8f);
-    //    }
-    //}
-    //private void Destroyy()
-    //{
-    //    Destroy(gameObject);
-    //}
     public void Damage(float HealthEnemy)
     {
         DodgeBullet();
@@ -229,12 +199,8 @@ public class EnemyController : MonoBehaviour, IDamageable
             _explosionBodyBloody.transform.position = collision.gameObject.transform.position;
             _explosionBodyBloody.gameObject.SetActive(true);
             _explosionBodyBloody.Play();
-
-            //if (stateEnemy != StateEnemy.die)
-            //{
             if (!isDead)
                 StartCoroutine(WaitTimeStopParticle());
-            //}
         }
 
     }

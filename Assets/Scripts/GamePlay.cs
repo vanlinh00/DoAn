@@ -11,10 +11,12 @@ public class GamePlay : MonoBehaviour
     }
     public virtual void EndGame()
     {
+        UiController._instance.ActiveEndGameUi();
         Debug.Log("EndGame");
     }
     public virtual void WinGame()
     {
+        UiController._instance.ActiveEndGameUi();
         Debug.Log("WinGame");
     }
 }

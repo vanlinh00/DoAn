@@ -8,23 +8,24 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
     public GameObject player;
-    
+
     //PickUP
     public float distancePickUp;
-    
+
     //Move
     public PlayerMovement playerMovement;
-    
+
     //rotation
     public PlayerCam playerCam;
-    
+
     // Gun
     public Gun gunPlayer;
 
     public Transform posDesMap;
-    public float health;
+
     public bool isOnTrain;
     public float HpPlayer;
+    public float MaxHpPlayer;
     public enum StatePlayer
     {
         Die,
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        health = 1000;
+
         instance = this;
         statePlayer = StatePlayer.Living;
         //Die();
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
     //public void Shooting()
     //{
     //    gunPlayer.Shoot();
@@ -74,6 +76,23 @@ public class PlayerController : MonoBehaviour
     //    // .Play();
     //}
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag.Equals("Usable"))
+        {
+            if (HpPlayer < MaxHpPlayer)
+            {
+                float AddHealth = MaxHpPlayer - HpPlayer;
+                float PickUpHealth = other.gameObject.GetComponent<PickupHealth>().health;
+
+                if (AddHealth >= PickUpHealth)
+                    AddHealth = PickUpHealth;
+                HpPlayer += AddHealth;
+                MainUi._instance.ChangeFillAmountHealth(AddHealth / (float)1000);
+              //  other.gameObject.SetActive(false);
+            }
+        }
+    }
 
     private void OnEnable()
     {
@@ -90,12 +109,11 @@ public class PlayerController : MonoBehaviour
             //  Debug.Log(HpPlayer);
             HpPlayer -= 100;
             UiController._instance.EnableHitZone();
-            MainUi._instance.ChangeFillAmountHealth();
+            MainUi._instance.ChangeFillAmountHealth(-0.1f);
             UiController._instance.CountTimeHizone = 0f;
             if (HpPlayer <= 0)
             {
                 GameManager._instance.gamePlay.EndGame();
-                UiController._instance.ActiveEndGameUi();
                 gameObject.SetActive(false);
             }
         }

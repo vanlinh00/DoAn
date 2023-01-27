@@ -25,12 +25,20 @@ public class GamePlayLevel1 : GamePlay
     public override void EndGame()
     {
         base.EndGame();
+        CalculaterStar();
 
-        float DeathRate = (countEnemy- MainUi._instance.CurrentAmountEnemy) / countEnemy;
-        
+    }
+    public override void WinGame()
+    {
+        base.WinGame();
+        CalculaterStar();
+
+    }
+    public void CalculaterStar()
+    {
+        float DeathRate = (countEnemy - MainUi._instance.CurrentAmountEnemy) / (float)countEnemy;
         int AmountStar = 0;
-
-        if (DeathRate >=1)
+        if (DeathRate >= 1)
         {
             AmountStar = 3;
         }
@@ -47,14 +55,9 @@ public class GamePlayLevel1 : GamePlay
             AmountStar = 0;
         }
 
-        Debug.Log("AmountStar" + AmountStar);
-        if(DataPlayer.GetInforPlayer().listCountStarLevel[IdLevel-1]>AmountStar)
+        if (DataPlayer.GetInforPlayer().listCountStarLevel[IdLevel - 1] < AmountStar)
         {
             DataPlayer.UpdateCountStar(IdLevel - 1, AmountStar);
         }
-    }
-    public override void WinGame()
-    {
-        base.WinGame();
     }
 }

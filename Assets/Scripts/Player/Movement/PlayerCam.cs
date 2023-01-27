@@ -49,7 +49,7 @@ public class PlayerCam : MonoBehaviour
             float mouseX = 0f;
             float mouseY = 0f;
 
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
             // // get mouse input
             //if (Input.GetMouseButton(0))
             //{
@@ -61,6 +61,7 @@ public class PlayerCam : MonoBehaviour
                 xRotation = Mathf.Clamp(xRotation, -70f, 50f);
                 transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0);
          //   }
+/*
 #elif UNITY_IOS || UNITY_ANDROID
             // if (Touchscreen.current.touches.Count > 0 && Touchscreen.current.touches[0].isInProgress)
             // {
@@ -102,5 +103,6 @@ public class PlayerCam : MonoBehaviour
 
 #endif
       //  }
+*/
     }
 }

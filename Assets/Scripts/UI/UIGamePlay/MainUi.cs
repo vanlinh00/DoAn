@@ -17,11 +17,11 @@ public class MainUi : Singleton<MainUi>
     {
         CurrentAmountEnemy = TotalAmountEnemy;
     }
-    public void ChangeFillAmountHealth()
+    public void ChangeFillAmountHealth(float CountHealth)
     {
         //if(Random.RandomRange(1,7)==1)
         //{
-            healthBar.fillAmount = healthBar.fillAmount - 0.1f;
+            healthBar.fillAmount = healthBar.fillAmount + CountHealth;
        // }
     }
     private void OnEnable()

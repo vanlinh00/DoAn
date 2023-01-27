@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class UiMap : MonoBehaviour
 {
     public Button comeback;
@@ -11,16 +11,23 @@ public class UiMap : MonoBehaviour
     public List<SelectLevelBtn> listSelectLevel;
     public Vector3 lastMouse;
     public Vector3 currentMouse;
-    private void OnEnable()
+    private void Awake()
+    {
+        comeback.onClick.AddListener(ComeBackMenu);
+    }
+    public void ComeBackMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    private void Start()
     {
         LevelProgress();
     }
     void LevelProgress()
     {
-        List<int> listStars = DataPlayer.GetInforPlayer().listCountStarLevel;
         for (int i = 0; i < listSelectLevel.Count; i++)
         {  
-            listSelectLevel[i].Init(true, (i + 1).ToString(), listStars[i]);
+            listSelectLevel[i].Init(true, 2/*DataPlayer.GetInforPlayer().listCountStarLevel[i]*/,i+1);
         }
     }
     private void Update()
@@ -38,7 +45,6 @@ public class UiMap : MonoBehaviour
                 Vector3 targetPos = new Vector3(mainPanel.transform.localPosition.x + distance2Pos/50, mainPanel.transform.localPosition.y, 0f);
                 mainPanel.GetComponent<RectTransform>().localPosition = targetPos;
             }
-
         }
     }
 }
