@@ -56,7 +56,7 @@ public class FragController : Weapon
         Bomb.GetComponent<Frag>()._firePoint = _shootPoint;
         Bomb.GetComponent<Frag>().Fly();
         _countBullet--;
-        MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>(), true);
+        MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>());
         yield return new WaitForSeconds(1f);
         timeBetween = true;
     }

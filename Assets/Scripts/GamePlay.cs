@@ -19,4 +19,8 @@ public class GamePlay : MonoBehaviour
         UiController._instance.ActiveEndGameUi();
         Debug.Log("WinGame");
     }
+    public virtual int GetCountEnemies()
+    {
+        return 0;
+    }
 }

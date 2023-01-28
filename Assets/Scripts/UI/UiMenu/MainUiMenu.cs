@@ -28,7 +28,6 @@ public class MainUiMenu : Singleton<MainUiMenu>
     {
         countCoin.text = DataPlayer.GetInforPlayer().countCoins.ToString();
         CountDiamond.text = DataPlayer.GetInforPlayer().countDiamond.ToString();
-
     }
     public void OpenLuckyBox()
     {

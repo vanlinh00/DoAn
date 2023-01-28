@@ -5,10 +5,10 @@ using UnityEngine;
 public class GamePlayLevel1 : GamePlay
 {
     public List<EnemyController> ListEnemys;
-    public int countEnemy;
-    private void Start()
+
+    public override int GetCountEnemies()
     {
-        countEnemy = ListEnemys.Count;
+      return  ListEnemys.Count;
     }
     public override void CheckEnemysColistionWihtBoom(Transform BomTrans)
     {
@@ -36,7 +36,7 @@ public class GamePlayLevel1 : GamePlay
     }
     public void CalculaterStar()
     {
-        float DeathRate = (countEnemy - MainUi._instance.CurrentAmountEnemy) / (float)countEnemy;
+        float DeathRate = (ListEnemys.Count - MainUi._instance.CurrentAmountEnemy) / (float)ListEnemys.Count;
         int AmountStar = 0;
         if (DeathRate >= 1)
         {
@@ -54,10 +54,9 @@ public class GamePlayLevel1 : GamePlay
         {
             AmountStar = 0;
         }
-
-        if (DataPlayer.GetInforPlayer().listCountStarLevel[IdLevel - 1] < AmountStar)
+        if(UserDataPref.GetAmountStarLevel(IdLevel)<AmountStar)
         {
-            DataPlayer.UpdateCountStar(IdLevel - 1, AmountStar);
+            UserDataPref.SetAmountStarLevel(IdLevel, AmountStar);
         }
     }
 }

@@ -9,16 +9,16 @@ public class GameManager : MonoBehaviour
     public GamePlay gamePlay;
     private void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this);
-            return;
-        }
-        else
-        {
+        //if (_instance != null && _instance != this)
+        //{
+        //    Destroy(this);
+        //    return;
+        //}
+        //else
+        //{
             _instance = this;
-        }
-        DontDestroyOnLoad(this);
+      //  }
+      //  DontDestroyOnLoad(this);
     }
     private void Start()
     {

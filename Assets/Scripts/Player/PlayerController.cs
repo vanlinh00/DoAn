@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
                     AddHealth = PickUpHealth;
                 HpPlayer += AddHealth;
                 MainUi._instance.ChangeFillAmountHealth(AddHealth / (float)1000);
-              //  other.gameObject.SetActive(false);
+                other.gameObject.SetActive(false);
             }
         }
     }

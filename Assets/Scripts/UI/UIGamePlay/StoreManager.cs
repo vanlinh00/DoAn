@@ -7,22 +7,25 @@ public class StoreManager : MonoBehaviour
     [SerializeField] GameObject _storeUnlocked;
     [SerializeField] GameObject _storeNotUnlocked;
 
+    public List<GameObject> listItemButtonWeapon;
     private void OnEnable()
     {
-        foreach (Transform child in _storeUnlocked.transform)
-        {
-            GameObject.Destroy(child.gameObject);
-        }
         LoadDataStoreUnlocked();
     }
     public  void LoadDataStoreUnlocked()
     {
-        for (int i=0;i< DataPlayer.GetInforPlayer().listIdGun.Count;i++)
+        for (int i=0;i< listItemButtonWeapon.Count;i++)
         {
-            GameObject newButtonWeapon = Instantiate(Resources.Load("UI/UiStore/ItemUnlockedPrefab", typeof(GameObject)), _storeUnlocked.transform.position, Quaternion.identity) as GameObject;
-            newButtonWeapon.transform.SetParent(_storeUnlocked.transform);
-            newButtonWeapon.GetComponent<ItemBtn>()._idGun = DataPlayer.GetInforPlayer().listIdGun[i];
-            newButtonWeapon.GetComponent<ItemBtn>().LoadImage();
+            if(i< DataPlayer.GetInforPlayer().listIdGun.Count)
+            {
+                listItemButtonWeapon[i].GetComponent<ItemBtn>()._idGun = DataPlayer.GetInforPlayer().listIdGun[i];
+                listItemButtonWeapon[i].GetComponent<ItemBtn>().LoadImage();
+            }
+            else
+            {
+                listItemButtonWeapon[i].gameObject.SetActive(false);
+            }    
+
         }
 
     }

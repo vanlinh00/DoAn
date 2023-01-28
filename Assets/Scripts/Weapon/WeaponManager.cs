@@ -41,7 +41,8 @@ public class WeaponManager : Singleton<WeaponManager>
         listGun[idGun - 1].SetActive(IsGun);
         _frag.SetActive(!IsGun);
         _frag.GetComponent<Weapon>().StateReady();
-        MainUi._instance.LoadGunPlaying(_frag.GetComponent<Weapon>(), true);
+        MainUi._instance.LoadGunPlaying(_frag.GetComponent<Weapon>());
+        MainUi._instance.LoadImageWeapon(!IsGun, idGun);
     }
 
     public void ChangeGun(int idNewGun)

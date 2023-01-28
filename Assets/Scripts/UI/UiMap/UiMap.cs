@@ -26,8 +26,9 @@ public class UiMap : MonoBehaviour
     void LevelProgress()
     {
         for (int i = 0; i < listSelectLevel.Count; i++)
-        {  
-            listSelectLevel[i].Init(true, 2/*DataPlayer.GetInforPlayer().listCountStarLevel[i]*/,i+1);
+        {
+            int CountStar = UserDataPref.GetAmountStarLevel(i + 1); 
+            listSelectLevel[i].Init(true, CountStar, i+1);
         }
     }
     private void Update()

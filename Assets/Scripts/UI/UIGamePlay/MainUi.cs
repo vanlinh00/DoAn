@@ -8,14 +8,16 @@ public class MainUi : Singleton<MainUi>
     public Image healthBar;
     public TextMeshProUGUI enemyTxt;
     public int CurrentAmountEnemy;
-    public int TotalAmountEnemy;
+    private int TotalAmountEnemy;
 
     public Image GunImg;
     public TextMeshProUGUI nameGunTxt;
     public TextMeshProUGUI CountBulletTxt;
     private void Start()
     {
+        TotalAmountEnemy = GameManager._instance.gamePlay.GetCountEnemies();
         CurrentAmountEnemy = TotalAmountEnemy;
+        enemyTxt.text = CurrentAmountEnemy + "/" + TotalAmountEnemy;
     }
     public void ChangeFillAmountHealth(float CountHealth)
     {
@@ -42,19 +44,19 @@ public class MainUi : Singleton<MainUi>
         }
     }
 
-    public void LoadGunPlaying(Weapon weapon,bool IsFrag)
+    public void LoadGunPlaying(Weapon weapon)
     {
-        if(!IsFrag)
+        CountBulletTxt.text = weapon._countBullet + "/" + weapon._countTotalBullets;
+    }
+    public void LoadImageWeapon(bool IsFrag, int idGun)
+    {
+        if (!IsFrag)
         {
-            GunImg.sprite = Resources.Load<Sprite>("Image/Shop/Guns/" + weapon.idGun);
+            GunImg.sprite = Resources.Load<Sprite>("Image/Shop/Guns/" + idGun);
         }
         else
         {
             GunImg.sprite = Resources.Load<Sprite>("Image/Shop/Frag/" + 1);
         }
-
-        //nameGunTxt.text
-        CountBulletTxt.text = weapon._countBullet+ "/"+weapon._countTotalBullets;
     }
-
 }

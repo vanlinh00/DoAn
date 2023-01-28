@@ -54,7 +54,7 @@ public class Gun : Weapon
         /*transform.GetComponent<Weapon>().*/
         _countBullet--;
 
-        MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>(), false);
+        MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>());
         yield return new WaitForSeconds(0.1f);
         ObjectPooler._instance.AddElement("Bullet", Bullet);
         Bullet.SetActive(false);
