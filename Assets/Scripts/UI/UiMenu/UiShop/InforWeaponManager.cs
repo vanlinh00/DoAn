@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class InforWeaponManager : Singleton<InforWeaponManager>
 {
     [SerializeField] Image _barDamageWeapon;
@@ -20,6 +20,16 @@ public class InforWeaponManager : Singleton<InforWeaponManager>
     protected override void Awake()
     {
         base.Awake();
+    }
+    public void SetActiveCurrentWeapon()
+    {
+        _weaPonCurrent.gameObject.SetActive(true);
+        _weaPonCurrent.transform.localScale = Vector3.zero;
+        _weaPonCurrent.transform.DOScale(new Vector3(0.6f,0.6f,0.6f), 0.5f);
+    }
+    public void SetDeActiveCurrentWeapon()
+    {
+        _weaPonCurrent.transform.DOScale(Vector3.zero, 0.5f).OnComplete(()=> _weaPonCurrent.gameObject.SetActive(false));
     }
     public void ChangePropertiesGun(float newDamage, float newRateOfFire, float newAccuracy, string nameGun, int idWeapon, int priceForCoin, int priceForDiamond)
     {
@@ -40,7 +50,7 @@ public class InforWeaponManager : Singleton<InforWeaponManager>
             Destroy(_weaPonCurrent);
         }
 
-        if (SelectWeaponUiShop._instance.getIdWeaPonDisplay() == 1)
+        if (SelectWeaponUiShop._instance.idWeaPonDisplay == 1)
         {
             string nameGunInAsset = "Gun_" + idWeapon;
             GameObject _newWeapon = Instantiate(Resources.Load("UI/UiShop/TypeWeapon1/" + nameGunInAsset, typeof(GameObject)), _positionGun, Quaternion.identity) as GameObject;

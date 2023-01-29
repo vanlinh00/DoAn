@@ -39274,9 +39274,9 @@ MonoBehaviour:
   listGun:
   - {fileID: 8097566578870964070}
   - {fileID: 8098221179197955335}
-  - {fileID: 8097870222919719428}
   - {fileID: 8098272066106333960}
   - {fileID: 8099499943168587119}
+  - {fileID: 8097870222919719428}
   - {fileID: 8098119798532496107}
 --- !u!1 &6495848524785520016
 GameObject:
@@ -39949,7 +39949,7 @@ GameObject:
   - component: {fileID: 8157860307923443641}
   - component: {fileID: 8097566578870964065}
   m_Layer: 8
-  m_Name: Gun1
+  m_Name: AK47
   m_TagString: gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41727,9 +41727,9 @@ Transform:
   m_Children:
   - {fileID: 8100804178294290215}
   - {fileID: 8100662076194795704}
-  - {fileID: 8103424304938335142}
   - {fileID: 8103235669829929899}
   - {fileID: 8103567409377296863}
+  - {fileID: 8103424304938335142}
   - {fileID: 8100825652491529483}
   m_Father: {fileID: 6495848524388891556}
   m_RootOrder: 1
@@ -42352,7 +42352,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1687941924967828, guid: 2383b480eb6caef43bedc113aec62e65, type: 3}
       propertyPath: m_Name
-      value: 3
+      value: Scar20
       objectReference: {fileID: 0}
     - target: {fileID: 1687941924967828, guid: 2383b480eb6caef43bedc113aec62e65, type: 3}
       propertyPath: m_IsActive
@@ -42360,7 +42360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4978881121268790, guid: 2383b480eb6caef43bedc113aec62e65, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4978881121268790, guid: 2383b480eb6caef43bedc113aec62e65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42401,6 +42401,11 @@ PrefabInstance:
     - target: {fileID: 4978881121268790, guid: 2383b480eb6caef43bedc113aec62e65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240227632016534364, guid: 2383b480eb6caef43bedc113aec62e65,
+        type: 3}
+      propertyPath: idGun
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7240227632016534364, guid: 2383b480eb6caef43bedc113aec62e65,
         type: 3}
@@ -42453,7 +42458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4840752361489701, guid: 1fae6ca3efc62dc439a78c4d33f2f460, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4840752361489701, guid: 1fae6ca3efc62dc439a78c4d33f2f460, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42494,6 +42499,11 @@ PrefabInstance:
     - target: {fileID: 4840752361489701, guid: 1fae6ca3efc62dc439a78c4d33f2f460, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505621531945976270, guid: 1fae6ca3efc62dc439a78c4d33f2f460,
+        type: 3}
+      propertyPath: idGun
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5505621531945976270, guid: 1fae6ca3efc62dc439a78c4d33f2f460,
         type: 3}
@@ -42631,6 +42641,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1389916995215318826, guid: 11d1a0c4f6c37e64dbb77b6310646032,
         type: 3}
+      propertyPath: idGun
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1389916995215318826, guid: 11d1a0c4f6c37e64dbb77b6310646032,
+        type: 3}
       propertyPath: power
       value: 500
       objectReference: {fileID: 0}
@@ -42659,7 +42674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4763996399659320, guid: 11d1a0c4f6c37e64dbb77b6310646032, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4763996399659320, guid: 11d1a0c4f6c37e64dbb77b6310646032, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42724,7 +42739,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1755359048682143, guid: 2c0ab1d8ccea95643a17d3ea967ac489, type: 3}
       propertyPath: m_Name
-      value: 2
+      value: AUG
       objectReference: {fileID: 0}
     - target: {fileID: 1755359048682143, guid: 2c0ab1d8ccea95643a17d3ea967ac489, type: 3}
       propertyPath: m_IsActive

@@ -16,6 +16,8 @@ public class Weapon : MonoBehaviour
 
     public bool isReloading;
     public float timeReload;
+
+    
     private void Start()
     {
         isReloading = true;

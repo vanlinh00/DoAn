@@ -9,6 +9,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e587158e9d35144b82246c713f71d03, type: 3}
+  m_Script: {fileID: 11500000, guid: 41bb223258c72294fa3e02ab08416a1a, type: 3}
   m_Name: AUG
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
+  id: 2
+  nameGun: AUG
+  priceForCoint: 230
+  pirceForDiamond: 200
+  listDamage:
+  - 0.2
+  - 0.4
+  - 0.6
+  - 0.8
+  - 1
+  listRateOfFire:
+  - 0.2
+  - 0.4
+  - 0.6
+  - 0.8
+  - 1
+  listAccuracy:
+  - 0.2
+  - 0.4
+  - 0.6
+  - 0.8
+  - 1
+  priceUpGrapde: 
+  isStart: 0

@@ -8,9 +8,6 @@ public class UiShop : Singleton<UiShop>
     [SerializeField] Button _quiteBg;
     [SerializeField] Button _quiteBtn;
 
-    [SerializeField] Button PrimaryBtn;
-    [SerializeField] Button KnivesBtn;
-
     [SerializeField] Button _primaryButton;
     [SerializeField] Button _knivesButton;
     [SerializeField] Button _pansButton;
@@ -23,6 +20,7 @@ public class UiShop : Singleton<UiShop>
         _knivesButton.onClick.AddListener(OpenShopKnives);
         _pansButton.onClick.AddListener(OpenpansButton);
     }
+ 
     void OpenpansButton()
     {
 
