@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bb223258c72294fa3e02ab08416a1a, type: 3}
   m_Name: AWP
   m_EditorClassIdentifier: 
-  id: 3
+  id: 2
   nameGun: AWP
   priceForCoint: 300
-  pirceForDiamond: 350
+  priceForDiamond: 350
   listDamage:
   - 0.2
   - 0.4
@@ -23,10 +23,10 @@ MonoBehaviour:
   - 0.8
   - 1
   listRateOfFire:
-  - 0.2
-  - 0.4
+  - 0.1
+  - 0.3
   - 0.6
-  - 0.8
+  - 0.7
   - 1
   listAccuracy:
   - 0.2
@@ -34,5 +34,5 @@ MonoBehaviour:
   - 0.6
   - 0.8
   - 1
-  priceUpGrapde: 
+  priceUpGrapde: 78000000c80000002c010000a401000008020000
   isStart: 0

@@ -50,6 +50,9 @@ public class LuckyBox : MonoBehaviour
 
             DataPlayer.UpdateAmountCoins(amountCoins);
             MainUiMenu._instance.UpdateCoinsAndDiamonds();
+        }else
+        {
+            UiNotice._instance.Init(false, "Out of slots");
         }
     }
 

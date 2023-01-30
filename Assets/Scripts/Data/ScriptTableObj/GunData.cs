@@ -8,7 +8,7 @@ public class GunData:ScriptableObject
     public int id;
     public string nameGun;
     public int priceForCoint;
-    public int pirceForDiamond;
+    public int priceForDiamond;
 
     public List<float> listDamage;
     public List<float> listRateOfFire;

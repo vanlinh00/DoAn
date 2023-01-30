@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 1
   nameGun: AK47
   priceForCoint: 200
-  pirceForDiamond: 100
+  priceForDiamond: 250
   listDamage:
   - 0.2
   - 0.4

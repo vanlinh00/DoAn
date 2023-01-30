@@ -5,23 +5,25 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
 {
-    [SerializeField] GameObject _content;
-    public int idWeaPonDisplay = 1;
+    public int idTypeWeaPonDisplay;
     public UpgrapdeWeapon upgrapdeWeapon;
     public Button upGrapdeBtn;
     public List<GunData> gunDatas;
+    public List<ShopButtonElement> listShopButtonElement;
+
     protected override void Awake()
     {
+        idTypeWeaPonDisplay = 1;
         base.Awake();
         upGrapdeBtn.onClick.AddListener(UpGrapde);
     }
     private void OnEnable()
     {
-        OpenStoreWeapon(1);
+        OpenStoreWeapon(idTypeWeaPonDisplay);
     }
     public void UpGrapde()
     {
-        upgrapdeWeapon.Init(idWeaPonDisplay);
+       upgrapdeWeapon.Init(InforWeaponManager._instance.gunData.id);
     }
 
     // chosse = 1 create list guns
@@ -29,46 +31,32 @@ public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
     // chosse = 3 create list pans
     public void OpenStoreWeapon(int idTypeWeaPon)
     {
-        idWeaPonDisplay = idTypeWeaPon;
 
-        foreach (Transform child in _content.transform)
+        for (int i = 0; i < listShopButtonElement.Count; i++)
         {
-            GameObject.Destroy(child.gameObject);
+           CreateListGuns(i, idTypeWeaPon, listShopButtonElement[i]);
         }
-
-        for (int i = 1; i < 10; i++)
-        {
-            CreateListGuns(i, idTypeWeaPon);
-        }
-        DOVirtual.DelayedCall(0.1f, _content.transform.GetChild(0).GetComponent<ShopButtonElement>().SelectWeapon);
+         DOVirtual.DelayedCall(0.1f,listShopButtonElement[0].SelectWeapon);
+    }
+    private void OnDisable()
+    {
+        DOTween.KillAll();
     }
 
-    void CreateListGuns(int i, int TypeWeapon)
+    void CreateListGuns(int i, int TypeWeapon, ShopButtonElement shopButtonE)
     {
-        GameObject newButtonWeapon = Instantiate(Resources.Load("UI/UiShop/shop_button_element", typeof(GameObject)), _content.transform.position, Quaternion.identity) as GameObject;
-        newButtonWeapon.transform.SetParent(_content.transform);
         switch (TypeWeapon)
         {
             case 1:
 
                 if (i >= gunDatas.Count)
                 {
-                    newButtonWeapon.GetComponent<ShopButtonElement>().IsButtonGun(i, "NewGun");
+                    shopButtonE.IsButtonGun(i+1, "NewGun",1000);
                 }
                 else
                 {
-                  
-                    newButtonWeapon.GetComponent<ShopButtonElement>().IsButtonGun(i, gunDatas[i].name);
-                    int idLevelGun = UserDataPref.GetLevelGun(gunDatas[i].id) - 1;
-                    ShopButtonElement shopButtonE = newButtonWeapon.GetComponent<ShopButtonElement>();
-                    shopButtonE._weapon.idWeapon = gunDatas[i].id;
-                    shopButtonE._weapon.damage = gunDatas[i].listDamage[idLevelGun];
-                    shopButtonE._weapon.rateOfFire = gunDatas[i].listRateOfFire[idLevelGun];
-                    shopButtonE._weapon.accuracy = gunDatas[i].listAccuracy[idLevelGun];
-                    shopButtonE._weapon.priceForCoin = gunDatas[i].priceForCoint;
-                    shopButtonE._weapon.priceForDiamond = gunDatas[i].pirceForDiamond;
-                    shopButtonE._weapon.name = gunDatas[i].name;
-                    shopButtonE._weapon.level = idLevelGun + 1;
+                    shopButtonE.IsButtonGun(i+1, gunDatas[i].name, gunDatas[i].id);
+
                 }
 
                 break;
@@ -79,9 +67,9 @@ public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
                 break;
         };
 
-        if (!DataPlayer.GetInforPlayer().listIdGun.Contains(i))
+        if (!DataPlayer.GetInforPlayer().listIdGun.Contains(i+1))
         {
-            newButtonWeapon.GetComponent<ShopButtonElement>().IsLock();
+            shopButtonE.IsLock();
         }
     }
 }

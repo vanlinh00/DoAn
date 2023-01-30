@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bb223258c72294fa3e02ab08416a1a, type: 3}
   m_Name: UMP45
   m_EditorClassIdentifier: 
-  id: 6
+  id: 5
   nameGun: UMP45
   priceForCoint: 500
-  pirceForDiamond: 540
+  priceForDiamond: 450
   listDamage:
   - 0.2
   - 0.4
@@ -34,5 +34,5 @@ MonoBehaviour:
   - 0.6
   - 0.8
   - 1
-  priceUpGrapde: 
+  priceUpGrapde: 6e000000e60000005e0100009001000058020000
   isStart: 0

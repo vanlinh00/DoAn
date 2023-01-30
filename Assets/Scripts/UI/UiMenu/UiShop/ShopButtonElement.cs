@@ -6,17 +6,20 @@ using UnityEngine.UI;
 public class ShopButtonElement : MonoBehaviour
 {
     public Image _backGround;
-    public WeaPonShop _weapon;
     public Image _weaponImage;
     public Text _textnameWeapon;
     public Button _btSelectWeapon;
     public GameObject _darkBackGround;
     public GameObject _lock;
     public int level;
+    public int idWeapon;
+    
     private void Awake()
     {
         _btSelectWeapon.onClick.AddListener(SelectWeapon);
+
     }
+
     public void IsLock()
     {
         _darkBackGround.SetActive(true);
@@ -27,26 +30,15 @@ public class ShopButtonElement : MonoBehaviour
         _darkBackGround.SetActive(false);
         _lock.SetActive(false);
     }
-    public void IsButtonGun(int idImage, string NameWeapon)
+    public void IsButtonGun(int idImage, string NameWeapon, int IdGun)
     {
         _weaponImage.sprite = Resources.Load<Sprite>("Image/Shop/Guns/" + idImage);
         _textnameWeapon.text = NameWeapon;
+        idWeapon = IdGun;
     }
     public void SelectWeapon()
     {
-      if(!_lock.activeSelf)
-        { 
-            InforWeaponManager._instance.ChangePropertiesGun(_weapon.damage, _weapon.rateOfFire, _weapon.accuracy, _weapon.name, _weapon.idWeapon, _weapon.priceForCoin, _weapon.priceForDiamond);
-        }
-        else
-        {
-            //if(DataPlayer.GetInforPlayer().countCoins>=_weapon.priceForCoin|| DataPlayer.GetInforPlayer().countDiamond >=_weapon.priceForDiamond)
-            //{
-            //    UnLock();
-            //    int AmountCoins = DataPlayer.GetInforPlayer().countCoins - _weapon.priceForCoin;
-            //    DataPlayer.UpdateAmountCoins(AmountCoins);
-            //    DataPlayer.AddNewIdGun(_weapon.idWeapon);
-            //}
-        }
+        InforWeaponManager._instance.shopButtonElement = gameObject.GetComponent<ShopButtonElement>();
+        InforWeaponManager._instance.ChangePropertiesGun( !_lock.activeSelf,idWeapon,false);
     }
 }

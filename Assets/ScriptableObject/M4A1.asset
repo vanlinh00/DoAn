@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bb223258c72294fa3e02ab08416a1a, type: 3}
   m_Name: M4A1
   m_EditorClassIdentifier: 
-  id: 4
+  id: 3
   nameGun: M4A1
   priceForCoint: 300
-  pirceForDiamond: 350
+  priceForDiamond: 250
   listDamage:
   - 0.2
   - 0.4
@@ -24,9 +24,9 @@ MonoBehaviour:
   - 1
   listRateOfFire:
   - 0.2
-  - 0.4
-  - 0.6
-  - 0.8
+  - 0.3
+  - 0.5
+  - 0.7
   - 1
   listAccuracy:
   - 0.2
@@ -34,5 +34,5 @@ MonoBehaviour:
   - 0.6
   - 0.8
   - 1
-  priceUpGrapde: 
+  priceUpGrapde: 7d000000f50000005e010000a9010000f4010000
   isStart: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bb223258c72294fa3e02ab08416a1a, type: 3}
   m_Name: Scar20
   m_EditorClassIdentifier: 
-  id: 5
+  id: 4
   nameGun: Scar20
   priceForCoint: 330
-  pirceForDiamond: 360
+  priceForDiamond: 230
   listDamage:
   - 0.2
   - 0.4
@@ -34,5 +34,5 @@ MonoBehaviour:
   - 0.6
   - 0.8
   - 1
-  priceUpGrapde: 
+  priceUpGrapde: 8c000000fa0000005e010000c2010000ee020000
   isStart: 0
