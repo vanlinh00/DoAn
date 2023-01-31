@@ -46,7 +46,7 @@ public class MainUi : Singleton<MainUi>
 
     public void LoadGunPlaying(Weapon weapon)
     {
-        CountBulletTxt.text = weapon._countBullet + "/" + weapon._countTotalBullets;
+        CountBulletTxt.text = weapon._countBullet + "/" + weapon._amountbullets;
     }
     public void LoadImageWeapon(bool IsFrag, int idGun)
     {

@@ -7,17 +7,15 @@ using DG.Tweening;
 public class EnemyController : MonoBehaviour, IDamageable
 {
     public NavMeshAgent agent;
-   // public Transform player;
-    public GameObject gun;
 
     //Check for Ground/Obstacles
     public LayerMask whatIsGround, whatIsPlayer;
 
     //Patroling
-    public Vector3 walkPoint;
+    private Vector3 walkPoint;
     private Vector3 oldPosition;
 
-    public bool walkPointSet;
+    private bool walkPointSet;
     public float walkPointRange;
 
     //Attack Player
@@ -25,11 +23,10 @@ public class EnemyController : MonoBehaviour, IDamageable
     bool alreadyAttacked;
 
     //States
-    public bool isDead;
+    private bool isDead;
     public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    private bool playerInSightRange, playerInAttackRange;
 
-    public GameObject projectile;
     public Animator _animator;
 
     // Gun 

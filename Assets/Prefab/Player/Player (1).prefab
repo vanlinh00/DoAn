@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 577956436986258975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 6495848525815139925}
   - {fileID: 6495848524388891556}
@@ -39273,7 +39273,6 @@ MonoBehaviour:
   _frag: {fileID: 2482303063060796235}
   listGun:
   - {fileID: 8097566578870964070}
-  - {fileID: 0}
   - {fileID: 8098272066106333960}
   - {fileID: 8099499943168587119}
   - {fileID: 8097870222919719428}
@@ -40005,12 +40004,10 @@ MonoBehaviour:
   _animator: {fileID: 8157860307923443641}
   _gunHead: {fileID: 8100804178294290215}
   _shootPoint: {x: 10.315561, y: 6.9113812, z: 2.4685102}
-  _camera: {fileID: 1207034047550057632}
   _name: 
   _countBullet: 9
   _amountbullets: 30
   idGun: 1
-  _countTotalBullets: 30
   isReloading: 0
   timeReload: 1
   power: 200

@@ -74,7 +74,7 @@ public class UpgrapdeWeapon : MonoBehaviour
         {
 
             int AmountDiamond = DataPlayer.GetInforPlayer().countDiamond - gunData.priceForDiamond;
-            DataPlayer.UpdateAmountCoins(AmountDiamond);
+            DataPlayer.UpdateAmountDiamond(AmountDiamond);
 
             UserDataPref.SetLevelGun(gunData.id, nextIdLevelGun);
             CloseTab();

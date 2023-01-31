@@ -18,7 +18,7 @@ public class FragController : Weapon
         if (GameState.stateGame != StateGame.OpenStore&& timeBetween)
         {
             Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
-            Ray ray = _camera.ScreenPointToRay(screenCenterPoint);
+            Ray ray = MainCamera._instance.gameObject.GetComponent<Camera>().ScreenPointToRay(screenCenterPoint);
             if (Physics.Raycast(ray, out RaycastHit raycastHit))
             {
                 _shootPoint = raycastHit.point;

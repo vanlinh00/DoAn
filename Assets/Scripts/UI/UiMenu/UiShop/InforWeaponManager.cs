@@ -148,7 +148,7 @@ public class InforWeaponManager : Singleton<InforWeaponManager>
         else
         {
             int AmountDiamond = DataPlayer.GetInforPlayer().countDiamond - gunData.priceForDiamond;
-            DataPlayer.UpdateAmountCoins(AmountDiamond);
+            DataPlayer.UpdateAmountDiamond(AmountDiamond);
 
         }
         ChangePropertiesGun(true, gunData.id, false);
