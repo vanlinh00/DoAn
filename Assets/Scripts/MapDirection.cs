@@ -22,7 +22,6 @@ public class MapDirection : MonoBehaviour
     {
         isMove = false;
         _agent = GetComponent<NavMeshAgent>();
-        FindDirection(false);
     }
 
     private void Update()
@@ -34,6 +33,7 @@ public class MapDirection : MonoBehaviour
             isMove = false;
             StartCoroutine(DisableMapDirection());
             Debug.Log("stop");
+            GameManager._instance.gamePlay.SetCantFindObj();
         }
 
         float offset = Time.time * scrollSpeed;

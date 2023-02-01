@@ -44247,6 +44247,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
         type: 3}
+      propertyPath: RangeMoveMaxX
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
+        type: 3}
+      propertyPath: RangeMoveMaxZ
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
+        type: 3}
+      propertyPath: RangeMoveMinX
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
+        type: 3}
+      propertyPath: RangeMoveMinZ
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
+        type: 3}
       propertyPath: ListEnemys.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -44477,6 +44497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495848525066217922, guid: aedc49c2cb0fd6344a8c7a1d27e5cd49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aedc49c2cb0fd6344a8c7a1d27e5cd49, type: 3}

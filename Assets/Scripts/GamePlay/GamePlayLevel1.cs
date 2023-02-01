@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GamePlayLevel1 : GamePlay
 {
+
     public List<EnemyController> ListEnemys;
 
     public override int GetCountEnemies()

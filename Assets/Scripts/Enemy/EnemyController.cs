@@ -9,10 +9,10 @@ public class EnemyController : MonoBehaviour, IDamageable
     public NavMeshAgent agent;
 
     //Check for Ground/Obstacles
-    public LayerMask whatIsGround, whatIsPlayer;
+    public LayerMask whatIsPlayer;
 
     //Patroling
-    private Vector3 walkPoint;
+    public Vector3 walkPoint;
     private Vector3 oldPosition;
 
     private bool walkPointSet;
@@ -23,14 +23,11 @@ public class EnemyController : MonoBehaviour, IDamageable
     bool alreadyAttacked;
 
     //States
-    private bool isDead;
+    protected bool isDead;
     public float sightRange, attackRange;
-    private bool playerInSightRange, playerInAttackRange;
+    protected bool playerInSightRange, playerInAttackRange;
 
     public Animator _animator;
-
-    // Gun 
-    public Transform FireSpawn;
 
     public float health = 1000f;
     [SerializeField] Image _valueHealthImg;
@@ -39,20 +36,20 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public ParticleSystem _expolsionGunVfx;
 
-    public float PosMinX;
-    public float PosMaxX;
-
-    public float PosMinZ;
-    public float PosMaxZ;
 
     public float SpeedMin;
     public float SpeedMax;
 
-    private void Awake()
+
+    protected virtual  void Awake()
     {
+        walkPointSet = false;
+        isDead = false;
         agent = GetComponent<NavMeshAgent>();
     }
-    private void Update()
+
+
+    protected virtual void Update()
     {
         if (!isDead)
         {
@@ -71,8 +68,8 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         if (isDead) return;
 
-        if (!walkPointSet) SearchWalkPoint();
-
+          if (!walkPointSet) SearchWalkPoint();
+    
         //Calculate direction and walk to Point
         if (walkPointSet)
         {
@@ -104,15 +101,20 @@ public class EnemyController : MonoBehaviour, IDamageable
             walkPointSet = false;
         }
     }
+
     private void SearchWalkPoint()
     {
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-        ///if (Physics.Raycast(walkPoint, transform.forward, 10, whatIsGround))
-        if (walkPoint.x >= PosMinX && walkPoint.x <= PosMaxX && walkPoint.z <=PosMaxZ && walkPoint.z >= PosMinZ) 
-        walkPointSet = true;
+
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(walkPoint, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            walkPoint = hit.position;
+            walkPointSet = true;
+        }
     }
     protected virtual void ChasePlayer()
     {
@@ -133,26 +135,18 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             EventManager.OnHitPlayer();
             StateShoot();
-           // Debug.Log("Hit Player");
+            // Debug.Log("Hit Player");
             _expolsionGunVfx.Play();
             alreadyAttacked = true;
             if (isDead) return;
             StartCoroutine(WaitTimeBullet());
-            // Invoke("ResetAttack", timeBetweenAttacks);
+
         }
     }
-
     IEnumerator WaitTimeBullet()
     {
         yield return new WaitForSeconds(timeBetweenAttacks);
         alreadyAttacked = false;
-    }
-    private void ResetAttack()
-    {
-        if (isDead) return;
-
-        alreadyAttacked = false;
-        // _animator.ResetTrigger("Hit");
     }
     public void StateIdle()
     {
@@ -167,7 +161,6 @@ public class EnemyController : MonoBehaviour, IDamageable
     public virtual void StateShoot()
     {
         _animator.SetBool("Run", false);
-        //  _animator.Play("Shoot");
         _animator.SetTrigger("Shoot");
     }
 

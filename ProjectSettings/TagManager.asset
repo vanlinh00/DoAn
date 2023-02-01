@@ -39,6 +39,7 @@ TagManager:
   - GasTank
   - scene
   - Enemy
+  - Moutain
   layers:
   - Default
   - TransparentFX

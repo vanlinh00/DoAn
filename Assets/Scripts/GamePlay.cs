@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GamePlay : MonoBehaviour
 {
+
     public int IdLevel;
     public virtual void CheckEnemysColistionWihtBoom(Transform BomTrans)
     {
@@ -22,5 +23,9 @@ public class GamePlay : MonoBehaviour
     public virtual int GetCountEnemies()
     {
         return 0;
+    }
+    public virtual void SetCantFindObj()
+    {
+
     }
 }

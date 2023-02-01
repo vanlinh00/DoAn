@@ -1941,7 +1941,7 @@ Transform:
   m_GameObject: {fileID: 6955258285141976909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.07, y: 0, z: 4.84}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 6955258283848687477}
   - {fileID: 5033579943846357389}
@@ -2083,33 +2083,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 6955258285141976912}
-  gun: {fileID: 6955258285141976909}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 2048
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointSet: 0
   walkPointRange: 30
   timeBetweenAttacks: 1
-  isDead: 0
   sightRange: 20
   attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
-  projectile: {fileID: 6955258283848687476}
   _animator: {fileID: 6955258283848687482}
-  FireSpawn: {fileID: 6955258284402255066}
   health: 1000
   _valueHealthImg: {fileID: 6955258284971415054}
   _explosionBodyBloody: {fileID: 5033579943846356588}
   _expolsionGunVfx: {fileID: 6955258285688829682}
-  PosMinX: 0
-  PosMaxX: 0
-  PosMinZ: 0
-  PosMaxZ: 0
   SpeedMin: 0
   SpeedMax: 0
 --- !u!65 &5089223034028637126
