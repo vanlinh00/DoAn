@@ -8,22 +8,29 @@ public class Weapon : MonoBehaviour
     public Transform _gunHead;
     public Vector3 _shootPoint;
 
-    public string _name;
-    public int _countBullet;
-    public int _amountbullets;
+   // public string _name;
+    protected int _countBullet;
+    private int _amountbullets;
     public int idGun;
 
-    public bool isReloading;
-    public float timeReload;
+    protected  bool isReloading;
+    protected float timeReload;
 
+    public GunData gunData;
     
-    private void Start()
+    protected virtual void Start()
     {
         isReloading = true;
-    }
-    private void Awake()
-    {
         _amountbullets = _countBullet;
+    }
+    private void OnEnable()
+    {
+        StartCoroutine(IWaitTime());
+    }
+    IEnumerator IWaitTime()
+    {
+        yield return new WaitForSeconds(0.1f);
+        MainUi._instance.LoadGunPlaying(gameObject.GetComponent<Weapon>());
     }
     public void StateReady()
     {
@@ -36,5 +43,18 @@ public class Weapon : MonoBehaviour
         _countBullet = _amountbullets;
         yield return new WaitForSeconds(timeReload);
         isReloading = true;
+    }
+    public int GetTotalBullet()
+    {
+        return _amountbullets;
+    }
+    public int GetNumberBullets()
+    {
+        return _countBullet;
+    }
+    public void SetNumberBullets(int NumberBullets)
+    {
+        _countBullet = NumberBullets;
+
     }
 }

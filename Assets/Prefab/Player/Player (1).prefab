@@ -40005,11 +40005,11 @@ MonoBehaviour:
   _gunHead: {fileID: 8100804178294290215}
   _shootPoint: {x: 10.315561, y: 6.9113812, z: 2.4685102}
   _name: 
-  _countBullet: 9
+  _countBullet: 30
   _amountbullets: 30
   idGun: 1
   isReloading: 0
-  timeReload: 1
+  gunData: {fileID: 11400000, guid: 03c3cb7c5e3636d4883c814506dd9151, type: 2}
   power: 200
   _explosionVfx: {fileID: 5629158234172349952}
 --- !u!1 &8097568049948614663
@@ -42410,6 +42410,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7240227632016534364, guid: 2383b480eb6caef43bedc113aec62e65,
         type: 3}
+      propertyPath: gunData
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fbfda5bd9398174081976799b6d9055,
+        type: 2}
+    - target: {fileID: 7240227632016534364, guid: 2383b480eb6caef43bedc113aec62e65,
+        type: 3}
       propertyPath: timeReload
       value: 1.2
       objectReference: {fileID: 0}
@@ -42506,6 +42512,12 @@ PrefabInstance:
       propertyPath: power
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 5505621531945976270, guid: 1fae6ca3efc62dc439a78c4d33f2f460,
+        type: 3}
+      propertyPath: gunData
+      value: 
+      objectReference: {fileID: 11400000, guid: 82f262b53859f0f4691dd379833a09f8,
+        type: 2}
     - target: {fileID: 5505621531945976270, guid: 1fae6ca3efc62dc439a78c4d33f2f460,
         type: 3}
       propertyPath: timeReload
@@ -42606,6 +42618,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2237293866918874764, guid: e48111d5022ef5c41aed75f81e144baa,
         type: 3}
+      propertyPath: gunData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c794145b4fd43b43a671ff846cb81f6,
+        type: 2}
+    - target: {fileID: 2237293866918874764, guid: e48111d5022ef5c41aed75f81e144baa,
+        type: 3}
       propertyPath: timeReload
       value: 0.5
       objectReference: {fileID: 0}
@@ -42650,6 +42668,12 @@ PrefabInstance:
       propertyPath: power
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: -1389916995215318826, guid: 11d1a0c4f6c37e64dbb77b6310646032,
+        type: 3}
+      propertyPath: gunData
+      value: 
+      objectReference: {fileID: 11400000, guid: 11b2b132469d0a14e84cfbb4aa7388a9,
+        type: 2}
     - target: {fileID: -1389916995215318826, guid: 11d1a0c4f6c37e64dbb77b6310646032,
         type: 3}
       propertyPath: timeReload

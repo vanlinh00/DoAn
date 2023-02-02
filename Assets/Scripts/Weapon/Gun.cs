@@ -1,12 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class Gun : Weapon
 {
-    public int power;
+    public float power;
     public ParticleSystem _explosionVfx;
+    int levelGun;
+    protected override void Start()
+    {
+        Init();
+        base.Start();
 
+    }
+    void Init()
+    {
+        levelGun = UserDataPref.GetLevelGun(idGun);
+        power =gunData.listDamage[levelGun - 1]*1000+ gunData.listRateOfFire[levelGun - 1] * 1000+ gunData.listAccuracy[levelGun - 1] * 1000;
+        power = power/(float)3;
+        timeReload = gunData.timeCharge[levelGun - 1];
+        SetNumberBullets(gunData.numberBullets);
+    }
     public void Update()
     {
         if (GameState.stateGame != StateGame.OpenStore&& isReloading)

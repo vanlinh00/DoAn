@@ -11,12 +11,12 @@ public class Enemy2 : EnemyController
     // bao no quay ve can cu bao cho ca con enemy khac cac con enemy khac den ban player
 
     public Transform PosTeam1;
-    private bool IsNotice;
-    public bool IsColliderTeam1;
+    public bool IsNotice;
+    public bool IsColliderNotice;
     protected override void Awake()
     {
         base.Awake();
-        IsColliderTeam1 = false;
+        IsColliderNotice = false;
         IsNotice = false;
     }
     protected override void Update()
@@ -33,7 +33,7 @@ public class Enemy2 : EnemyController
             }
             else if (IsNotice)
             {
-                if (IsColliderTeam1)
+                if (IsColliderNotice)
                 {
                     playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
                     if (playerInAttackRange)

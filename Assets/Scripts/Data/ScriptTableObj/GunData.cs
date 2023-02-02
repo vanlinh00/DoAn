@@ -14,6 +14,8 @@ public class GunData:ScriptableObject
     public List<float> listRateOfFire;
     public List<float> listAccuracy;
     public List<int>   priceUpGrapde;
+    public List<float> timeCharge;
+    public int numberBullets;
 
     public bool isStart;
     public void OnValidate()

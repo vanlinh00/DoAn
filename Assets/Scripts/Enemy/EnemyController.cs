@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     //Attack Player
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+   protected bool alreadyAttacked;
 
     //States
     protected bool isDead;
@@ -35,11 +35,8 @@ public class EnemyController : MonoBehaviour, IDamageable
     float currentTimeMove;
 
     public ParticleSystem _expolsionGunVfx;
-
-
     public float SpeedMin;
     public float SpeedMax;
-
 
     protected virtual  void Awake()
     {
@@ -47,8 +44,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         isDead = false;
         agent = GetComponent<NavMeshAgent>();
     }
-
-
     protected virtual void Update()
     {
         if (!isDead)
@@ -135,20 +130,18 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             EventManager.OnHitPlayer();
             StateShoot();
-            // Debug.Log("Hit Player");
+             //Debug.Log("Hit Player");
             _expolsionGunVfx.Play();
             alreadyAttacked = true;
-            if (isDead) return;
             StartCoroutine(WaitTimeBullet());
-
         }
-    }
-    IEnumerator WaitTimeBullet()
+    }   
+  protected IEnumerator WaitTimeBullet()
     {
         yield return new WaitForSeconds(timeBetweenAttacks);
         alreadyAttacked = false;
     }
-    public void StateIdle()
+    public virtual void StateIdle()
     {
         _animator.ResetTrigger("Shoot");
         _animator.SetBool("Run", false);

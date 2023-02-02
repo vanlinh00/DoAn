@@ -15,6 +15,7 @@ public class ItemBtn : MonoBehaviour
     }
     void LoadGun()
     {
+        UiController._instance.CloseStore();
         WeaponManager._instance.ChangeGun(_idGun);
     }
     public void LoadImage()

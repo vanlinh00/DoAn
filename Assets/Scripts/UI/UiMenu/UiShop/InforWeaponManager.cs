@@ -8,13 +8,14 @@ public class InforWeaponManager : Singleton<InforWeaponManager>
     [SerializeField] Image _barDamageWeapon;
     [SerializeField] Image _barRateOfFireWeapon;
     [SerializeField] Image _barAccuracyWeapon;
-
+    public Image _barReloadTime;
     [SerializeField] Text _nameWeapon;
     public Text levelTxt;
 
     public Text damageTxt;
     public Text rateOfFireTxt;
     public Text accuracyTxt;
+    public Text reloadTimeTxt;
 
     [SerializeField] Text _priceWeaponFCoinTxt;
     [SerializeField] Text _priceWeaponFDiamondTxt;
@@ -71,11 +72,12 @@ public class InforWeaponManager : Singleton<InforWeaponManager>
         _barDamageWeapon.fillAmount = gunData.listDamage[idLevelGun];
         _barRateOfFireWeapon.fillAmount = gunData.listRateOfFire[idLevelGun];
         _barAccuracyWeapon.fillAmount = gunData.listAccuracy[idLevelGun];
+        _barReloadTime.fillAmount = gunData.timeCharge[idLevelGun];
 
         damageTxt.text = (gunData.listDamage[idLevelGun] * 1000).ToString();
         rateOfFireTxt.text = (gunData.listRateOfFire[idLevelGun] * 1000).ToString();
         accuracyTxt.text = (gunData.listAccuracy[idLevelGun] * 1000).ToString();
-
+        reloadTimeTxt.text = gunData.timeCharge[idLevelGun] + " s";
         _nameWeapon.text = gunData.name;
         levelTxt.text = "Level: " + (idLevelGun + 1);
 

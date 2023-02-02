@@ -14,10 +14,12 @@ public class UpgrapdeWeapon : MonoBehaviour
     public Image damageBar;
     public Image rateRireBar;
     public Image accuracyBar;
+    public Image timeReloadBar;
+
 
     public Text damageTxt;
     public Text rateFireTxt;
-    public Text accuracyTxt;
+    public Text accuracyTxt, timeReLoadTxt;
 
     public Text priceDiamondTxt;
     public Button upGradeBtn;
@@ -55,11 +57,12 @@ public class UpgrapdeWeapon : MonoBehaviour
         damageBar.fillAmount = gunData.listDamage[nextIdLevelGun - 1];
         rateRireBar.fillAmount = gunData.listRateOfFire[nextIdLevelGun - 1];
         accuracyBar.fillAmount = gunData.listAccuracy[nextIdLevelGun - 1];
+        timeReloadBar.fillAmount = gunData.timeCharge[nextIdLevelGun - 1];
 
         damageTxt.text = (gunData.listDamage[nextIdLevelGun - 1] * 1000).ToString();
         rateFireTxt.text = (gunData.listRateOfFire[nextIdLevelGun - 1] * 1000).ToString();
         accuracyTxt.text = (gunData.listAccuracy[nextIdLevelGun - 1] * 1000).ToString();
-
+        timeReLoadTxt.text = gunData.timeCharge[nextIdLevelGun - 1]+ " s";
         priceDiamondTxt.text = gunData.priceUpGrapde[nextIdLevelGun - 1].ToString();
 
 

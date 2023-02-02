@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,18 @@ public class GamePlayLevel3 : GamePlay
     public override void SetCantFindObj()
     {
         IsCantFindObj = true;
-    }    
+    }
 
+    public override void EndGame()
+    {
+        base.EndGame();
+
+        CalculaterStar();
+    }
+    public override void WinGame()
+    {
+        base.WinGame();
+        CalculaterStar();
+
+    }
 }

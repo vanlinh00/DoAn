@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class StoreManager : MonoBehaviour
 {
-    [SerializeField] GameObject _storeUnlocked;
-    [SerializeField] GameObject _storeNotUnlocked;
-
     public List<GameObject> listItemButtonWeapon;
     private void OnEnable()
     {

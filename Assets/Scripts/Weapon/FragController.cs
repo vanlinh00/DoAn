@@ -5,17 +5,19 @@ using UnityEngine;
 public class FragController : Weapon
 {
     public bool timeBetween;
-    private void Start()
+    protected override void Start()
     {
-    
+        SetNumberBullets(3);
         timeReload = 5f;
+        base.Start();
     }
     private void OnEnable()
-    {    timeBetween = true; 
+    {
+        timeBetween = true;
     }
     public void Update()
     {
-        if (GameState.stateGame != StateGame.OpenStore&& timeBetween)
+        if (GameState.stateGame != StateGame.OpenStore && timeBetween)
         {
             Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
             Ray ray = MainCamera._instance.gameObject.GetComponent<Camera>().ScreenPointToRay(screenCenterPoint);
