@@ -42,4 +42,5 @@ MonoBehaviour:
   - 0.5
   - 0.2
   numberBullets: 10
+  scope: 1
   isStart: 0

@@ -4,15 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
-public class UiMap : MonoBehaviour
+public class UiMap : Singleton<UiMap>
 {
     public Button comeback;
     public GameObject mainPanel;
     public List<SelectLevelBtn> listSelectLevel;
     public Vector3 lastMouse;
     public Vector3 currentMouse;
-    private void Awake()
+    public InforLevelUI inforLevelUI;
+    protected override void Awake()
     {
+        base.Awake();
         comeback.onClick.AddListener(ComeBackMenu);
     }
     public void ComeBackMenu()

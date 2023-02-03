@@ -10,10 +10,11 @@ public class MainCamera : Singleton<MainCamera>
     }
     public void SetNormalMainCamera()
     {
-        transform.localPosition = new Vector3(0, 3, 0);
+        transform.GetComponent<Camera>().fieldOfView = 40;
     }
     public void SetMainCameraAWM()
     {
-        transform.localPosition = new Vector3(0, 3, 6);
+        transform.GetComponent<Camera>().fieldOfView = 10;
+  
     }
 }

@@ -16,14 +16,14 @@ public class Gun : Weapon
     void Init()
     {
         levelGun = UserDataPref.GetLevelGun(idGun);
-        power =gunData.listDamage[levelGun - 1]*1000+ gunData.listRateOfFire[levelGun - 1] * 1000+ gunData.listAccuracy[levelGun - 1] * 1000;
-        power = power/(float)3;
+        power = gunData.listDamage[levelGun - 1] * 1000 + gunData.listRateOfFire[levelGun - 1] * 1000 + gunData.listAccuracy[levelGun - 1] * 1000;
+        power = power / (float)3;
         timeReload = gunData.timeCharge[levelGun - 1];
         SetNumberBullets(gunData.numberBullets);
     }
-    public void Update()
+    protected virtual void Update()
     {
-        if (GameState.stateGame != StateGame.OpenStore&& isReloading)
+        if (GameState.stateGame != StateGame.OpenStore && isReloading)
         {
             Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
             Ray ray = MainCamera._instance.gameObject.GetComponent<Camera>().ScreenPointToRay(screenCenterPoint);
@@ -45,6 +45,7 @@ public class Gun : Weapon
                     StartCoroutine(IEReload());
                 }
             }
+
             if (Input.GetKeyDown("q"))
             {
                 StartCoroutine(IEReload());

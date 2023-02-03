@@ -9,6 +9,7 @@ public class UiScope : Singleton<UiScope>
     protected override void Awake()
     {
         base.Awake();
+        SetNormalScope();
     }
     public void SetNormalScope()
     {

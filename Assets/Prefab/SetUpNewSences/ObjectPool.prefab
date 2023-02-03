@@ -59,3 +59,7 @@ MonoBehaviour:
   - tag: Gun3
     prefab: {fileID: 1687941924967828, guid: 2383b480eb6caef43bedc113aec62e65, type: 3}
     size: 1
+  - tag: BulletMark1
+    prefab: {fileID: 2630058161415079598, guid: dbb1ab8d3d8f7324385be65cd759cd7a,
+      type: 3}
+    size: 300

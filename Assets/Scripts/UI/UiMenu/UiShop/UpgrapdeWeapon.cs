@@ -31,7 +31,6 @@ public class UpgrapdeWeapon : MonoBehaviour
     {
         quiteBtn.onClick.AddListener(CloseTab);
         upGradeBtn.onClick.AddListener(upGradeWeapon);
-        DataPlayer.UpdateAmountDiamond(10000);
     }
     public void Init(int IdGun)
     {
@@ -84,6 +83,12 @@ public class UpgrapdeWeapon : MonoBehaviour
             UiNotice._instance.Init(true, "Succes");
             InforWeaponManager._instance.ChangePropertiesGun(true, gunData.id, false);
         }
+        else
+        {
+            UiNotice._instance.Init(false, "Not Enough Money");
+        }
+
+
     }
 
     public void CloseTab()

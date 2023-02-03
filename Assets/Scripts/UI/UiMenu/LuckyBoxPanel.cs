@@ -10,12 +10,12 @@ public class LuckyBoxPanel : Singleton<LuckyBoxPanel>
     public List<LuckyBox> listBoxBtn;
     public GameObject Content;
 
-    private void Awake()
+    protected override void Awake()
     {
         LoadAllBoxBtn();
         base.Awake();
-        DataPlayer.UpdateAmountKeys(3);
         _buttonClose.onClick.AddListener(CloseLuckyBoxPanel);
+        DisplayKeys();
     }
     private void OnEnable()
     {

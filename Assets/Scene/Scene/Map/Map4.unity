@@ -375,6 +375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -711,6 +716,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -2147,6 +2157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -2267,6 +2282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -2344,6 +2364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -2514,6 +2539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -3117,6 +3147,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -3303,6 +3338,7 @@ MonoBehaviour:
   - {fileID: 1415735595}
   - {fileID: 1468932883}
   IdLevel: 4
+  inforLevelData: {fileID: 11400000, guid: 6e9670541c273e8449dd5a496c2f0ada, type: 2}
 --- !u!1 &1104709698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +3504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -3705,6 +3746,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -4425,6 +4471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -4588,6 +4639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -4770,6 +4826,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -4944,6 +5005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}
@@ -5221,6 +5287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nha2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0e4463fb1078a4aa1b07628a25e6d3,
         type: 3}

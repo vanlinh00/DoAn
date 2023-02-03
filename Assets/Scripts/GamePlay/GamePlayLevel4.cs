@@ -24,5 +24,6 @@ public class GamePlayLevel4 : GamePlay
         {
             UserDataPref.SetAmountStarLevel(IdLevel, AmountStar);
         }
+        UpdateDiamondAndKey(AmountStar);
     }
 }

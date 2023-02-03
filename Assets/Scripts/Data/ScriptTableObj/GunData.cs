@@ -17,7 +17,9 @@ public class GunData:ScriptableObject
     public List<float> timeCharge;
     public int numberBullets;
 
+    public bool scope;
     public bool isStart;
+
     public void OnValidate()
     {
         if(isStart)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Bullet : MonoBehaviour, ImoveBulletable
 {
@@ -27,6 +28,11 @@ public class Bullet : MonoBehaviour, ImoveBulletable
         
             ObjectPooler._instance.AddElement("Bullet", transform.gameObject);
             transform.gameObject.SetActive(false);
+        }
+        else if(collision.gameObject.tag.Equals("Obj"))
+        {
+            GameObject BulletMark = ObjectPooler._instance.SpawnFromPool("BulletMark1", transform.position,new Quaternion());
+            BulletMark.transform.LookAt(PlayerController.instance.transform.position);
         }
 
     }

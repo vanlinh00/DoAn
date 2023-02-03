@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 1447}
   m_Layer: 25
   m_Name: sence03_mudi (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3864,6 +3864,7 @@ MonoBehaviour:
   - {fileID: 2030507874}
   - {fileID: 564485725}
   IdLevel: 2
+  inforLevelData: {fileID: 11400000, guid: c09689b047644ef4390ed275bff8c38b, type: 2}
 --- !u!4 &2601786222406947740
 Transform:
   m_ObjectHideFlags: 0

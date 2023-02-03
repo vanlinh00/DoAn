@@ -6,13 +6,13 @@ public class GamePlay : MonoBehaviour
 {
     public List<EnemyController> ListEnemys;
     public int IdLevel;
+    public InforLevelData inforLevelData;
     public virtual int GetCountEnemies()
     {
         return ListEnemys.Count;
     }
     public virtual void CheckEnemysColistionWihtBoom(Transform BomTrans)
     {
-
         for (int i = 0; i < ListEnemys.Count; i++)
         {
             float DisEnemyBoom = Vector3.Distance(ListEnemys[i].transform.position, BomTrans.position);
@@ -60,5 +60,20 @@ public class GamePlay : MonoBehaviour
         {
             UserDataPref.SetAmountStarLevel(IdLevel, AmountStar);
         }
+        UpdateDiamondAndKey(AmountStar);
+    }
+    public void UpdateDiamondAndKey(int NumberStar)
+    {
+        if (NumberStar <= 0)
+            return;
+
+        int NumberKeys = DataPlayer.GetInforPlayer().countKeys + inforLevelData.reward[NumberStar - 1].numberKey;
+        if (NumberKeys > 3)
+            NumberKeys = 3;
+
+        DataPlayer.UpdateAmountKeys(NumberKeys);
+
+        int NumberDiamond = DataPlayer.GetInforPlayer().countDiamond + inforLevelData.reward[NumberStar - 1].numberDimond;
+        DataPlayer.UpdateAmountDiamond(NumberDiamond);
     }
 }

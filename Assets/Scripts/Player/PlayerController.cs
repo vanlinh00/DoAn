@@ -113,6 +113,7 @@ public class PlayerController : MonoBehaviour
             UiController._instance.CountTimeHizone = 0f;
             if (HpPlayer <= 0)
             {
+                statePlayer = StatePlayer.Die;
                 GameManager._instance.gamePlay.EndGame();
                 gameObject.SetActive(false);
             }

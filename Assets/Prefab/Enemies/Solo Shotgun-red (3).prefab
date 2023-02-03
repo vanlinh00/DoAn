@@ -37274,7 +37274,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2678582255426292040}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.10945087
   m_Height: 0.36483622
   m_Direction: 0
@@ -37707,7 +37707,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2678582256010038840}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.12661631
   m_Height: 0.50646526
   m_Direction: 0
@@ -37845,7 +37845,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2678582256083300524}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.12661493
   m_Height: 0.5064597
   m_Direction: 0
@@ -38495,7 +38495,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2678582256502852632}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.064837
   m_Height: 0.259348
   m_Direction: 0
@@ -38664,7 +38664,7 @@ BoxCollider:
   m_GameObject: {fileID: 2678582256532259043}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.093451865, y: 0.25853243, z: 0.35649455}
   m_Center: {x: 0.046725955, y: -0.02735126, z: -0.00000040233135}
@@ -38998,7 +38998,7 @@ BoxCollider:
   m_GameObject: {fileID: 2678582256835019634}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.42264485, y: 0.25813836, z: 0.35649455}
   m_Center: {x: -0.30495417, y: -0.025850818, z: 0.00000052154064}
@@ -39090,7 +39090,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2678582256896628431}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.10945081
   m_Height: 0.364836
   m_Direction: 0
@@ -39279,34 +39279,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2678582256975249910}
-  gun: {fileID: 2678582256713166087}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 4294967295
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 2048
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointSet: 0
   walkPointRange: 30
   timeBetweenAttacks: 0.5
-  isDead: 0
   sightRange: 20
   attackRange: 10
-  playerInSightRange: 0
-  playerInAttackRange: 0
-  projectile: {fileID: 5261908539032414034, guid: 71d257e512cd48f4592b1d78950d0a10,
-    type: 3}
   _animator: {fileID: 2678582256713166080}
-  FireSpawn: {fileID: 2678582256975249911}
   health: 1000
   _valueHealthImg: {fileID: 2678582256383772379}
   _explosionBodyBloody: {fileID: 1035247294629576430}
   _expolsionGunVfx: {fileID: 2877374268076994099}
-  PosMinX: 0
-  PosMaxX: 0
-  PosMinZ: 0
-  PosMaxZ: 0
   SpeedMin: 0
   SpeedMax: 0
 --- !u!65 &2678582256975249899
@@ -39395,7 +39380,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2678582257022114882}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.06483692
   m_Height: 0.25934768
   m_Direction: 0

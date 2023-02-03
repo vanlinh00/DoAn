@@ -42,6 +42,7 @@ public class Weapon : MonoBehaviour
         _animator.SetTrigger("Reload");
         _countBullet = _amountbullets;
         yield return new WaitForSeconds(timeReload);
+        MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>());
         isReloading = true;
     }
     public int GetTotalBullet()

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1319}
   m_Layer: 25
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 1320}
   m_Layer: 25
   m_Name: pro
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2454}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 1322}
   m_Layer: 0
   m_Name: AllLight
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 1323}
   m_Layer: 25
   m_Name: qiang
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2456}
   m_Layer: 0
   m_Name: Point light (27)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 1329}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 2457}
   m_Layer: 0
   m_Name: SunLightback1 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 2458}
   m_Layer: 0
   m_Name: Point light (26)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 2459}
   m_Layer: 0
   m_Name: Point light (31)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 1339}
   m_Layer: 25
   m_Name: tong
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 2460}
   m_Layer: 0
   m_Name: Point Light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 2461}
   m_Layer: 0
   m_Name: Area Light (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 2462}
   m_Layer: 0
   m_Name: Area Light (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 2463}
   m_Layer: 0
   m_Name: Point light (22)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 2464}
   m_Layer: 0
   m_Name: Point light (7)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 2465}
   m_Layer: 0
   m_Name: Area Light (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 2466}
   m_Layer: 0
   m_Name: Area Light (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 2467}
   m_Layer: 0
   m_Name: Area Light (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 2468}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 1357}
   m_Layer: 25
   m_Name: tree
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 2469}
   m_Layer: 0
   m_Name: Point light (25)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 2470}
   m_Layer: 0
   m_Name: Area Light (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 2471}
   m_Layer: 0
   m_Name: Point light (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 2472}
   m_Layer: 0
   m_Name: Area Light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 2473}
   m_Layer: 0
   m_Name: Point light (12)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 2474}
   m_Layer: 0
   m_Name: Area Light (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,13 +461,26 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368}
+  - component: {fileID: 112}
   m_Layer: 0
   m_Name: AllObjects
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3b99a631ecbc64392e16376a5a3855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &116
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +493,7 @@ GameObject:
   - component: {fileID: 2475}
   m_Layer: 0
   m_Name: Point light (24)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,7 +510,7 @@ GameObject:
   - component: {fileID: 2476}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,7 +526,7 @@ GameObject:
   - component: {fileID: 1377}
   m_Layer: 25
   m_Name: yuan
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,7 +543,7 @@ GameObject:
   - component: {fileID: 2477}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,7 +559,7 @@ GameObject:
   - component: {fileID: 1380}
   m_Layer: 0
   m_Name: NoStatic
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -563,7 +576,7 @@ GameObject:
   - component: {fileID: 2478}
   m_Layer: 0
   m_Name: Point Light (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,7 +593,7 @@ GameObject:
   - component: {fileID: 2479}
   m_Layer: 0
   m_Name: Point light (30)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -597,7 +610,7 @@ GameObject:
   - component: {fileID: 2480}
   m_Layer: 0
   m_Name: Point light (29)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -614,7 +627,7 @@ GameObject:
   - component: {fileID: 2481}
   m_Layer: 0
   m_Name: Point light (9)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -631,7 +644,7 @@ GameObject:
   - component: {fileID: 2482}
   m_Layer: 0
   m_Name: Point light (28)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -647,7 +660,7 @@ GameObject:
   - component: {fileID: 1391}
   m_Layer: 0
   m_Name: guangyun
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -664,7 +677,7 @@ GameObject:
   - component: {fileID: 2483}
   m_Layer: 0
   m_Name: SunLight
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -681,7 +694,7 @@ GameObject:
   - component: {fileID: 2643}
   m_Layer: 0
   m_Name: Light Probe Group
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,7 +711,7 @@ GameObject:
   - component: {fileID: 2484}
   m_Layer: 0
   m_Name: Point light (10)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -715,7 +728,7 @@ GameObject:
   - component: {fileID: 2485}
   m_Layer: 0
   m_Name: Point light (17)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -732,7 +745,7 @@ GameObject:
   - component: {fileID: 2486}
   m_Layer: 0
   m_Name: Point light (21)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -748,7 +761,7 @@ GameObject:
   - component: {fileID: 1407}
   m_Layer: 25
   m_Name: car
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -765,7 +778,7 @@ GameObject:
   - component: {fileID: 2487}
   m_Layer: 0
   m_Name: Point light (16)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,7 +795,7 @@ GameObject:
   - component: {fileID: 2488}
   m_Layer: 0
   m_Name: Point Light (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,7 +811,7 @@ GameObject:
   - component: {fileID: 1414}
   m_Layer: 25
   m_Name: lubian
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -815,7 +828,7 @@ GameObject:
   - component: {fileID: 2489}
   m_Layer: 0
   m_Name: Point light (11)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -832,7 +845,7 @@ GameObject:
   - component: {fileID: 2490}
   m_Layer: 0
   m_Name: Point light (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -849,7 +862,7 @@ GameObject:
   - component: {fileID: 2491}
   m_Layer: 0
   m_Name: Area Light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -866,7 +879,7 @@ GameObject:
   - component: {fileID: 2492}
   m_Layer: 0
   m_Name: Area Light (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -883,7 +896,7 @@ GameObject:
   - component: {fileID: 2493}
   m_Layer: 0
   m_Name: Point light (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -900,7 +913,7 @@ GameObject:
   - component: {fileID: 2494}
   m_Layer: 0
   m_Name: Point light (15)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -917,7 +930,7 @@ GameObject:
   - component: {fileID: 2495}
   m_Layer: 0
   m_Name: Point Light (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -934,7 +947,7 @@ GameObject:
   - component: {fileID: 2496}
   m_Layer: 0
   m_Name: Area Light (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -951,7 +964,7 @@ GameObject:
   - component: {fileID: 2498}
   m_Layer: 0
   m_Name: Point light (18)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -968,7 +981,7 @@ GameObject:
   - component: {fileID: 2499}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -985,7 +998,7 @@ GameObject:
   - component: {fileID: 2500}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1002,7 +1015,7 @@ GameObject:
   - component: {fileID: 2501}
   m_Layer: 0
   m_Name: Point light (20)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,7 +1031,7 @@ GameObject:
   - component: {fileID: 1440}
   m_Layer: 25
   m_Name: Static
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1035,7 +1048,7 @@ GameObject:
   - component: {fileID: 2502}
   m_Layer: 0
   m_Name: Area Light (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1052,7 +1065,7 @@ GameObject:
   - component: {fileID: 2503}
   m_Layer: 0
   m_Name: SunLightback1
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1081,7 @@ GameObject:
   - component: {fileID: 1445}
   m_Layer: 25
   m_Name: jianzhu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1084,7 +1097,7 @@ GameObject:
   - component: {fileID: 1446}
   m_Layer: 25
   m_Name: ganzi
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1101,7 +1114,7 @@ GameObject:
   - component: {fileID: 2504}
   m_Layer: 0
   m_Name: Point light (19)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1118,7 +1131,7 @@ GameObject:
   - component: {fileID: 2505}
   m_Layer: 0
   m_Name: Point light (8)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1135,7 +1148,7 @@ GameObject:
   - component: {fileID: 2506}
   m_Layer: 0
   m_Name: Point Light (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1151,7 +1164,7 @@ GameObject:
   - component: {fileID: 1457}
   m_Layer: 25
   m_Name: box
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1168,7 +1181,7 @@ GameObject:
   - component: {fileID: 2507}
   m_Layer: 0
   m_Name: Point light (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1185,7 +1198,7 @@ GameObject:
   - component: {fileID: 2508}
   m_Layer: 0
   m_Name: Point Light (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1202,7 +1215,7 @@ GameObject:
   - component: {fileID: 2509}
   m_Layer: 0
   m_Name: Point light (14)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1219,7 +1232,7 @@ GameObject:
   - component: {fileID: 2377}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1236,7 +1249,7 @@ GameObject:
   - component: {fileID: 2510}
   m_Layer: 0
   m_Name: Area Light (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1253,7 +1266,7 @@ GameObject:
   - component: {fileID: 2511}
   m_Layer: 0
   m_Name: Point light (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1270,7 +1283,7 @@ GameObject:
   - component: {fileID: 2512}
   m_Layer: 0
   m_Name: Point light (23)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1286,7 +1299,7 @@ GameObject:
   - component: {fileID: 1475}
   m_Layer: 25
   m_Name: deng
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1303,7 +1316,7 @@ GameObject:
   - component: {fileID: 2513}
   m_Layer: 0
   m_Name: Point light (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1320,7 +1333,7 @@ GameObject:
   - component: {fileID: 2514}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1337,7 +1350,7 @@ GameObject:
   - component: {fileID: 2515}
   m_Layer: 0
   m_Name: Point light (13)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1354,7 +1367,7 @@ GameObject:
   - component: {fileID: 2516}
   m_Layer: 0
   m_Name: Point Light (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1372,7 +1385,7 @@ GameObject:
   - component: {fileID: 2602}
   m_Layer: 0
   m_Name: flat_zhongyu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1390,7 +1403,7 @@ GameObject:
   - component: {fileID: 2603}
   m_Layer: 0
   m_Name: flat_zhongyu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1408,7 +1421,7 @@ GameObject:
   - component: {fileID: 2601}
   m_Layer: 0
   m_Name: yu_zhong
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1426,7 +1439,7 @@ GameObject:
   - component: {fileID: 2600}
   m_Layer: 0
   m_Name: yu_zhong (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1444,7 +1457,7 @@ GameObject:
   - component: {fileID: 2599}
   m_Layer: 0
   m_Name: splash_zhongyu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1462,7 +1475,7 @@ GameObject:
   - component: {fileID: 2598}
   m_Layer: 0
   m_Name: splash_zhongyu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1480,7 +1493,7 @@ GameObject:
   - component: {fileID: 2605}
   m_Layer: 0
   m_Name: fog_zhongyu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1498,7 +1511,7 @@ GameObject:
   - component: {fileID: 2604}
   m_Layer: 0
   m_Name: fog_zhongyu
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1516,7 +1529,7 @@ GameObject:
   - component: {fileID: 1885}
   m_Layer: 25
   m_Name: deng1_scene32 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1534,7 +1547,7 @@ GameObject:
   - component: {fileID: 1886}
   m_Layer: 25
   m_Name: deng1_scene32
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1552,7 +1565,7 @@ GameObject:
   - component: {fileID: 1890}
   m_Layer: 25
   m_Name: deng1_scene32 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1570,7 +1583,7 @@ GameObject:
   - component: {fileID: 1891}
   m_Layer: 25
   m_Name: deng1_scene32 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1588,7 +1601,7 @@ GameObject:
   - component: {fileID: 1888}
   m_Layer: 25
   m_Name: deng1_scene32 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1606,7 +1619,7 @@ GameObject:
   - component: {fileID: 1889}
   m_Layer: 25
   m_Name: deng1_scene32 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1637,7 @@ GameObject:
   - component: {fileID: 1887}
   m_Layer: 25
   m_Name: deng1_scene32 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1643,7 +1656,7 @@ GameObject:
   - component: {fileID: 2327}
   m_Layer: 25
   m_Name: box1_scene33 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1662,7 +1675,7 @@ GameObject:
   - component: {fileID: 2328}
   m_Layer: 25
   m_Name: box1_scene33 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1681,7 +1694,7 @@ GameObject:
   - component: {fileID: 2341}
   m_Layer: 25
   m_Name: box1_scene33 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1700,7 +1713,7 @@ GameObject:
   - component: {fileID: 2384}
   m_Layer: 25
   m_Name: box1_scene33 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1719,7 +1732,7 @@ GameObject:
   - component: {fileID: 2368}
   m_Layer: 25
   m_Name: box1_scene33 (14)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1738,7 +1751,7 @@ GameObject:
   - component: {fileID: 2330}
   m_Layer: 25
   m_Name: box1_scene33 (8)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,7 +1770,7 @@ GameObject:
   - component: {fileID: 2324}
   m_Layer: 25
   m_Name: box1_scene33 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1776,7 +1789,7 @@ GameObject:
   - component: {fileID: 2382}
   m_Layer: 25
   m_Name: box1_scene33 (15)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1795,7 +1808,7 @@ GameObject:
   - component: {fileID: 2363}
   m_Layer: 25
   m_Name: box1_scene33 (12)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1814,7 +1827,7 @@ GameObject:
   - component: {fileID: 2333}
   m_Layer: 25
   m_Name: box1_scene33 (9)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1833,7 +1846,7 @@ GameObject:
   - component: {fileID: 2350}
   m_Layer: 25
   m_Name: box1_scene33 (18)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,7 +1865,7 @@ GameObject:
   - component: {fileID: 2349}
   m_Layer: 25
   m_Name: box1_scene33 (11)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1871,7 +1884,7 @@ GameObject:
   - component: {fileID: 2359}
   m_Layer: 25
   m_Name: box1_scene33 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1890,7 +1903,7 @@ GameObject:
   - component: {fileID: 2321}
   m_Layer: 25
   m_Name: box1_scene33
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1909,7 +1922,7 @@ GameObject:
   - component: {fileID: 2365}
   m_Layer: 25
   m_Name: box1_scene33 (10)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1928,7 +1941,7 @@ GameObject:
   - component: {fileID: 2334}
   m_Layer: 25
   m_Name: box1_scene33 (16)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1947,7 +1960,7 @@ GameObject:
   - component: {fileID: 2325}
   m_Layer: 25
   m_Name: box1_scene33 (13)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1966,7 +1979,7 @@ GameObject:
   - component: {fileID: 2319}
   m_Layer: 25
   m_Name: box1_scene33 (7)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1985,7 +1998,7 @@ GameObject:
   - component: {fileID: 2357}
   m_Layer: 25
   m_Name: box1_scene33 (17)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2004,7 +2017,7 @@ GameObject:
   - component: {fileID: 2367}
   m_Layer: 25
   m_Name: yuan1_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2023,7 +2036,7 @@ GameObject:
   - component: {fileID: 2360}
   m_Layer: 25
   m_Name: yuan1_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,7 +2055,7 @@ GameObject:
   - component: {fileID: 2256}
   m_Layer: 25
   m_Name: pro3_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2061,7 +2074,7 @@ GameObject:
   - component: {fileID: 2314}
   m_Layer: 25
   m_Name: jianzhu9_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2079,7 +2092,7 @@ GameObject:
   - component: {fileID: 1916}
   m_Layer: 0
   m_Name: tizi1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2098,7 +2111,7 @@ GameObject:
   - component: {fileID: 2265}
   m_Layer: 25
   m_Name: lubian6_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2117,7 +2130,7 @@ GameObject:
   - component: {fileID: 2273}
   m_Layer: 25
   m_Name: lubian6_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2135,7 +2148,7 @@ GameObject:
   - component: {fileID: 1905}
   m_Layer: 25
   m_Name: lubian1_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2153,7 +2166,7 @@ GameObject:
   - component: {fileID: 1904}
   m_Layer: 25
   m_Name: lubian1_scene35 (9)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2171,7 +2184,7 @@ GameObject:
   - component: {fileID: 1903}
   m_Layer: 25
   m_Name: lubian1_scene35 (7)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2189,7 +2202,7 @@ GameObject:
   - component: {fileID: 1900}
   m_Layer: 25
   m_Name: lubian1_scene35 (12)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2207,7 +2220,7 @@ GameObject:
   - component: {fileID: 1899}
   m_Layer: 25
   m_Name: lubian1_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2225,7 +2238,7 @@ GameObject:
   - component: {fileID: 1902}
   m_Layer: 25
   m_Name: lubian1_scene35 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2243,7 +2256,7 @@ GameObject:
   - component: {fileID: 1901}
   m_Layer: 25
   m_Name: lubian1_scene35 (8)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2261,7 +2274,7 @@ GameObject:
   - component: {fileID: 1910}
   m_Layer: 25
   m_Name: lubian1_scene35 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2279,7 +2292,7 @@ GameObject:
   - component: {fileID: 1909}
   m_Layer: 25
   m_Name: lubian1_scene35 (11)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2297,7 +2310,7 @@ GameObject:
   - component: {fileID: 1907}
   m_Layer: 25
   m_Name: lubian1_scene35 (10)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2315,7 +2328,7 @@ GameObject:
   - component: {fileID: 1908}
   m_Layer: 25
   m_Name: lubian1_scene35 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2333,7 +2346,7 @@ GameObject:
   - component: {fileID: 1906}
   m_Layer: 25
   m_Name: lubian1_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2352,7 +2365,7 @@ GameObject:
   - component: {fileID: 2371}
   m_Layer: 25
   m_Name: ganzi1_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2371,7 +2384,7 @@ GameObject:
   - component: {fileID: 2320}
   m_Layer: 25
   m_Name: ganzi1_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2390,7 +2403,7 @@ GameObject:
   - component: {fileID: 2310}
   m_Layer: 25
   m_Name: lubian5_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2409,7 +2422,7 @@ GameObject:
   - component: {fileID: 2263}
   m_Layer: 25
   m_Name: lubian5_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2428,7 +2441,7 @@ GameObject:
   - component: {fileID: 2301}
   m_Layer: 25
   m_Name: deng1_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2446,7 +2459,7 @@ GameObject:
   - component: {fileID: 1930}
   m_Layer: 25
   m_Name: tree1_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2464,7 +2477,7 @@ GameObject:
   - component: {fileID: 1933}
   m_Layer: 25
   m_Name: tree1_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2482,7 +2495,7 @@ GameObject:
   - component: {fileID: 1932}
   m_Layer: 25
   m_Name: tree1_scene35 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2500,7 +2513,7 @@ GameObject:
   - component: {fileID: 1931}
   m_Layer: 25
   m_Name: tree1_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2519,7 +2532,7 @@ GameObject:
   - component: {fileID: 2309}
   m_Layer: 25
   m_Name: tong2_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2538,7 +2551,7 @@ GameObject:
   - component: {fileID: 2272}
   m_Layer: 25
   m_Name: tong2_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2557,7 +2570,7 @@ GameObject:
   - component: {fileID: 2307}
   m_Layer: 25
   m_Name: tong2_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2576,7 +2589,7 @@ GameObject:
   - component: {fileID: 2282}
   m_Layer: 25
   m_Name: tong2_scene35 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2595,7 +2608,7 @@ GameObject:
   - component: {fileID: 2290}
   m_Layer: 25
   m_Name: lubian2_scene35 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2614,7 +2627,7 @@ GameObject:
   - component: {fileID: 2255}
   m_Layer: 25
   m_Name: lubian2_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2633,7 +2646,7 @@ GameObject:
   - component: {fileID: 2288}
   m_Layer: 25
   m_Name: lubian2_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2652,7 +2665,7 @@ GameObject:
   - component: {fileID: 2278}
   m_Layer: 25
   m_Name: lubian2_scene35 (8)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2671,7 +2684,7 @@ GameObject:
   - component: {fileID: 2296}
   m_Layer: 25
   m_Name: lubian2_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2690,7 +2703,7 @@ GameObject:
   - component: {fileID: 2284}
   m_Layer: 25
   m_Name: lubian2_scene35 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2709,7 +2722,7 @@ GameObject:
   - component: {fileID: 2261}
   m_Layer: 25
   m_Name: lubian2_scene35 (7)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2728,7 +2741,7 @@ GameObject:
   - component: {fileID: 2289}
   m_Layer: 25
   m_Name: lubian2_scene35 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2747,7 +2760,7 @@ GameObject:
   - component: {fileID: 2358}
   m_Layer: 25
   m_Name: yuan2_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2766,7 +2779,7 @@ GameObject:
   - component: {fileID: 2303}
   m_Layer: 25
   m_Name: jianzhu10_scene35 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2785,7 +2798,7 @@ GameObject:
   - component: {fileID: 2275}
   m_Layer: 25
   m_Name: jianzhu10_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2804,7 +2817,7 @@ GameObject:
   - component: {fileID: 2313}
   m_Layer: 25
   m_Name: jianzhu10_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2823,7 +2836,7 @@ GameObject:
   - component: {fileID: 2298}
   m_Layer: 25
   m_Name: jianzhu10_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2842,7 +2855,7 @@ GameObject:
   - component: {fileID: 2260}
   m_Layer: 25
   m_Name: lubian3_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2861,7 +2874,7 @@ GameObject:
   - component: {fileID: 2347}
   m_Layer: 25
   m_Name: box3_scene33 (37)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2880,7 +2893,7 @@ GameObject:
   - component: {fileID: 2336}
   m_Layer: 25
   m_Name: box3_scene33 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2899,7 +2912,7 @@ GameObject:
   - component: {fileID: 2355}
   m_Layer: 25
   m_Name: box3_scene33 (26)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2918,7 +2931,7 @@ GameObject:
   - component: {fileID: 2322}
   m_Layer: 25
   m_Name: box3_scene33 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2937,7 +2950,7 @@ GameObject:
   - component: {fileID: 2351}
   m_Layer: 25
   m_Name: box3_scene33 (23)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2956,7 +2969,7 @@ GameObject:
   - component: {fileID: 2346}
   m_Layer: 25
   m_Name: box3_scene33 (13)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2975,7 +2988,7 @@ GameObject:
   - component: {fileID: 2348}
   m_Layer: 25
   m_Name: box3_scene33 (21)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2994,7 +3007,7 @@ GameObject:
   - component: {fileID: 2383}
   m_Layer: 25
   m_Name: box3_scene33 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3013,7 +3026,7 @@ GameObject:
   - component: {fileID: 2352}
   m_Layer: 25
   m_Name: box3_scene33 (12)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3032,7 +3045,7 @@ GameObject:
   - component: {fileID: 2323}
   m_Layer: 25
   m_Name: box3_scene33 (34)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3051,7 +3064,7 @@ GameObject:
   - component: {fileID: 2339}
   m_Layer: 25
   m_Name: box3_scene33 (7)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3070,7 +3083,7 @@ GameObject:
   - component: {fileID: 2354}
   m_Layer: 25
   m_Name: box3_scene33 (31)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3089,7 +3102,7 @@ GameObject:
   - component: {fileID: 2340}
   m_Layer: 25
   m_Name: box3_scene33 (32)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3108,7 +3121,7 @@ GameObject:
   - component: {fileID: 2356}
   m_Layer: 25
   m_Name: box3_scene33 (20)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3127,7 +3140,7 @@ GameObject:
   - component: {fileID: 2331}
   m_Layer: 25
   m_Name: box3_scene33 (33)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3146,7 +3159,7 @@ GameObject:
   - component: {fileID: 2374}
   m_Layer: 25
   m_Name: box3_scene33 (36)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3165,7 +3178,7 @@ GameObject:
   - component: {fileID: 2370}
   m_Layer: 25
   m_Name: box3_scene33 (8)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3184,7 +3197,7 @@ GameObject:
   - component: {fileID: 2366}
   m_Layer: 25
   m_Name: box3_scene33 (28)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3203,7 +3216,7 @@ GameObject:
   - component: {fileID: 2372}
   m_Layer: 25
   m_Name: box3_scene33 (27)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3222,7 +3235,7 @@ GameObject:
   - component: {fileID: 2375}
   m_Layer: 25
   m_Name: box3_scene33
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3241,7 +3254,7 @@ GameObject:
   - component: {fileID: 2362}
   m_Layer: 25
   m_Name: box3_scene33 (18)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3260,7 +3273,7 @@ GameObject:
   - component: {fileID: 2364}
   m_Layer: 25
   m_Name: box3_scene33 (16)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3279,7 +3292,7 @@ GameObject:
   - component: {fileID: 2376}
   m_Layer: 25
   m_Name: box3_scene33 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3298,7 +3311,7 @@ GameObject:
   - component: {fileID: 2381}
   m_Layer: 25
   m_Name: box3_scene33 (22)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3317,7 +3330,7 @@ GameObject:
   - component: {fileID: 2361}
   m_Layer: 25
   m_Name: box3_scene33 (29)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3336,7 +3349,7 @@ GameObject:
   - component: {fileID: 2332}
   m_Layer: 25
   m_Name: box3_scene33 (15)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3355,7 +3368,7 @@ GameObject:
   - component: {fileID: 2345}
   m_Layer: 25
   m_Name: box3_scene33 (30)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3374,7 +3387,7 @@ GameObject:
   - component: {fileID: 2329}
   m_Layer: 25
   m_Name: box3_scene33 (25)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3393,7 +3406,7 @@ GameObject:
   - component: {fileID: 2373}
   m_Layer: 25
   m_Name: box3_scene33 (10)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3412,7 +3425,7 @@ GameObject:
   - component: {fileID: 2344}
   m_Layer: 25
   m_Name: box3_scene33 (19)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3431,7 +3444,7 @@ GameObject:
   - component: {fileID: 2338}
   m_Layer: 25
   m_Name: box3_scene33 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3450,7 +3463,7 @@ GameObject:
   - component: {fileID: 2369}
   m_Layer: 25
   m_Name: box3_scene33 (14)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3469,7 +3482,7 @@ GameObject:
   - component: {fileID: 2343}
   m_Layer: 25
   m_Name: box3_scene33 (9)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3488,7 +3501,7 @@ GameObject:
   - component: {fileID: 2335}
   m_Layer: 25
   m_Name: box3_scene33 (17)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3507,7 +3520,7 @@ GameObject:
   - component: {fileID: 2380}
   m_Layer: 25
   m_Name: box3_scene33 (24)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3526,7 +3539,7 @@ GameObject:
   - component: {fileID: 2378}
   m_Layer: 25
   m_Name: box3_scene33 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3545,7 +3558,7 @@ GameObject:
   - component: {fileID: 2326}
   m_Layer: 25
   m_Name: box3_scene33 (11)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3563,7 +3576,7 @@ GameObject:
   - component: {fileID: 1987}
   m_Layer: 0
   m_Name: guangyun_scene42 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3581,7 +3594,7 @@ GameObject:
   - component: {fileID: 1988}
   m_Layer: 0
   m_Name: guangyun_scene42 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3599,7 +3612,7 @@ GameObject:
   - component: {fileID: 1989}
   m_Layer: 0
   m_Name: guangyun_scene42 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3617,7 +3630,7 @@ GameObject:
   - component: {fileID: 1990}
   m_Layer: 0
   m_Name: guangyun_scene42 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3635,7 +3648,7 @@ GameObject:
   - component: {fileID: 1991}
   m_Layer: 0
   m_Name: guangyun_scene42 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3653,7 +3666,7 @@ GameObject:
   - component: {fileID: 1992}
   m_Layer: 0
   m_Name: guangyun_scene42 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3671,7 +3684,7 @@ GameObject:
   - component: {fileID: 1993}
   m_Layer: 0
   m_Name: guangyun_scene42
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3690,7 +3703,7 @@ GameObject:
   - component: {fileID: 2302}
   m_Layer: 25
   m_Name: jianzhu7_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3709,7 +3722,7 @@ GameObject:
   - component: {fileID: 2305}
   m_Layer: 25
   m_Name: deng1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3728,7 +3741,7 @@ GameObject:
   - component: {fileID: 2262}
   m_Layer: 25
   m_Name: tong1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3747,7 +3760,7 @@ GameObject:
   - component: {fileID: 2264}
   m_Layer: 25
   m_Name: Terrain1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3766,7 +3779,7 @@ GameObject:
   - component: {fileID: 2316}
   m_Layer: 25
   m_Name: car2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3785,7 +3798,7 @@ GameObject:
   - component: {fileID: 2279}
   m_Layer: 25
   m_Name: qiang3_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3803,7 +3816,7 @@ GameObject:
   - component: {fileID: 1950}
   m_Layer: 25
   m_Name: tree1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3822,7 +3835,7 @@ GameObject:
   - component: {fileID: 2317}
   m_Layer: 25
   m_Name: jianzhu8_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3841,7 +3854,7 @@ GameObject:
   - component: {fileID: 2286}
   m_Layer: 25
   m_Name: lubian5_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3860,7 +3873,7 @@ GameObject:
   - component: {fileID: 2318}
   m_Layer: 25
   m_Name: jianzhu1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3879,7 +3892,7 @@ GameObject:
   - component: {fileID: 2259}
   m_Layer: 25
   m_Name: car1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3898,7 +3911,7 @@ GameObject:
   - component: {fileID: 2300}
   m_Layer: 25
   m_Name: jianzhu6_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3917,7 +3930,7 @@ GameObject:
   - component: {fileID: 2258}
   m_Layer: 25
   m_Name: Terrain3_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3936,7 +3949,7 @@ GameObject:
   - component: {fileID: 2295}
   m_Layer: 25
   m_Name: qiang1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3955,7 +3968,7 @@ GameObject:
   - component: {fileID: 2311}
   m_Layer: 25
   m_Name: pro2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3974,7 +3987,7 @@ GameObject:
   - component: {fileID: 2281}
   m_Layer: 25
   m_Name: lubian4_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3993,7 +4006,7 @@ GameObject:
   - component: {fileID: 2293}
   m_Layer: 25
   m_Name: jianzhu2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4012,7 +4025,7 @@ GameObject:
   - component: {fileID: 2291}
   m_Layer: 25
   m_Name: pro1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4031,7 +4044,7 @@ GameObject:
   - component: {fileID: 2270}
   m_Layer: 25
   m_Name: jianzhu3_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4050,7 +4063,7 @@ GameObject:
   - component: {fileID: 2299}
   m_Layer: 25
   m_Name: qiang2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4069,7 +4082,7 @@ GameObject:
   - component: {fileID: 2285}
   m_Layer: 25
   m_Name: jianzhu11_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4088,7 +4101,7 @@ GameObject:
   - component: {fileID: 2276}
   m_Layer: 25
   m_Name: pro3_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4106,7 +4119,7 @@ GameObject:
   - component: {fileID: 1978}
   m_Layer: 25
   m_Name: lubian1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4125,7 +4138,7 @@ GameObject:
   - component: {fileID: 2297}
   m_Layer: 25
   m_Name: car3_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4144,7 +4157,7 @@ GameObject:
   - component: {fileID: 2306}
   m_Layer: 25
   m_Name: jianzhu9_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4163,7 +4176,7 @@ GameObject:
   - component: {fileID: 2271}
   m_Layer: 25
   m_Name: lubian6_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4182,7 +4195,7 @@ GameObject:
   - component: {fileID: 2267}
   m_Layer: 25
   m_Name: jianzhu10_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4201,7 +4214,7 @@ GameObject:
   - component: {fileID: 2277}
   m_Layer: 25
   m_Name: lubian3_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4220,7 +4233,7 @@ GameObject:
   - component: {fileID: 2379}
   m_Layer: 25
   m_Name: yuan1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4239,7 +4252,7 @@ GameObject:
   - component: {fileID: 2292}
   m_Layer: 25
   m_Name: Terrain2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4258,7 +4271,7 @@ GameObject:
   - component: {fileID: 2287}
   m_Layer: 25
   m_Name: jianzhu5_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4277,7 +4290,7 @@ GameObject:
   - component: {fileID: 2268}
   m_Layer: 25
   m_Name: jianzhu4_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4296,7 +4309,7 @@ GameObject:
   - component: {fileID: 2353}
   m_Layer: 25
   m_Name: yuan2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4315,7 +4328,7 @@ GameObject:
   - component: {fileID: 2312}
   m_Layer: 25
   m_Name: tong2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4334,7 +4347,7 @@ GameObject:
   - component: {fileID: 2274}
   m_Layer: 25
   m_Name: pro5_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4353,7 +4366,7 @@ GameObject:
   - component: {fileID: 2337}
   m_Layer: 25
   m_Name: ganzi1_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4372,7 +4385,7 @@ GameObject:
   - component: {fileID: 2342}
   m_Layer: 25
   m_Name: pro4_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4391,7 +4404,7 @@ GameObject:
   - component: {fileID: 2269}
   m_Layer: 25
   m_Name: lubian2_scene35
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4410,7 +4423,7 @@ GameObject:
   - component: {fileID: 2315}
   m_Layer: 25
   m_Name: tong1_scene35 (3)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4429,7 +4442,7 @@ GameObject:
   - component: {fileID: 2257}
   m_Layer: 25
   m_Name: tong1_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4448,7 +4461,7 @@ GameObject:
   - component: {fileID: 2304}
   m_Layer: 25
   m_Name: tong1_scene35 (6)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4467,7 +4480,7 @@ GameObject:
   - component: {fileID: 2294}
   m_Layer: 25
   m_Name: tong1_scene35 (4)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4486,7 +4499,7 @@ GameObject:
   - component: {fileID: 2280}
   m_Layer: 25
   m_Name: tong1_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4505,7 +4518,7 @@ GameObject:
   - component: {fileID: 2308}
   m_Layer: 25
   m_Name: tong1_scene35 (5)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4524,7 +4537,7 @@ GameObject:
   - component: {fileID: 2266}
   m_Layer: 25
   m_Name: lubian4_scene35 (1)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4543,7 +4556,7 @@ GameObject:
   - component: {fileID: 2283}
   m_Layer: 25
   m_Name: lubian4_scene35 (2)
-  m_TagString: Untagged
+  m_TagString: Obj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5037,7 +5050,6 @@ Transform:
   - {fileID: 1440}
   - {fileID: 1380}
   - {fileID: 1322}
-  - {fileID: 1341936764258353442}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
@@ -42869,6 +42881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8479716213400097202}
+  - {fileID: 1341936764258353442}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44020,7 +44033,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1368}
+    m_TransformParent: {fileID: 42892932}
     m_Modifications:
     - target: {fileID: 1341936765855112969, guid: 6be0e8639de52ec479da6ab8960dd4cc,
         type: 3}
@@ -44030,7 +44043,7 @@ PrefabInstance:
     - target: {fileID: 1341936765855112971, guid: 6be0e8639de52ec479da6ab8960dd4cc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1341936765855112971, guid: 6be0e8639de52ec479da6ab8960dd4cc,
         type: 3}
@@ -44181,6 +44194,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5506635233221610478, guid: 2293b6ba573dc54479bae8c656300950,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
+      objectReference: {fileID: 0}
     - target: {fileID: 5506635233221611226, guid: 2293b6ba573dc54479bae8c656300950,
         type: 3}
       propertyPath: m_RootOrder
@@ -44265,6 +44283,12 @@ PrefabInstance:
       propertyPath: RangeMoveMinZ
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
+        type: 3}
+      propertyPath: inforLevelData
+      value: 
+      objectReference: {fileID: 11400000, guid: c8599c1d9f3a6f54cb84ea3995446489,
+        type: 2}
     - target: {fileID: 2601786221109611698, guid: 55bd6aa7362c06849af8f124a75f7d79,
         type: 3}
       propertyPath: ListEnemys.Array.size
@@ -44428,6 +44452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: sky_scene35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849100548111899635, guid: 8eacec0c62739a44cbde3e29e8b6b268,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obj
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eacec0c62739a44cbde3e29e8b6b268, type: 3}
@@ -44594,16 +44623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7802044616763455971, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826071278338, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9067642826130654212, guid: f998061f7e3fecb459f17954ff79e846,
         type: 3}
       propertyPath: m_Pivot.x
@@ -44709,11 +44728,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 9067642826130655105, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 9067642826130655357, guid: f998061f7e3fecb459f17954ff79e846,
         type: 3}
       propertyPath: m_Name
@@ -44724,85 +44738,10 @@ PrefabInstance:
       propertyPath: cameraObj
       value: 
       objectReference: {fileID: 76874100}
-    - target: {fileID: 9067642826434528194, guid: f998061f7e3fecb459f17954ff79e846,
+    - target: {fileID: 9067642827005935367, guid: f998061f7e3fecb459f17954ff79e846,
         type: 3}
-      propertyPath: CurrentAmountEnemy
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826434528196, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826613109148, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_Alpha
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108946, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 8400000, guid: 00e2da50a47be624a9e156fdd4f31a5d, type: 2}
-    - target: {fileID: 9067642826687108947, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108947, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108947, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108947, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108947, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -130
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108947, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -130
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826687108948, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826717905792, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826717905854, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.042452812
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826717905854, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642826717905854, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.94906396
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067642827005935371, guid: f998061f7e3fecb459f17954ff79e846,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f998061f7e3fecb459f17954ff79e846, type: 3}

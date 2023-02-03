@@ -1017,7 +1017,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258284437968272}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.08417461
   m_Height: 0.42087305
   m_Direction: 0
@@ -1188,7 +1188,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258284534829761}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.114946164
   m_Height: 0.38315386
   m_Direction: 0
@@ -1436,7 +1436,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258284779884619}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.122826
   m_Height: 0.491304
   m_Direction: 0
@@ -1639,7 +1639,7 @@ SphereCollider:
   m_GameObject: {fileID: 6955258284963869549}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.118918285
   m_Center: {x: -0.05, y: 0, z: 0}
@@ -1859,7 +1859,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258285073697825}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.057398546
   m_Height: 0.22959419
   m_Direction: 0
@@ -2086,6 +2086,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 2048
+  walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 30
   timeBetweenAttacks: 1
   sightRange: 20
@@ -2320,7 +2321,7 @@ BoxCollider:
   m_GameObject: {fileID: 6955258285261915099}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.10999997, y: 0.25816023, z: 0.39639434}
   m_Center: {x: 0.05500003, y: -0.04393883, z: -0.00000022351742}
@@ -2537,7 +2538,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258285372227357}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.084174655
   m_Height: 0.42087328
   m_Direction: 0
@@ -2877,7 +2878,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258285640604332}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.12282599
   m_Height: 0.49130395
   m_Direction: 0
@@ -7759,7 +7760,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258285722695783}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.057398528
   m_Height: 0.22959411
   m_Direction: 0
@@ -7885,7 +7886,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6955258285736644248}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.114946164
   m_Height: 0.38315386
   m_Direction: 0

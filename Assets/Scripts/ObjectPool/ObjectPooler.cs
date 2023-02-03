@@ -58,7 +58,7 @@ public class ObjectPooler : Singleton<ObjectPooler>
     }
     public void AddElement(string tag, GameObject objectToSpawn)
     {
-
+        objectToSpawn.SetActive(false);
         if (!poolDictionary.ContainsKey(tag))
         {
             Debug.LogWarning("Pool with tag" + tag + "doesn't excist");

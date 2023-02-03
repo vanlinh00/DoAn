@@ -20,7 +20,7 @@ public class SelectLevelBtn : MonoBehaviour
     {
         mapSelectBtn.onClick.AddListener(LoadMap);
     }
-    public void Init(bool IsPassed,int CountStar, int IdLevel)
+    public void Init(bool IsPassed, int CountStar, int IdLevel)
     {
         idLevel = IdLevel;
         if (IsPassed)
@@ -37,9 +37,10 @@ public class SelectLevelBtn : MonoBehaviour
         }
         levelTxt.text = IdLevel.ToString();
         performanceLevel.CompleteStar(CountStar);
-    }    
+    }
     public void LoadMap()
     {
-        SceneManager.LoadScene(idLevel);
+        // SceneManager.LoadScene(idLevel);
+        UiMap._instance.inforLevelUI.Init(idLevel);
     }
 }
