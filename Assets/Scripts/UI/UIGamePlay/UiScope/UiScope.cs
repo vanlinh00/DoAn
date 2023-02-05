@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UiScope : Singleton<UiScope>
 {
-    public GameObject Scope;
+    public GameObject NormalScope;
     public GameObject ScopeAWM;
     protected override void Awake()
     {
@@ -13,13 +13,13 @@ public class UiScope : Singleton<UiScope>
     }
     public void SetNormalScope()
     {
-        Scope.SetActive(true);
+        NormalScope.SetActive(true);
         ScopeAWM.SetActive(false);
         MainCamera._instance.SetNormalMainCamera();
     }
     public void SetScopeAWM()
     {
-        Scope.SetActive(false);
+        NormalScope.SetActive(false);
         ScopeAWM.SetActive(true);
         MainCamera._instance.SetMainCameraAWM();
     }

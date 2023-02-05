@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
     public Transform posDesMap;
 
-    public bool isOnTrain;
     public float HpPlayer;
     public float MaxHpPlayer;
     public enum StatePlayer
@@ -38,10 +37,11 @@ public class PlayerController : MonoBehaviour
     {
 
         instance = this;
-        statePlayer = StatePlayer.Living;
+
         //Die();
         DisableCursor();
     }
+    
     public void DisableCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -96,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        statePlayer = StatePlayer.Living;
         EventManager.HitPlayer += Damage;
     }
     public void OnDisable()
@@ -120,6 +121,4 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
-
 }

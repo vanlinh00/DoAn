@@ -14,9 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public float airMultiplier;
     bool readyToJump;
 
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
-
     [Header("Keybinds")] public KeyCode jumpKey = KeyCode.Space;
 
     [Header("Ground Check")] public float playerHeight;
@@ -32,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    [HideInInspector] public TextMeshProUGUI text_speed;
 
     /// <summary>
     /// 

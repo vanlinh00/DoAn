@@ -22,7 +22,7 @@ public class UiController : Singleton<UiController>
     }
     private void Update()
     {
-        if (Input.GetKeyDown("z")&&PlayerController.instance.gunPlayer.idGun!=2&&PlayerController.instance.statePlayer!=PlayerController.StatePlayer.Die)
+        if (Input.GetKeyDown("z")&&UiScope._instance.NormalScope.activeSelf&&PlayerController.instance.statePlayer!=PlayerController.StatePlayer.Die)
         {
             if (_uiStore.activeSelf)
             {

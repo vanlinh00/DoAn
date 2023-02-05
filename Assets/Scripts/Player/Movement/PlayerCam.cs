@@ -16,16 +16,14 @@ public class PlayerCam : MonoBehaviour
 
     public float yRotation;
 
-    public bool isHandle;
-
-    private void Start()
+      private void Start()
     {
         // #if UNITY_STANDALONE || UNITY_EDITOR
         //         // get mouse input
         //         Cursor.lockState = CursorLockMode.Locked;
         //         Cursor.visible = false;
         // #endif
-        isHandle = false;
+
         SetCam();
     }
 

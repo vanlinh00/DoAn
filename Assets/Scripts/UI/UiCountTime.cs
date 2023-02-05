@@ -25,6 +25,7 @@ public class UiCountTime : Singleton<UiCountTime>
             if (totalTime <= 0)
             {
                 GameManager._instance.gamePlay.WinGame();
+                return;
             }
         }
     }

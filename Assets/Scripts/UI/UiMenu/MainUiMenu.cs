@@ -13,8 +13,11 @@ public class MainUiMenu : Singleton<MainUiMenu>
     [SerializeField] Button _chooseMapBtn;
     public Text countCoin;
     public Text CountDiamond;
+
     protected override void Awake()
     {
+  
+        PlayerPrefs.DeleteAll();
         base.Awake();
         _btMiddleLeft.onClick.AddListener(NextAnimationl);
         _btMiddleRight.onClick.AddListener(NextAnimationr);

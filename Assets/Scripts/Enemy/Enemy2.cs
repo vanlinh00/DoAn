@@ -13,11 +13,13 @@ public class Enemy2 : EnemyController
     public Transform PosTeam1;
     public bool IsNotice;
     public bool IsColliderNotice;
+    private bool IsHit;
     protected override void Awake()
     {
         base.Awake();
         IsColliderNotice = false;
         IsNotice = false;
+        IsHit = false;
     }
     protected override void Update()
     {
@@ -25,7 +27,7 @@ public class Enemy2 : EnemyController
         if (!isDead)
         {
             playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-            if (playerInSightRange && !IsNotice)
+            if ((playerInSightRange|| IsHit) && !IsNotice)
             {
                 IsNotice = true;
                 NotifyTeammates();
@@ -48,7 +50,13 @@ public class Enemy2 : EnemyController
             }
         }
     }
-    public void NotifyTeammates()
+    public override void Damage(float HealthEnemy)
+    {
+        base.Damage(HealthEnemy);
+        IsHit = true;
+
+    }
+        public void NotifyTeammates()
     {
         Destroy(gameObject.GetComponent<DOTweenPath>());
         agent.destination = PosTeam1.position;

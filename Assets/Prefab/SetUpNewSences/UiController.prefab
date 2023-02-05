@@ -4578,7 +4578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6f8e2bf3f9c15418f352775b05b202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scope: {fileID: 9067642827467089836}
+  NormalScope: {fileID: 9067642827467089836}
   ScopeAWM: {fileID: 9067642826613109148}
 --- !u!1 &9067642827631247454
 GameObject:

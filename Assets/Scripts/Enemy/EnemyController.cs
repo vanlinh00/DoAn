@@ -158,7 +158,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     }
 
 
-    public void Damage(float HealthEnemy)
+    public virtual void Damage(float HealthEnemy)
     {
         DodgeBullet();
         health = health - HealthEnemy;
