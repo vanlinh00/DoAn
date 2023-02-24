@@ -2,28 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class LuckyBoxPanel : Singleton<LuckyBoxPanel>
+using DG.Tweening;
+public class LuckyBoxPanel : BasePopup
 {
-    [SerializeField] Button _buttonClose;
+    public static LuckyBoxPanel _instance;
     public GameObject[] arrayKeys;
     public List<LuckyBox> listBoxBtn;
     public GameObject Content;
 
-    protected override void Awake()
+    public override void Awake()
     {
+        _instance = this;
         LoadAllBoxBtn();
         base.Awake();
-        _buttonClose.onClick.AddListener(CloseLuckyBoxPanel);
+
         DisplayKeys();
     }
     private void OnEnable()
     {
         RenewAllBoxBtn();
     }
-    public void CloseLuckyBoxPanel()
+    public override void Show()
     {
-        CavasControllerUiMenu._instance.DeActiveLuckyPanel();
+        base.Show();
+    }
+    public override void Hide()
+    {
+        base.Hide();
     }
     public void DisplayKeys()
     {

@@ -20,4 +20,13 @@ public class UserDataPref
     {
         PlayerPrefs.SetInt("gun_level" + IdGun, Level);
     }
+
+    public static int GetAmountAuxiliaryItems(int IdAuxiItem)
+    {
+        return PlayerPrefs.GetInt("auxiliary_items_count"+ IdAuxiItem, 1);
+    }
+    public static void SetAmountAuxiliaryItems(int IdAuxiItem,int CountItem)
+    {
+        PlayerPrefs.SetInt("auxiliary_items_count"+ IdAuxiItem, CountItem);
+    }
 }

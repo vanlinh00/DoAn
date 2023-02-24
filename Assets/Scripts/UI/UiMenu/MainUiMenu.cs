@@ -11,20 +11,20 @@ public class MainUiMenu : Singleton<MainUiMenu>
     [SerializeField] Button _btnLuckyBox;
 
     [SerializeField] Button _chooseMapBtn;
+    public Button _dailyBtn;
     public Text countCoin;
     public Text CountDiamond;
-
+    [SerializeField] Button myBagBtn;
     protected override void Awake()
     {
-  
-        PlayerPrefs.DeleteAll();
         base.Awake();
         _btMiddleLeft.onClick.AddListener(NextAnimationl);
         _btMiddleRight.onClick.AddListener(NextAnimationr);
         _btShop.onClick.AddListener(OpenShop);
         _btnLuckyBox.onClick.AddListener(OpenLuckyBox);
         _chooseMapBtn.onClick.AddListener(CavasControllerUiMenu._instance.OpenMapUi);
-
+        _dailyBtn.onClick.AddListener(OpenDaily);
+        myBagBtn.onClick.AddListener(UiBag.instance.Show);
         UpdateCoinsAndDiamonds();
     }
     public void UpdateCoinsAndDiamonds()
@@ -34,7 +34,12 @@ public class MainUiMenu : Singleton<MainUiMenu>
     }
     public void OpenLuckyBox()
     {
-        CavasControllerUiMenu._instance.SetActiveLuckyPanel();
+        //CavasControllerUiMenu._instance.SetActiveLuckyPanel();
+        LuckyBoxPanel._instance.Show();
+    }
+    public void OpenDaily()
+    {
+        DailyCheckInController.Instance.CheckClaimReward(true);
     }
     void OpenShop()
     {

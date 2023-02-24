@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,6 +37,13 @@ public class ShopButtonElement : MonoBehaviour
         _textnameWeapon.text = NameWeapon;
         idWeapon = IdGun;
     }
+    public void IsButtonAuxiliaryItems(int idImage, string NameWeapon, int IdItem)
+    {
+        _weaponImage.sprite = Resources.Load<Sprite>("Image/Shop/Guns/" + idImage);
+        _textnameWeapon.text = NameWeapon;
+        idWeapon = IdItem;
+    }
+
     public void SelectWeapon()
     {
         InforWeaponManager._instance.shopButtonElement = gameObject.GetComponent<ShopButtonElement>();

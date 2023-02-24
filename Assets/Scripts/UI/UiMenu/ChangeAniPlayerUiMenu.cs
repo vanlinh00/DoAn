@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ChangeAniPlayerUiMenu :BaseCharacterController
+public class ChangeAniPlayerUiMenu : BaseCharacterController
 {
     public static ChangeAniPlayerUiMenu instance;
     public int checkNextAnim = 0;
@@ -21,7 +21,7 @@ public class ChangeAniPlayerUiMenu :BaseCharacterController
             {
                 checkNextAnim--;
             }
-           base.AnimatorPlayer(mapState(checkNextAnim));
+            base.AnimatorPlayer(mapState(checkNextAnim));
         }
         else
         {
@@ -30,7 +30,7 @@ public class ChangeAniPlayerUiMenu :BaseCharacterController
             {
                 checkNextAnim = 0;
             }
-        base.AnimatorPlayer(mapState(checkNextAnim));
+            base.AnimatorPlayer(mapState(checkNextAnim));
         }
     }
     protected CharacterState mapState(int numb)

@@ -9,6 +9,7 @@ public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
     public UpgrapdeWeapon upgrapdeWeapon;
     public Button upGrapdeBtn;
     public List<GunData> gunDatas;
+    public List<GunData> auxiliaryItemsDatas;
     public List<ShopButtonElement> listShopButtonElement;
 
     protected override void Awake()
@@ -27,11 +28,10 @@ public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
     }
 
     // chosse = 1 create list guns
-    // chosse = 2 create list knives
+    // chosse = 2 create auxiliaryItems
     // chosse = 3 create list pans
     public void OpenStoreWeapon(int idTypeWeaPon)
     {
-
         for (int i = 0; i < listShopButtonElement.Count; i++)
         {
            CreateListGuns(i, idTypeWeaPon, listShopButtonElement[i]);
@@ -61,6 +61,7 @@ public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
 
                 break;
             case 2:
+                shopButtonE.IsButtonAuxiliaryItems(i + 1, auxiliaryItemsDatas[i].name, auxiliaryItemsDatas[i].id);
                 break;
             case 3:
 

@@ -9,9 +9,14 @@ public class UiNotice : Singleton<UiNotice>
     public Image backGroundImg;
     public Text noticeTxt;
     public CanvasGroup canvasGr;
+    protected override void Awake()
+    {
+        base.Awake();
+        backGroundImg.gameObject.SetActive(false);
+    }
     public void Init(bool IsSucces,string NoticeTxt)
     {
-        gameObject.SetActive(true);
+        backGroundImg.gameObject.SetActive(true);
         if (IsSucces)
         {
             backGroundImg.color = blue;
@@ -22,7 +27,7 @@ public class UiNotice : Singleton<UiNotice>
         }
         noticeTxt.text = NoticeTxt;
         backGroundImg.transform.localPosition = Vector3.zero;
-        backGroundImg.GetComponent<RectTransform>().DOLocalMoveY(59.28f, 1f).OnComplete(() => gameObject.SetActive(false));
+        backGroundImg.GetComponent<RectTransform>().DOLocalMoveY(59.28f, 1f).OnComplete(() => backGroundImg.gameObject.SetActive(false));
         //var t = 1;
         //canvasGr.alpha = t;
         //DOTween.To(() => canvasGr.alpha, value => canvasGr.alpha = value, 0, 0.5f);

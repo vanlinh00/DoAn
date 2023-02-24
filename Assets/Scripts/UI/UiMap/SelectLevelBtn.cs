@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class SelectLevelBtn : MonoBehaviour
 {
-    public Image bgImg;
+    //public Image bgImg;
 
     public Text levelTxt;
-    public Color green;
+    public Color blue;
     public Color white;
 
     public Image LineNextLevel;
@@ -26,18 +26,19 @@ public class SelectLevelBtn : MonoBehaviour
         if (IsPassed)
         {
             levelTxt.color = white;
-            bgImg.gameObject.SetActive(true);
-            LineNextLevel.gameObject.SetActive(true);
+            //  bgImg.gameObject.SetActive(true);
+            LineNextLevel.color = white;
         }
         else
         {
-            LineNextLevel.gameObject.SetActive(false);
-            levelTxt.color = green;
-            bgImg.gameObject.SetActive(false);
+            LineNextLevel.color = blue;
+            levelTxt.color = blue;
+            //  bgImg.gameObject.SetActive(false);
         }
         levelTxt.text = IdLevel.ToString();
         performanceLevel.CompleteStar(CountStar);
     }
+
     public void LoadMap()
     {
         // SceneManager.LoadScene(idLevel);
