@@ -19,7 +19,7 @@ public class ElementBag : MonoBehaviour
     {
         buyMoreItemBtn.onClick.AddListener(BuyMoreItem);
     }
-    public void Start()
+    private void OnEnable()
     {
         UpdateCountElement();
     }
@@ -35,13 +35,13 @@ public class ElementBag : MonoBehaviour
                 CountItem++;
             }
             UserDataPref.SetAmountAuxiliaryItems((int)typeElementBag, CountItem);
+            MainUiMenu._instance.UpdateCoinsAndDiamonds();
             UpdateCountElement();
         }
         else
         {
             UiNotice._instance.Init(false, "Not enough money");
         }
-
     }
     public void UpdateCountElement()
     {

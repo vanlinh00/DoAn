@@ -42,19 +42,21 @@ public class Gun : Weapon
                 }
                 else
                 {
-                    StartCoroutine(IEReload());
+                    ReloadWeapon((int)TypeElementBag.Bullet);
                 }
             }
 
             if (Input.GetKeyDown("q"))
             {
-                StartCoroutine(IEReload());
+                ReloadWeapon((int)TypeElementBag.Bullet);
             }
         }
     }
 
     public void Shoot()
     {
+        if (_countBullet == 0)
+            return;
         StartCoroutine(WaitTimeBullet());
     }
     IEnumerator WaitTimeBullet()

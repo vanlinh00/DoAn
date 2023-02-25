@@ -20,6 +20,7 @@ public class CavasControllerUiMenu : Singleton<CavasControllerUiMenu>
     }
     void Start()
     {
+        UserDataPref.SetAmountAuxiliaryItems((int)TypeElementBag.Bullet, 300);
         //   DataPlayer a = new DataPlayer();
         MusicController.instance.OnPlayAudio(SoundType.mainmenu);
     }

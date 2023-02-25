@@ -8,16 +8,16 @@ public class Weapon : MonoBehaviour
     public Transform _gunHead;
     public Vector3 _shootPoint;
 
-   // public string _name;
+    // public string _name;
     protected int _countBullet;
     private int _amountbullets;
     public int idGun;
 
-    protected  bool isReloading;
+    protected bool isReloading;
     protected float timeReload;
 
     public GunData gunData;
-    
+
     protected virtual void Start()
     {
         isReloading = true;
@@ -36,11 +36,27 @@ public class Weapon : MonoBehaviour
     {
         _animator.SetTrigger("Ready");
     }
-    public IEnumerator IEReload()
+
+    protected void ReloadWeapon(int IdItem)
+    {
+        StartCoroutine(IEReload(IdItem));
+    }
+    public IEnumerator IEReload(int IdItem)
     {
         isReloading = false;
         _animator.SetTrigger("Reload");
-        _countBullet = _amountbullets;
+
+        int remainingBullet = UserDataPref.GetAmountAuxiliaryItems(IdItem);
+        if (remainingBullet >= _amountbullets)
+        {
+            UserDataPref.SetAmountAuxiliaryItems(IdItem, remainingBullet - _amountbullets);
+            remainingBullet = _amountbullets;
+        }
+        else
+        {
+            UserDataPref.SetAmountAuxiliaryItems(IdItem,0);
+        }
+        _countBullet = remainingBullet;
         yield return new WaitForSeconds(timeReload);
         MainUi._instance.LoadGunPlaying(transform.GetComponent<Weapon>());
         isReloading = true;

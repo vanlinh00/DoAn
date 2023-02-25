@@ -34,16 +34,17 @@ public class FragController : Weapon
                 }
                 else
                 {
-                    StartCoroutine(IEReload());
+                    ReloadWeapon((int)TypeElementBag.Grenad);   
                 }
             }
             if (Input.GetKeyDown("q"))
             {
-                StartCoroutine(IEReload());
+                ReloadWeapon((int)TypeElementBag.Grenad);
             }
 
         }
     }
+ 
 
     public void Shoot()
     {
