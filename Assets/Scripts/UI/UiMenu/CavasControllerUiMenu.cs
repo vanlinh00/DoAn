@@ -26,18 +26,14 @@ public class CavasControllerUiMenu : Singleton<CavasControllerUiMenu>
     }
     public void SetActiveLuckyPanel()
     {
-
         _mapUi.SetActive(false);
         _player.SetActive(false);
         _mainUi.SetActive(true);
         _shopUi.SetActive(false);
-
-
     }
 
     public void SetActiveShopUi()
     {
-
         _mapUi.SetActive(false);
         _player.SetActive(false);
         _mainUi.SetActive(false);
