@@ -28,14 +28,10 @@ public class GamePlayLevel3 : GamePlay
 
     public override void EndGame()
     {
-        base.EndGame();
-
-        CalculaterStar();
+        int AmountStar = base.CalculaterStar();
+        int Amountkeys = base.GetNumberKey(AmountStar);
+        int AmountDiamond = base.GetNumberDiamond(AmountStar);
+        UiController._instance.ActiveEndGameUi(AmountStar, Amountkeys, AmountDiamond);
     }
-    public override void WinGame()
-    {
-        base.WinGame();
-        CalculaterStar();
 
-    }
 }

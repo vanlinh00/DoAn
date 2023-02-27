@@ -4,21 +4,51 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
-
 public class UiEndGame : MonoBehaviour
 {
+    public static UiEndGame instance;
     [SerializeField] Button ComeBackBtn;
+    [SerializeField] Button ComeBackMenu;
     [SerializeField] CanvasGroup _canvasGr;
-    private void Awake()
+
+    public List<Image> ListImages;
+
+    public Text diamondTxt;
+    public Text keyTxt;
+    public void Awake()
     {
-        ComeBackBtn.onClick.AddListener(LoadMenu);
+        instance = this;
+        ComeBackBtn.onClick.AddListener(LoadSceneAgain);
+        ComeBackMenu.onClick.AddListener(LoadMainScene);
     }
-    public void Show()
+    public void Show(int NumberStar, int NumberKeys, int NumberDiamond)
     {
+        foreach (var i in ListImages)
+        {
+            i.gameObject.SetActive(false);
+        }
         _canvasGr.alpha = 0;
-        DOTween.To(() => _canvasGr.alpha, value => _canvasGr.alpha = value, 1, 0.5f);
+        DOTween.To(() => _canvasGr.alpha, value => _canvasGr.alpha = value, 1, 0.5f).OnComplete(() =>
+        {
+            StartCoroutine(LoadStar(NumberStar, NumberKeys, NumberDiamond));
+        });
     }
-    public void LoadMenu()
+    IEnumerator LoadStar(int NumberStar, int NumberKeys, int NumberDiamond)
+    {
+        for(int i=0;i<NumberStar;i++)
+        {
+            yield return new WaitForSeconds(0.5f);
+            ListImages[i].gameObject.SetActive(true);
+        }
+        diamondTxt.text = NumberDiamond.ToString();
+        keyTxt.text = NumberKeys.ToString();
+    }
+    public void LoadSceneAgain()
+    {
+        int IdLevel = GameManager._instance.gamePlay.IdLevel;
+        SceneManager.LoadScene(IdLevel);
+    }
+    public void LoadMainScene()
     {
         SceneManager.LoadScene(0);
     }

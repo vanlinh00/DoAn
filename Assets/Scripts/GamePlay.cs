@@ -7,6 +7,7 @@ public class GamePlay : MonoBehaviour
     public List<EnemyController> ListEnemys;
     public int IdLevel;
     public InforLevelData inforLevelData;
+
     public virtual int GetCountEnemies()
     {
         return ListEnemys.Count;
@@ -24,19 +25,13 @@ public class GamePlay : MonoBehaviour
     }
     public virtual void EndGame()
     {
-        UiController._instance.ActiveEndGameUi();
         Debug.Log("EndGame");
-    }
-    public virtual void WinGame()
-    {
-        UiController._instance.ActiveEndGameUi();
-        Debug.Log("WinGame");
     }
     public virtual void SetCantFindObj()
     {
 
     }
-    public virtual void CalculaterStar()
+    public virtual int CalculaterStar()
     {
         float DeathRate = (ListEnemys.Count - MainUi._instance.CurrentAmountEnemy) / (float)ListEnemys.Count;
         int AmountStar = 0;
@@ -60,20 +55,37 @@ public class GamePlay : MonoBehaviour
         {
             UserDataPref.SetAmountStarLevel(IdLevel, AmountStar);
         }
-        UpdateDiamondAndKey(AmountStar);
+        return AmountStar;
+        // UpdateDiamondAndKey(AmountStar);
     }
-    public void UpdateDiamondAndKey(int NumberStar)
+    public int GetNumberKey(int NumberStar)
     {
-        if (NumberStar <= 0)
-            return;
+        if (NumberStar >0)
+        {
+            int NumberKeys = DataPlayer.GetInforPlayer().countKeys + inforLevelData.reward[NumberStar - 1].numberKey;
+            if (NumberKeys > 3)
+                NumberKeys = 3;
+            DataPlayer.UpdateAmountKeys(NumberKeys);
+            return inforLevelData.reward[NumberStar - 1].numberKey;
+        }
+        else
+        {
+            return 0;
+        }
 
-        int NumberKeys = DataPlayer.GetInforPlayer().countKeys + inforLevelData.reward[NumberStar - 1].numberKey;
-        if (NumberKeys > 3)
-            NumberKeys = 3;
+    }
+    public int GetNumberDiamond(int NumberStar)
+    {
+        if (NumberStar >0)
+        {
+            int NumberDiamond = DataPlayer.GetInforPlayer().countDiamond + inforLevelData.reward[NumberStar - 1].numberDimond;
+            DataPlayer.UpdateAmountDiamond(NumberDiamond);
+            return inforLevelData.reward[NumberStar - 1].numberDimond;
+        }
+        else
+        {
+            return 0;
+        }
 
-        DataPlayer.UpdateAmountKeys(NumberKeys);
-
-        int NumberDiamond = DataPlayer.GetInforPlayer().countDiamond + inforLevelData.reward[NumberStar - 1].numberDimond;
-        DataPlayer.UpdateAmountDiamond(NumberDiamond);
     }
 }

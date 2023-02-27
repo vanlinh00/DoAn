@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GamePlayLevel4 : GamePlay
 {
-
-    public override void CalculaterStar()
+    public override int CalculaterStar()
     {
         int AmountStar = 0;
         if (UiCountTime._instance.totalTime > 60)
@@ -24,6 +23,15 @@ public class GamePlayLevel4 : GamePlay
         {
             UserDataPref.SetAmountStarLevel(IdLevel, AmountStar);
         }
-        UpdateDiamondAndKey(AmountStar);
+        // UpdateDiamondAndKey(AmountStar);
+        return AmountStar;
+    }
+
+    public override void EndGame()
+    {
+        int AmountStar = base.CalculaterStar();
+        int Amountkeys = base.GetNumberKey(AmountStar);
+        int AmountDiamond = base.GetNumberDiamond(AmountStar);
+        UiController._instance.ActiveEndGameUi(AmountStar, Amountkeys, AmountDiamond);
     }
 }

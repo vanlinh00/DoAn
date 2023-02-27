@@ -74,7 +74,7 @@ public class UiController : Singleton<UiController>
             HitZone.SetActive(true);
         }
     }
-    public void ActiveEndGameUi()
+    public void ActiveEndGameUi(int NumberStar, int NumberKeys, int NumberDiamond)
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -82,7 +82,7 @@ public class UiController : Singleton<UiController>
         cameraObj.SetActive(true);
         _scope.SetActive(false);
         _uiEndGame.gameObject.SetActive(true);
-        _uiEndGame.Show();
+        _uiEndGame.Show(NumberStar,NumberKeys,NumberDiamond);
  
     }
 }

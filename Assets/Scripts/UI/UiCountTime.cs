@@ -7,8 +7,10 @@ public class UiCountTime : Singleton<UiCountTime>
     public float currentTime;
     public int totalTime;
     public Text textTotalTime;
+    public bool isShowed;
     void Start()
     {
+        isShowed = false;
         currentTime = 0;
         UpDateTime();
     }
@@ -16,6 +18,9 @@ public class UiCountTime : Singleton<UiCountTime>
     // Update is called once per frame
     void Update()
     {
+        if (isShowed)
+            return;
+
         currentTime += Time.deltaTime;
         if (currentTime >= 1)
         {
@@ -24,8 +29,8 @@ public class UiCountTime : Singleton<UiCountTime>
             UpDateTime();
             if (totalTime <= 0)
             {
-                GameManager._instance.gamePlay.WinGame();
-                return;
+                GameManager._instance.gamePlay.EndGame();
+                isShowed = true;
             }
         }
     }

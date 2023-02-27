@@ -40,7 +40,7 @@ public class MainUi : Singleton<MainUi>
         enemyTxt.text = CurrentAmountEnemy + "/" + TotalAmountEnemy;
         if(CurrentAmountEnemy<=0)
         {
-            GameManager._instance.gamePlay.WinGame();
+            GameManager._instance.gamePlay.EndGame();
         }
     }
 
