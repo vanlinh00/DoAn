@@ -12,7 +12,6 @@ public class UiEndGame : MonoBehaviour
     [SerializeField] CanvasGroup _canvasGr;
 
     public List<Image> ListImages;
-
     public Text diamondTxt;
     public Text keyTxt;
     public void Awake()
@@ -42,6 +41,11 @@ public class UiEndGame : MonoBehaviour
         }
         diamondTxt.text = NumberDiamond.ToString();
         keyTxt.text = NumberKeys.ToString();
+
+        if(NumberStar==3)
+        {
+            DataPlayer.UpdateLevel(DataPlayer.GetInforPlayer().level + 1);
+        }    
     }
     public void LoadSceneAgain()
     {

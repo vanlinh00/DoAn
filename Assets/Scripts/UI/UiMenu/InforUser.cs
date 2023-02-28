@@ -11,7 +11,7 @@ public class InforUser : Singleton<InforUser>
 
     public void OnEnable()
     {
-        DataPlayer.UpdateName("VanLinh00");
+         DataPlayer.UpdateName("User001");
         _nameText.text = DataPlayer.GetInforPlayer().name;
         _levelText.text ="Level "+ DataPlayer.GetInforPlayer().level;
         _rankingText.text ="Ranking "+ DataPlayer.GetInforPlayer().ranking;

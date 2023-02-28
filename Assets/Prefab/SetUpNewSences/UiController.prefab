@@ -3997,7 +3997,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NOT UNLOCKED
+  m_Text: Auxiliary Items
 --- !u!1 &9067642826241625668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,7 +4662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UNLOCKED
+  m_Text: All Your Guns
 --- !u!1 &9067642826613109148
 GameObject:
   m_ObjectHideFlags: 0

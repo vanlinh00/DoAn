@@ -8,7 +8,7 @@ public class SelectWeaponUiShop : Singleton<SelectWeaponUiShop>
     public int idTypeWeaPonDisplay;
     public UpgrapdeWeapon upgrapdeWeapon;
     public Button upGrapdeBtn;
-    public List<GunData> gunDatas;
+    public List<GunData> gunDatas;  
     public List<GunData> auxiliaryItemsDatas;
     public List<ShopButtonElement> listShopButtonElement;
 
