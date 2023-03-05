@@ -123,7 +123,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 9c19f302086a5d24eaf96b51230700c8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c3c1ff06e32ebd44f963fa5631d60d40, type: 2}
 --- !u!1 &16215988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7129503492080312261, guid: ac441dc2d4552d848b956e88bbc4ae39,
@@ -4228,6 +4228,7 @@ MonoBehaviour:
   currentTime: 0
   totalTime: 120
   textTotalTime: {fileID: 1487296801}
+  isShowed: 0
 --- !u!1001 &1468932881
 PrefabInstance:
   m_ObjectHideFlags: 0
