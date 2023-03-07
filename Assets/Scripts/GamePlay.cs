@@ -26,6 +26,7 @@ public class GamePlay : MonoBehaviour
     public virtual void EndGame()
     {
         Debug.Log("EndGame");
+        PlayerController.instance.ControllerPlayer(false);
     }
     public virtual void SetCantFindObj()
     {

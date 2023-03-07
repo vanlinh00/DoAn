@@ -16,6 +16,7 @@ public class PlayerCam : MonoBehaviour
 
     public float yRotation;
 
+    public bool isControl;
       private void Start()
     {
         // #if UNITY_STANDALONE || UNITY_EDITOR
@@ -23,7 +24,7 @@ public class PlayerCam : MonoBehaviour
         //         Cursor.lockState = CursorLockMode.Locked;
         //         Cursor.visible = false;
         // #endif
-
+        isControl = true;
         SetCam();
     }
 
@@ -40,8 +41,8 @@ public class PlayerCam : MonoBehaviour
     {
         // if (Utils.IsPointerOverUIElement())
         //     return;
-        //if (!isHandle)
-        //    return;
+        if (!isControl)
+            return;
         //if (PlayerController.instance.statePlayer == PlayerController.StatePlayer.Living)
         // {
         float mouseX = 0f;

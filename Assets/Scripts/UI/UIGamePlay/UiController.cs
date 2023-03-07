@@ -44,6 +44,15 @@ public class UiController : Singleton<UiController>
             EnableCursor();
             SceneManager.LoadScene(0);
         }
+
+        if(Input.GetKeyDown("h"))
+        {
+            int NumberHp = UserDataPref.GetAmountAuxiliaryItems((int)TypeElementBag.Hp);
+            if (NumberHp == 0)
+                return;
+            PlayerController.instance.AddHp(500f, null);
+            UserDataPref.SetAmountAuxiliaryItems((int)TypeElementBag.Hp, NumberHp - 1);
+        }
     }
     public void OpenStore()
     {

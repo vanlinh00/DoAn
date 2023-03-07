@@ -75,22 +75,34 @@ public class PlayerController : MonoBehaviour
     //    //     .Play())
     //    // .Play();
     //}
+    
+    public void ControllerPlayer(bool Res)
+    {
+        playerCam.isControl = Res;
+        playerMovement.isControl = Res;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("Usable"))
         {
-            if (HpPlayer < MaxHpPlayer)
-            {
-                float AddHealth = MaxHpPlayer - HpPlayer;
-                float PickUpHealth = other.gameObject.GetComponent<PickupHealth>().health;
+            float PickUpHealth = other.gameObject.GetComponent<PickupHealth>().health;
+            AddHp(PickUpHealth,other.gameObject);
+        }
+    }
+    public void AddHp(float PickUpHealth,GameObject usableObj)
+    {
+        if (HpPlayer < MaxHpPlayer)
+        {
+            float AddHealth = MaxHpPlayer - HpPlayer;
 
-                if (AddHealth >= PickUpHealth)
-                    AddHealth = PickUpHealth;
-                HpPlayer += AddHealth;
-                MainUi._instance.ChangeFillAmountHealth(AddHealth / (float)1000);
-                other.gameObject.SetActive(false);
-            }
+            if (AddHealth >= PickUpHealth)
+                AddHealth = PickUpHealth;
+            HpPlayer += AddHealth;
+            MainUi._instance.ChangeFillAmountHealth(AddHealth / (float)1000);
+            if (usableObj == null)
+                return;
+            usableObj.SetActive(false);
         }
     }
 

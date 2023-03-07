@@ -29,6 +29,7 @@ public class GamePlayLevel4 : GamePlay
 
     public override void EndGame()
     {
+        base.EndGame();
         int AmountStar = base.CalculaterStar();
         int Amountkeys = base.GetNumberKey(AmountStar);
         int AmountDiamond = base.GetNumberDiamond(AmountStar);

@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
 
     public GunData gunData;
 
+
     protected virtual void Start()
     {
         isReloading = true;

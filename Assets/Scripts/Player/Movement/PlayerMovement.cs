@@ -38,10 +38,10 @@ public class PlayerMovement : MonoBehaviour
     public bool isJumb;
     public bool isJumbing;
 
-    public bool isHandle;
+    public bool isControl;
     private void Start()
     {
-        isHandle = false;
+        isControl = true;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         isJumb = false;
@@ -50,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        //if(!isHandle)
-        //    return;
+        if (!isControl)
+            return;
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight /*0.5f + 0.2f*/, whatIsGround);
     
@@ -72,9 +72,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {      
-        //if(!isHandle)
-        //    return;
+    {
+        if (!isControl)
+            return;
         MovePlayer();
   
     }

@@ -11,7 +11,6 @@ public class Gun : Weapon
     {
         Init();
         base.Start();
-
     }
     void Init()
     {
@@ -23,6 +22,8 @@ public class Gun : Weapon
     }
     protected virtual void Update()
     {
+
+
         if (GameState.stateGame != StateGame.OpenStore && isReloading)
         {
             Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
