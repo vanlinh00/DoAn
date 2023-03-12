@@ -41,6 +41,7 @@ TagManager:
   - Enemy
   - Moutain
   - Obj
+  - Mine
   layers:
   - Default
   - TransparentFX

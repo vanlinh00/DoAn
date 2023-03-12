@@ -30,7 +30,22 @@ public class UiMap : Singleton<UiMap>
         for (int i = 0; i < listSelectLevel.Count; i++)
         {
             int CountStar = UserDataPref.GetAmountStarLevel(i + 1); 
-            listSelectLevel[i].Init(true, CountStar, i+1);
+
+            int IdMap = UserDataPref.IdMapPlaying;
+          
+            if(i<=IdMap)
+            {
+                listSelectLevel[i].Init(true, CountStar, i+1);
+            }
+            else
+            {
+                listSelectLevel[i].Init(false, CountStar, i + 1);
+            }
+            if(i<IdMap)
+            {
+                listSelectLevel[i].SetLineNextLevel(true);
+            }
+
         }
     }
     private void Update()

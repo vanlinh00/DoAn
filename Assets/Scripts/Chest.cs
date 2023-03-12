@@ -16,6 +16,7 @@ public class Chest : MonoBehaviour
                 particleVfx.SetActive(true);
                 DOVirtual.DelayedCall(1f, () =>
                 {
+                    MainUi._instance.CurrentAmountEnemy = 0;
                     GameManager._instance.gamePlay.EndGame();
                     gameObject.SetActive(false);
                 });

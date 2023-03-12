@@ -18,6 +18,7 @@ public class MainUi : Singleton<MainUi>
         TotalAmountEnemy = GameManager._instance.gamePlay.GetCountEnemies();
         CurrentAmountEnemy = TotalAmountEnemy;
         enemyTxt.text = CurrentAmountEnemy + "/" + TotalAmountEnemy;
+
     }
     public void ChangeFillAmountHealth(float CountHealth)
     {

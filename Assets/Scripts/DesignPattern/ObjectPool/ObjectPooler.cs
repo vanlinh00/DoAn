@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectPooler : Singleton<ObjectPooler>
 {
-   
     protected override void Awake()
     {
         base.Awake();

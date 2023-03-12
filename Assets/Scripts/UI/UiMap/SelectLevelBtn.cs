@@ -9,39 +9,46 @@ public class SelectLevelBtn : MonoBehaviour
     //public Image bgImg;
 
     public Text levelTxt;
-    public Color blue;
-    public Color white;
-
     public Image LineNextLevel;
     public PerformanceLevel performanceLevel;
     public Button mapSelectBtn;
     int idLevel;
+    public bool isLock;
+    public GameObject star;
+
+    public GameObject IconLock;
     private void Awake()
     {
         mapSelectBtn.onClick.AddListener(LoadMap);
     }
     public void Init(bool IsPassed, int CountStar, int IdLevel)
     {
+        isLock = !IsPassed;
         idLevel = IdLevel;
-        if (IsPassed)
-        {
-            levelTxt.color = white;
-            //  bgImg.gameObject.SetActive(true);
-            LineNextLevel.color = white;
-        }
-        else
-        {
-            LineNextLevel.color = blue;
-            levelTxt.color = blue;
-            //  bgImg.gameObject.SetActive(false);
-        }
+        levelTxt.color = Color.white;
+
+        IconLock.SetActive(!IsPassed);
+        star.SetActive(IsPassed);
         levelTxt.text = IdLevel.ToString();
         performanceLevel.CompleteStar(CountStar);
     }
 
+    public void SetLineNextLevel(bool IsGreen)
+    {
+        if(!IsGreen)
+        {
+            LineNextLevel.color = Color.white;
+        }
+        else
+        {
+            LineNextLevel.color = Color.green;
+        }
+    }
+
     public void LoadMap()
     {
-        // SceneManager.LoadScene(idLevel);
+        if (isLock)
+            return;
         UiMap._instance.inforLevelUI.Init(idLevel);
     }
 }

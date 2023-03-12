@@ -12,6 +12,7 @@ public class GamePlayLevel1 : GamePlay
         int AmountDiamond = base.GetNumberDiamond(AmountStar);
         UiController._instance.ActiveEndGameUi(AmountStar, Amountkeys, AmountDiamond);
 
+ 
     }
 
 }

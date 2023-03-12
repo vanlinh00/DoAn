@@ -61,6 +61,11 @@ public class GamePlay : MonoBehaviour
     }
     public int GetNumberKey(int NumberStar)
     {
+        if (NumberStar >= 2)
+        {
+            UserDataPref.IdMapPlaying = UserDataPref.IdMapPlaying + 1;
+        }
+
         if (NumberStar >0)
         {
             int NumberKeys = DataPlayer.GetInforPlayer().countKeys + inforLevelData.reward[NumberStar - 1].numberKey;

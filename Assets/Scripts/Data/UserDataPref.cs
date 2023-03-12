@@ -29,4 +29,11 @@ public class UserDataPref
     {
         PlayerPrefs.SetInt("auxiliary_items_count"+ IdAuxiItem, CountItem);
     }
+
+    public static int IdMapPlaying
+    {
+        get => PlayerPrefs.GetInt("IdMapPlaying");
+        set => PlayerPrefs.SetInt("IdMapPlaying", value);
+    }
+
 }

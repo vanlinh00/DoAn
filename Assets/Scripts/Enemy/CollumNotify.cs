@@ -9,6 +9,7 @@ public class CollumNotify : MonoBehaviour
     public List<Enemy3> enemiesTeam3;
     public List<Enemy4> enemiesTeam4;
     private bool isNotice;
+  //  public GameObject Team1Object, Team2Object;
     private void Start()
     {
         isNotice = false;
@@ -29,6 +30,9 @@ public class CollumNotify : MonoBehaviour
             }
             for (int i=0;i<enemiesTeam3.Count;i++)
             {
+                enemiesTeam4[i].gameObject.SetActive(true);
+                enemiesTeam3[i].gameObject.SetActive(true);
+
                 enemiesTeam4[i].SetStateEnemy(false);
                 enemiesTeam3[i].isAttackPlayer = true;
              }

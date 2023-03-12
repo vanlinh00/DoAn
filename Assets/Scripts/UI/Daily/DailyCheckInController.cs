@@ -23,6 +23,7 @@ public class DailyCheckInController  : BasePopup
     }
     public void Start()
     {
+      //  PlayerPrefs.DeleteAll();
         CheckClaimReward(false);
     }
 

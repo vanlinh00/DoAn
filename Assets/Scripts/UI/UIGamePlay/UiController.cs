@@ -18,6 +18,7 @@ public class UiController : Singleton<UiController>
     public GameObject cameraObj;
     private void Start()
     {
+    //   PlayerPrefs.DeleteAll();
         CountTimeHizone = 0;
     }
     private void Update()

@@ -29,8 +29,8 @@ public class ElementBag : MonoBehaviour
         {
             int AmountCoins = DataPlayer.GetInforPlayer().countCoins - pirceItem;
             DataPlayer.UpdateAmountCoins(AmountCoins);
-            int CountItem = int.TryParse(countElementTxt.text, out int result) ? result : 0;
-            if (CountItem != 0)
+            int CountItem = int.TryParse(countElementTxt.text, out int result) ? result : -1;
+            if (CountItem !=-1)
             {
                 CountItem++;
             }
